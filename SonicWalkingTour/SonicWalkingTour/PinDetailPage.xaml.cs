@@ -27,7 +27,7 @@ namespace SonicWalkingTour
         Stream GetStreamFromFile(string filename)
         {
             var assembly = typeof(App).GetTypeInfo().Assembly;
-            var stream = assembly.GetManifestResourceStream("SonicWalkingTourDemo.SharedAssets.Audio." + filename);
+            var stream = assembly.GetManifestResourceStream(App.MusicLocation + filename);
             return stream;
         }
 

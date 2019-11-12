@@ -9,6 +9,7 @@ namespace SonicWalkingTour
 
         public static double ScreenHeight;
         public static double ScreenWidth;
+        public static string MusicLocation = "SonicWalkingTour.SharedAssets.Audio.";
 
         public App()
         {

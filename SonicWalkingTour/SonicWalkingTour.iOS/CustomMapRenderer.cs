@@ -18,7 +18,6 @@ namespace SonicWalkingTour.iOS
     {
         UIView customPinView;
         List<CustomPin> customPins;
-        ISimpleAudioPlayer player;
 
         protected override void OnElementChanged(ElementChangedEventArgs<View> e)
         {
@@ -83,9 +82,11 @@ namespace SonicWalkingTour.iOS
         void OnCalloutAccessoryControlTapped(object sender, MKMapViewAccessoryTappedEventArgs e)
         {
             var customView = e.View as CustomMKAnnotationView;
+            var position = new Position(customView.Annotation.Coordinate.Latitude, customView.Annotation.Coordinate.Longitude);
+            var customPin = GetCustomPin(position);
             if (!string.IsNullOrWhiteSpace(customView.Url))
             {
-                //new PinDetailPage(e.View as CustomPin);
+                App.Current.MainPage.Navigation.PushAsync(new PinDetailPage(customPin));
             }
         }
 
@@ -129,10 +130,18 @@ namespace SonicWalkingTour.iOS
             return null;
         }
 
-        void Play_Clicked()
+        CustomPin GetCustomPin(Position position)
         {
-
-            player.Play();
+            //var position = new Position(annotation.Coordinate.Latitude, annotation.Coordinate.Longitude);
+            foreach (var pin in customPins)
+            {
+                if (pin.Position == position)
+                {
+                    return pin;
+                }
+            }
+            return null;
         }
+
     }
 }

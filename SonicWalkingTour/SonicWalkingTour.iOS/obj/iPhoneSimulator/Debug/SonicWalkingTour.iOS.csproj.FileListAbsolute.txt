@@ -95,3 +95,5 @@
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.csproj.CopyComplete
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.exe
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.pdb
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/bin/iPhoneSimulator/Debug/Mono.Android.dll
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/bin/iPhoneSimulator/Debug/Mono.Android.pdb
