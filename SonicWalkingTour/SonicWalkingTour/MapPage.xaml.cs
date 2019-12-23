@@ -71,6 +71,24 @@ namespace SonicWalkingTour
                 Url = track3
             };
 
+            // instantiate a polyline
+            Polyline polyline = new Polyline
+            {
+                StrokeColor = Color.Green,
+                StrokeWidth = 14,
+                Geopath =
+                            {
+                                new Xamarin.Forms.Maps.Position(44.533145, -87.923061),
+                                new Xamarin.Forms.Maps.Position(44.531778, -87.920431),
+                                new Xamarin.Forms.Maps.Position(44.531354, -87.919450),
+                                new Xamarin.Forms.Maps.Position(44.530359, -87.916433)
+
+                            }
+            };
+
+            customMap.MapElements.Add(polyline);
+
+
             customMap.CustomPins = new List<CustomPin> { pin1, pin2, pin3, pin4 };
             customMap.Pins.Add(pin1);
             customMap.Pins.Add(pin2);
