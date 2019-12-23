@@ -2,15 +2,14 @@
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/bin/Debug/netstandard2.0/SonicWalkingTour.dll
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/bin/Debug/netstandard2.0/ref/SonicWalkingTour.dll
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/bin/Debug/netstandard2.0/SonicWalkingTour.pdb
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/SonicWalkingTour.csprojAssemblyReference.cache
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/App.xaml.g.cs
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/LoginPage.xaml.g.cs
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/MapPage.xaml.g.cs
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/PinDetailPage.xaml.g.cs
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/SonicWalkingTour.AssemblyInfoInputs.cache
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/SonicWalkingTour.AssemblyInfo.cs
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/SonicWalkingTour.dll
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/ref/SonicWalkingTour.dll
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/SonicWalkingTour.pdb
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/Debug/netstandard2.0/PinDetailPage.xaml.g.cs

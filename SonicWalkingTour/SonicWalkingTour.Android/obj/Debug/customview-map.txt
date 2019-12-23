@@ -26,9 +26,12 @@ external-path;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWal
 foreground;obj/Debug/res/mipmap-anydpi-v26/icon.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/icon_round.xml
 FrameLayout;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/44/jl/res/layout/bottomtablayout.xml
+ImageButton;obj/Debug/res/layout/infowindow.xml
+ImageView;obj/Debug/res/layout/infowindow.xml
 item;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/44/jl/res/values/styles.xml
 item;obj/Debug/res/values/styles.xml
 LinearLayout;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/44/jl/res/layout/bottomtablayout.xml
+LinearLayout;obj/Debug/res/layout/infowindow.xml
 paths;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/42/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 resources;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/44/jl/res/values/styles.xml
 resources;obj/Debug/res/values/colors.xml
@@ -39,6 +42,7 @@ set;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.A
 set;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/44/jl/res/anim/exittoright.xml
 style;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/44/jl/res/values/styles.xml
 style;obj/Debug/res/values/styles.xml
+TextView;obj/Debug/res/layout/infowindow.xml
 translate;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/44/jl/res/anim/enterfromleft.xml
 translate;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/44/jl/res/anim/enterfromright.xml
 translate;/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/Debug/lp/44/jl/res/anim/exittoleft.xml

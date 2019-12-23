@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="uwgb.dylanhoffman.sonicwalkingtour">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-  <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-feature android:name="android.hardware.location.gps" />
   <uses-feature android:name="android.hardware.location.network" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
   <application android:label="SonicWalkingTour.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB-ZJMJxemf3mJ4TlUEwYLalXan3WifssU" />
     <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SonicWalkingTour" android:theme="@style/MainTheme" android:name="md56594cab5ff59596f0178267d300f4a99.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

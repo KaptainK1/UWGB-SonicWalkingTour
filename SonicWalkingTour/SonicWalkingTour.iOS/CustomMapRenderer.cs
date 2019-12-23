@@ -90,6 +90,7 @@ namespace SonicWalkingTour.iOS
             }
         }
 
+        //method to create a new annotation when a pin is selected
         void OnDidSelectAnnotationView(object sender, MKAnnotationViewEventArgs e)
         {
             var customView = e.View as CustomMKAnnotationView;
