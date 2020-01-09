@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
 using Plugin.Permissions;
@@ -18,6 +19,7 @@ namespace SonicWalkingTour
         const string track1 = "Track1.mp3";
         const string track2 = "Track2.mp3";
         const string track3 = "Track3.mp3";
+        const string track5 = "Haxe.mp3";
 
         public MapPage()
         {
@@ -31,76 +33,91 @@ namespace SonicWalkingTour
         //function to load all the pins we will be using
         private void LoadPins()
         {
-            var pin4 = new CustomPin()
-            {
-                Type = PinType.Place,
-                Position = new Xamarin.Forms.Maps.Position(44.531778, -87.920431),
-                Description = "Here is a brief description of the Quad",
-                MarkerId = "xamarin",
-                Label = "The Quad",
-                Url = track4
-            };
 
             var pin1 = new CustomPin()
             {
-                Type = PinType.Place,
-                Position = new Xamarin.Forms.Maps.Position(44.533145, -87.923061),
-                Description = "Here is a brief description of the Weidner",
+                Type = PinType.SavedPin,
+                Position = new Xamarin.Forms.Maps.Position(44.532351, -87.920922),
+                Description = "Here is a brief description of Student Services!",
                 MarkerId = "xamarin",
-                Label = "The Weidner Center",
+                Label = "Student Services",
                 Url = track1
             };
 
             var pin2 = new CustomPin()
             {
-                Type = PinType.Place,
-                Position = new Xamarin.Forms.Maps.Position(44.530359, -87.916433),
-                Description = "Here is a brief description of the Kress",
+                Type = PinType.SavedPin,
+                Position = new Xamarin.Forms.Maps.Position(44.531936, -87.921457),
+                Description = "Here is a brief description of the Tunnels",
                 MarkerId = "xamarin",
-                Label = "The Kress Center",
+                Label = "Tunnels",
                 Url = track2
             };
 
             var pin3 = new CustomPin()
             {
-                Type = PinType.Place,
-                Position = new Xamarin.Forms.Maps.Position(44.531354, -87.919450),
-                Description = "Here is a brief description of the Mary Ann Confrin",
+                Type = PinType.SavedPin,
+                Position = new Xamarin.Forms.Maps.Position(44.531397, -87.921274),
+                Description = "Here is a brief description of the Confrin Library!",
                 MarkerId = "xamarin",
-                Label = "Mary Ann Confrin",
+                Label = "Confrin Library",
                 Url = track3
             };
 
+            var pin4 = new CustomPin()
+            {
+                Type = PinType.SavedPin,
+                Position = new Xamarin.Forms.Maps.Position(44.532386, -87.919828),
+                Description = "Here is a brief description of the Union!",
+                MarkerId = "xamarin",
+                Label = "The Union",
+                Url = track4
+            };
+
+            var pin5 = new CustomPin()
+            {
+                Type = PinType.SavedPin,
+                Position = new Xamarin.Forms.Maps.Position(44.531822, -87.920591),
+                Description = "Here is a brief description of the Quad",
+                MarkerId = "xamarin",
+                Label = "The Quad",
+                Url = track5
+            };
+
             // instantiate a polyline
+            // this could be a simple way to draw a path between points
             Polyline polyline = new Polyline
             {
                 StrokeColor = Color.Green,
                 StrokeWidth = 14,
                 Geopath =
                             {
-                                new Xamarin.Forms.Maps.Position(44.533145, -87.923061),
-                                new Xamarin.Forms.Maps.Position(44.531778, -87.920431),
-                                new Xamarin.Forms.Maps.Position(44.531354, -87.919450),
-                                new Xamarin.Forms.Maps.Position(44.530359, -87.916433)
+                                pin1.Position,
+                                pin2.Position,
+                                pin3.Position,
+                                pin4.Position,
+                                pin5.Position
 
                             }
             };
 
+            //add the line between the points
             customMap.MapElements.Add(polyline);
 
-
-            customMap.CustomPins = new List<CustomPin> { pin1, pin2, pin3, pin4 };
+            //create a list of pins then add them to the map
+            customMap.CustomPins = new List<CustomPin> { pin1, pin2, pin3, pin4, pin5 };
             customMap.Pins.Add(pin1);
             customMap.Pins.Add(pin2);
             customMap.Pins.Add(pin3);
             customMap.Pins.Add(pin4);
+            customMap.Pins.Add(pin5);
 
             //customMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Xamarin.Forms.Maps.Position(44.531354, -87.919450), Distance.FromMiles(0.5)));
 
         }
 
         //fuction to get the location of the user then display it
-        private async void GetLocation()
+        private async Task GetLocation()
         {
             //if we have permission, move to the user's location
             if (hasLocationPermission)
@@ -191,7 +208,7 @@ namespace SonicWalkingTour
             var center = new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude);
 
             //get the span of the map with the center
-            var mapspan = new Xamarin.Forms.Maps.MapSpan(center, 0.009d, 0.009d);
+            var mapspan = new Xamarin.Forms.Maps.MapSpan(center, 0.0015d, 0.0015d);
 
             //now move to the region
             customMap.MoveToRegion(mapspan);

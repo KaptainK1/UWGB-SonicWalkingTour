@@ -40,5 +40,22 @@
 	<string>We need location permission to display where you are on the map</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>We need microphone permission to play music</string>
+	<key>Custom Property1</key>
+	<string></string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>dhoffman.local</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

@@ -1,33 +1,35 @@
-﻿<Properties StartupConfiguration="{89EBDA87-0226-4CBE-B33F-625E9F7E5446}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SonicWalkingTour.Android/CustomMapRenderer.cs">
+﻿<Properties StartupConfiguration="{7C497DB4-7D46-496B-9D66-EF93968F89BF}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SonicWalkingTour/LoginPage.xaml.cs">
     <Files>
-      <File FileName="SonicWalkingTour.iOS/CustomMapRenderer.cs" Line="72" Column="37" />
-      <File FileName="SonicWalkingTour.Android/Resources/AboutResources.txt" />
-      <File FileName="SonicWalkingTour.Android/Resources/Resource.designer.cs" />
-      <File FileName="SonicWalkingTour.Android/Resources/layout/Toolbar.xml" />
-      <File FileName="SonicWalkingTour.Android/Resources/layout/InfoWindow.axml" />
-      <File FileName="SonicWalkingTour.Android/CustomMapRenderer.cs" Line="54" Column="80" />
-      <File FileName="SonicWalkingTour.Android/Properties/AssemblyInfo.cs" />
-      <File FileName="SonicWalkingTour.Android/Properties/AndroidManifest.xml" />
+      <File FileName="SonicWalkingTour/LoginPage.xaml" Line="1" Column="1" />
+      <File FileName="SonicWalkingTour/LoginPage.xaml.cs" Line="37" Column="65" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SonicWalkingTour" expanded="True">
-            <Node name="SonicWalkingTour" expanded="True" />
+            <Node name="SonicWalkingTour" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="SharedAssets" expanded="True">
+                <Node name="Audio" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="LoginPage.xaml" expanded="True">
+                <Node name="LoginPage.xaml.cs" selected="True" />
+              </Node>
+              <Node name="MapPage.xaml" expanded="True" />
+            </Node>
             <Node name="SonicWalkingTour.Android" expanded="True">
               <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
-              </Node>
-              <Node name="CustomMapRenderer.cs" selected="True" />
+              <Node name="Resources" expanded="True" />
             </Node>
-            <Node name="SonicWalkingTour.iOS" expanded="True" />
+            <Node name="SonicWalkingTour.iOS" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -36,7 +38,9 @@
   <MonoDevelop.Ide.ItemProperties.SonicWalkingTour.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0162108A-E53C-48FC-8E0C-4ED64FF9E7D3" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/LoginPage.xaml.cs" relfile="SonicWalkingTour/LoginPage.xaml.cs" line="31" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
