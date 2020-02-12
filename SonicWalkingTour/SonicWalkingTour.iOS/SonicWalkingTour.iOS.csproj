@@ -124,10 +124,6 @@
       <HintPath>..\..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\10.0.6.2\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v9.0\Mono.Android.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
-  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\SonicWalkingTour\SonicWalkingTour.csproj">
@@ -168,5 +164,8 @@
     <BundleResource Include="Resources\monkey.png" />
     <BundleResource Include="Resources\pin.png" />
     <BundleResource Include="Resources\xamarin.png" />
+    <BundleResource Include="Resources\route.png" />
+    <BundleResource Include="Resources\route%402x.png" />
+    <BundleResource Include="Resources\route%403x.png" />
   </ItemGroup>
 </Project>

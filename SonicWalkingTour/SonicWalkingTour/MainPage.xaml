@@ -16,4 +16,6 @@
                            Icon="gear.png"/>-->
         <local:MapPage Title="Map"
                        Icon="map.png"/>
+            <local:RoutePage Title="Route"
+                       Icon="route.png"/>
 </TabbedPage>
