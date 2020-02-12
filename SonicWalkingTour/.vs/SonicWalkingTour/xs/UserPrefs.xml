@@ -2,12 +2,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="SonicWalkingTour/MapPage.xaml.cs">
     <Files>
       <File FileName="SonicWalkingTour/LoginPage.xaml" Line="14" Column="1" />
-      <File FileName="SonicWalkingTour/LoginPage.xaml.cs" Line="21" Column="1" />
-      <File FileName="SonicWalkingTour/RoutePage.xaml" Line="13" Column="1" />
-      <File FileName="SonicWalkingTour/RoutePage.xaml.cs" Line="14" Column="6" />
-      <File FileName="SonicWalkingTour/MainPage.xaml" Line="21" Column="14" />
+      <File FileName="SonicWalkingTour/LoginPage.xaml.cs" />
+      <File FileName="SonicWalkingTour/RoutePage.xaml" />
+      <File FileName="SonicWalkingTour/RoutePage.xaml.cs" />
+      <File FileName="SonicWalkingTour/MainPage.xaml" />
       <File FileName="SonicWalkingTour.iOS/Resources/map.png" />
-      <File FileName="SonicWalkingTour/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="SonicWalkingTour/MainPage.xaml.cs" />
       <File FileName="SonicWalkingTour/MapPage.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -28,7 +28,6 @@
             </Node>
             <Node name="SonicWalkingTour.Android" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="Packages" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>
             <Node name="SonicWalkingTour.iOS" expanded="True">

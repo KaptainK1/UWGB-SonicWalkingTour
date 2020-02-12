@@ -1,1 +1,0 @@
-# UWGB-SonicWalkingTour
