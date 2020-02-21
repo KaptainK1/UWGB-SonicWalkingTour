@@ -10,6 +10,8 @@ namespace SonicWalkingTour
         public RoutePage()
         {
             InitializeComponent();
+
+            CustomPinListView.ItemsSource = App.pins;
         }
     }
 }

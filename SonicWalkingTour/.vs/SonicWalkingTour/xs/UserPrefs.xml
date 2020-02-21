@@ -1,29 +1,29 @@
 ﻿<Properties StartupConfiguration="{7C497DB4-7D46-496B-9D66-EF93968F89BF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SonicWalkingTour/MapPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SonicWalkingTour/CustomPin.cs">
     <Files>
-      <File FileName="SonicWalkingTour/LoginPage.xaml" Line="14" Column="1" />
-      <File FileName="SonicWalkingTour/LoginPage.xaml.cs" />
-      <File FileName="SonicWalkingTour/RoutePage.xaml" />
-      <File FileName="SonicWalkingTour/RoutePage.xaml.cs" />
-      <File FileName="SonicWalkingTour/MainPage.xaml" />
-      <File FileName="SonicWalkingTour.iOS/Resources/map.png" />
-      <File FileName="SonicWalkingTour/MainPage.xaml.cs" />
-      <File FileName="SonicWalkingTour/MapPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="SonicWalkingTour/RoutePage.xaml.cs" Line="16" Column="6" />
+      <File FileName="SonicWalkingTour/RoutePage.xaml" Line="32" Column="1" />
+      <File FileName="SonicWalkingTour/App.xaml.cs" Line="75" Column="15" />
+      <File FileName="SonicWalkingTour/App.xaml" Line="1" Column="1" />
+      <File FileName="SonicWalkingTour/LoginPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="SonicWalkingTour/LoginPage.xaml" Line="1" Column="1" />
+      <File FileName="SonicWalkingTour/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="SonicWalkingTour/MapPage.xaml" Line="1" Column="1" />
+      <File FileName="SonicWalkingTour/PinDetailPage.xaml" Line="6" Column="1" />
+      <File FileName="SonicWalkingTour.iOS/CustomMapRenderer.cs" Line="39" Column="1" />
+      <File FileName="SonicWalkingTour/CustomPin.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SonicWalkingTour" expanded="True">
             <Node name="SonicWalkingTour" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
+              <Node name="Dependencies" expanded="True" />
               <Node name="App.xaml" expanded="True" />
+              <Node name="CustomPin.cs" selected="True" />
               <Node name="LoginPage.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
-              <Node name="MapPage.xaml" expanded="True">
-                <Node name="MapPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="MapPage.xaml" expanded="True" />
               <Node name="RoutePage.xaml" expanded="True" />
             </Node>
             <Node name="SonicWalkingTour.Android" expanded="True">
@@ -31,20 +31,28 @@
               <Node name="Properties" expanded="True" />
             </Node>
             <Node name="SonicWalkingTour.iOS" expanded="True">
+              <Node name="References" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.SonicWalkingTour.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_6_API_25" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SonicWalkingTour.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0162108A-E53C-48FC-8E0C-4ED64FF9E7D3" />
+  <MonoDevelop.Ide.ItemProperties.SonicWalkingTour.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4483F24E-CD7C-4C2E-8E8D-1B5A8B1C8094" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/CustomMapRenderer.cs" relfile="SonicWalkingTour.iOS/CustomMapRenderer.cs" line="18" column="1" />
+      <Breakpoint file="/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/CustomMapRenderer.cs" relfile="SonicWalkingTour.iOS/CustomMapRenderer.cs" line="121" column="1" />
+      <Breakpoint file="/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/CustomMapRenderer.cs" relfile="SonicWalkingTour.iOS/CustomMapRenderer.cs" line="134" column="1" />
+      <Breakpoint file="/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/CustomMapRenderer.cs" relfile="SonicWalkingTour.iOS/CustomMapRenderer.cs" line="39" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

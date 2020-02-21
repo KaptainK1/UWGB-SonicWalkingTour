@@ -7,6 +7,8 @@ namespace SonicWalkingTour
 
         public string Url { get; set; }
         public string Description { get; set; }
+        public int StopID { get; set; }
+        
         //add property for the next pin and previous pin?
         //this would give us a graph structure
     }

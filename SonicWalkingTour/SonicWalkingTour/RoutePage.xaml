@@ -1,10 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SonicWalkingTour.RoutePage">
-      <ListView x:Name="CustomPinListView"
-            ItemsSource="{Binding CustomPin}">
+      <ListView x:Name="CustomPinListView">
     <ListView.ItemTemplate>
       <DataTemplate>
-        <TextCell Text="{Binding Description}" />
+          <ViewCell>
+                <StackLayout
+                Orientation="Vertical">
+                <Grid>
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                  </Grid.ColumnDefinitions>
+                        <!--<Image Source="{Binding image}" />-->
+                        <Label Text="{Binding Label}" Grid.Column="0" Grid.Row="0"
+                        TextColor="#f35e20" />
+                        <Label Text="Stop Number:   " Grid.Column="0" Grid.Row="1"/>
+                        <Label Text="{Binding StopID}" Grid.Column="0" Grid.Row="1"
+                        TextColor="#503026"
+                        HorizontalOptions="EndAndExpand"
+                        />
+                    </Grid>
+                </StackLayout>
+            </ViewCell>
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>

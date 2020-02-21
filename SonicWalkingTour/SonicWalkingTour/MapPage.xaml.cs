@@ -15,11 +15,6 @@ namespace SonicWalkingTour
 
         //boolean to hold if we have permission or not for location
         bool hasLocationPermission = false;
-        const string track4 = "Track4.mp3";
-        const string track1 = "Track1.mp3";
-        const string track2 = "Track2.mp3";
-        const string track3 = "Track3.mp3";
-        const string track5 = "Haxe.mp3";
 
         public MapPage()
         {
@@ -34,86 +29,33 @@ namespace SonicWalkingTour
         private void LoadPins()
         {
 
-            var pin1 = new CustomPin()
-            {
-                Type = PinType.SavedPin,
-                Position = new Xamarin.Forms.Maps.Position(44.532351, -87.920922),
-                Description = "Here is a brief description of Student Services!",
-                MarkerId = "xamarin",
-                Label = "Student Services",
-                Url = track1
-            };
-
-            var pin2 = new CustomPin()
-            {
-                Type = PinType.SavedPin,
-                Position = new Xamarin.Forms.Maps.Position(44.531936, -87.921457),
-                Description = "Here is a brief description of the Tunnels",
-                MarkerId = "xamarin",
-                Label = "Tunnels",
-                Url = track2
-            };
-
-            var pin3 = new CustomPin()
-            {
-                Type = PinType.SavedPin,
-                Position = new Xamarin.Forms.Maps.Position(44.531397, -87.921274),
-                Description = "Here is a brief description of the Confrin Library!",
-                MarkerId = "xamarin",
-                Label = "Confrin Library",
-                Url = track3
-            };
-
-            var pin4 = new CustomPin()
-            {
-                Type = PinType.SavedPin,
-                Position = new Xamarin.Forms.Maps.Position(44.532386, -87.919828),
-                Description = "Here is a brief description of the Union!",
-                MarkerId = "xamarin",
-                Label = "The Union",
-                Url = track4
-            };
-
-            var pin5 = new CustomPin()
-            {
-                Type = PinType.SavedPin,
-                Position = new Xamarin.Forms.Maps.Position(44.531822, -87.920591),
-                Description = "Here is a brief description of the Quad",
-                MarkerId = "xamarin",
-                Label = "The Quad",
-                Url = track5
-            };
-
             // instantiate a polyline
             // this could be a simple way to draw a path between points
             Polyline polyline = new Polyline
             {
                 StrokeColor = Color.Green,
-                StrokeWidth = 14,
+                StrokeWidth = 12,
                 Geopath =
                             {
-                                pin1.Position,
-                                pin2.Position,
-                                pin3.Position,
-                                pin4.Position,
-                                pin5.Position
+                                new Xamarin.Forms.Maps.Position(44.532351, -87.920922),
+                                new Xamarin.Forms.Maps.Position(44.531936, -87.921457),
+                                new Xamarin.Forms.Maps.Position(44.531397, -87.921274),
+                                new Xamarin.Forms.Maps.Position(44.532386, -87.919828),
+                                new Xamarin.Forms.Maps.Position(44.531822, -87.920591)
 
                             }
             };
 
             //add the line between the points
             customMap.MapElements.Add(polyline);
+            customMap.CustomPins = App.pins;
 
-            //create a list of pins then add them to the map
-            customMap.CustomPins = new List<CustomPin> { pin1, pin2, pin3, pin4, pin5 };
-            customMap.Pins.Add(pin1);
-            customMap.Pins.Add(pin2);
-            customMap.Pins.Add(pin3);
-            customMap.Pins.Add(pin4);
-            customMap.Pins.Add(pin5);
 
-            //customMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Xamarin.Forms.Maps.Position(44.531354, -87.919450), Distance.FromMiles(0.5)));
-
+            foreach (CustomPin pin in App.pins)
+            {
+                customMap.Pins.Add(pin);
+                Console.WriteLine(pin.Description);
+            }
         }
 
         //fuction to get the location of the user then display it

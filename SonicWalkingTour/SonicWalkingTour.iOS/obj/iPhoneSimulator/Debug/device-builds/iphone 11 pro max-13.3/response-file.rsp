@@ -12,7 +12,6 @@
  --abi=x86_64
 "--symbollist=/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro max-13.3/mtouch-symbols.list"
  --dsym=no
--r=/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/bin/iPhoneSimulator/Debug/Mono.Android.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
 -r=/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/bin/Debug/netstandard2.0/SonicWalkingTour.dll
@@ -210,7 +209,6 @@
 -r=/Users/dhoffman/.nuget/packages/xamarin.forms/4.4.0.991265/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/dhoffman/.nuget/packages/xamarin.forms.maps/4.4.0.991265/lib/Xamarin.iOS10/Xamarin.Forms.Maps.dll
 -r=/Users/dhoffman/.nuget/packages/xamarin.forms.maps/4.4.0.991265/lib/Xamarin.iOS10/Xamarin.Forms.Maps.iOS.dll
--r=/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/bin/iPhoneSimulator/Debug/Mono.Android.dll
 -r=/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/bin/Debug/netstandard2.0/SonicWalkingTour.dll
  --target-framework=Xamarin.iOS,v1.0
 --root-assembly=/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/bin/iPhoneSimulator/Debug/SonicWalkingTour.iOS.exe
