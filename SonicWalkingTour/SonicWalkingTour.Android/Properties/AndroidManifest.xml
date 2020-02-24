@@ -3,7 +3,7 @@
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
 	<application android:label="SonicWalkingTour.Android">
 		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB-ZJMJxemf3mJ4TlUEwYLalXan3WifssU" />
-        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+		<uses-library android:name="org.apache.http.legacy" android:required="false" />
 	</application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />

@@ -151,10 +151,6 @@
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.iOS.dll
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/bin/iPhoneSimulator/Debug/SonicWalkingTour.dll
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/bin/iPhoneSimulator/Debug/SonicWalkingTour.pdb
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.csprojAssemblyReference.cache
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.csproj.CopyComplete
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.exe
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.pdb
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/ibtool/_BundleResourceWithLogicalName.items
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/actool/_PartialAppManifest.items
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/actool/_BundleResourceWithLogicalName.items
@@ -196,3 +192,7 @@
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/route@2x.png
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/route@3x.png
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.csprojAssemblyReference.cache
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.csproj.CopyComplete
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.exe
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.pdb

@@ -2,17 +2,17 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="SonicWalkingTour/PinGraph.cs">
     <Files>
       <File FileName="SonicWalkingTour/RoutePage.xaml" Line="1" Column="1" />
-      <File FileName="SonicWalkingTour/RoutePage.xaml.cs" Line="11" Column="10" />
-      <File FileName="SonicWalkingTour/App.xaml.cs" Line="19" Column="35" />
+      <File FileName="SonicWalkingTour/RoutePage.xaml.cs" />
+      <File FileName="SonicWalkingTour/App.xaml.cs" />
       <File FileName="SonicWalkingTour/PinGraph.cs" Line="17" Column="1" />
-      <File FileName="SonicWalkingTour/App.xaml" Line="1" Column="1" />
-      <File FileName="SonicWalkingTour/CustomMap.cs" Line="10" Column="1" />
-      <File FileName="SonicWalkingTour/CustomPin.cs" Line="7" Column="33" />
-      <File FileName="SonicWalkingTour/Edge.cs" Line="23" Column="1" />
-      <File FileName="SonicWalkingTour/MainPage.xaml" Line="1" Column="1" />
-      <File FileName="SonicWalkingTour/MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="SonicWalkingTour/MapPage.xaml" Line="1" Column="1" />
-      <File FileName="SonicWalkingTour/MapPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="SonicWalkingTour/App.xaml" />
+      <File FileName="SonicWalkingTour/CustomMap.cs" />
+      <File FileName="SonicWalkingTour/CustomPin.cs" />
+      <File FileName="SonicWalkingTour/Edge.cs" />
+      <File FileName="SonicWalkingTour/MainPage.xaml" />
+      <File FileName="SonicWalkingTour/MainPage.xaml.cs" />
+      <File FileName="SonicWalkingTour/MapPage.xaml" />
+      <File FileName="SonicWalkingTour/MapPage.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,15 +21,8 @@
             <Node name="SonicWalkingTour" expanded="True">
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
-                <Node name="SdkDependencies" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
-              <Node name="LoginPage.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
-              <Node name="MapPage.xaml" expanded="True" />
-              <Node name="PinDetailPage.xaml" expanded="True" />
               <Node name="PinGraph.cs" selected="True" />
-              <Node name="RoutePage.xaml" expanded="True" />
             </Node>
             <Node name="SonicWalkingTour.Android" expanded="True">
               <Node name="References" expanded="True" />
@@ -41,9 +34,6 @@
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
