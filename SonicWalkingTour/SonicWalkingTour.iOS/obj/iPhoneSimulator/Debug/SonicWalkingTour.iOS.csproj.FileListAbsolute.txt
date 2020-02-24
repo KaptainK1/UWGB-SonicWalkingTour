@@ -155,44 +155,44 @@
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.csproj.CopyComplete
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.exe
 /Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/SonicWalkingTour.iOS.pdb
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/ibtool/_BundleResourceWithLogicalName.items
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/_PartialAppManifest.items
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/actool/_BundleResourceWithLogicalName.items
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/coremlc/_PartialAppManifest.items
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/coremlc/_BundleResourceWithLogicalName.items
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/add.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/gear.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/pause@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/play@3x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/add@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/home@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/Default-Portrait@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/home@3x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/add@3x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/play@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/pause@3x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/Default-Portrait.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/Default@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/map.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/home.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/save@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/man.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/map@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/Default-568h@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/pause.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/map@3x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/save@3x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/man@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/gear@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/Default.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/play.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/gear@3x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/save.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/man@3x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/monkey.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/pin.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/xamarin.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/route.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/route@2x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/route@3x.png
-/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.3/optimized/
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/ibtool/_BundleResourceWithLogicalName.items
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/actool/_PartialAppManifest.items
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/actool/_BundleResourceWithLogicalName.items
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/coremlc/_PartialAppManifest.items
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/coremlc/_BundleResourceWithLogicalName.items
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/add.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/gear.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/pause@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/play@3x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/add@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/home@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/Default-Portrait@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/home@3x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/add@3x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/play@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/pause@3x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/Default-Portrait.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/Default@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/map.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/home.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/save@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/man.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/map@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/Default-568h@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/pause.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/map@3x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/save@3x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/man@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/gear@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/Default.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/play.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/gear@3x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/save.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/man@3x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/monkey.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/pin.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/xamarin.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/route.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/route@2x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/route@3x.png
+/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11 pro-13.3/optimized/

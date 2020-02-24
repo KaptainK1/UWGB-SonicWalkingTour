@@ -3,7 +3,7 @@
       <ListView x:Name="CustomPinListView">
     <ListView.ItemTemplate>
       <DataTemplate>
-          <ViewCell>
+          <ViewCell Tapped="ListItem_Tapped">
                 <StackLayout
                 Orientation="Vertical">
                 <Grid>
@@ -14,14 +14,12 @@
                   <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
                   </Grid.ColumnDefinitions>
-                        <!--<Image Source="{Binding image}" />-->
                         <Label Text="{Binding Label}" Grid.Column="0" Grid.Row="0"
                         TextColor="#f35e20" />
                         <Label Text="Stop Number:   " Grid.Column="0" Grid.Row="1"/>
                         <Label Text="{Binding StopID}" Grid.Column="0" Grid.Row="1"
                         TextColor="#503026"
-                        HorizontalOptions="EndAndExpand"
-                        />
+                        HorizontalOptions="EndAndExpand"/>
                     </Grid>
                 </StackLayout>
             </ViewCell>

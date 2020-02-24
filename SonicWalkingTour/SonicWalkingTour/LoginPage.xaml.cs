@@ -14,7 +14,7 @@ namespace SonicWalkingTour
             InitializeComponent();
 
 
-            generateToken();
+            //generateToken();
         }
         void Login_Clicked(object sender, System.EventArgs e)
         {
