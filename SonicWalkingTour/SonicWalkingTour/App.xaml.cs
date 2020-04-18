@@ -23,6 +23,21 @@ namespace SonicWalkingTour
             MainPage = new NavigationPage(new LoginPage());
         }
 
+        #region Load Pins from the Azure Database
+        protected List<CustomPin> initPinsFromAzureDB()
+        {
+
+            List<CustomPin> customPins = new List<CustomPin>();
+
+
+
+
+
+            return customPins;
+
+        }
+        #endregion
+
         protected List<CustomPin> InitializePins()
         {
 

@@ -16,12 +16,30 @@ namespace SonicWalkingTour
 
             //generateToken();
         }
+
+        /*
         void Login_Clicked(object sender, System.EventArgs e)
         {
             //got to the main page
             Navigation.PushAsync(new MainPage());
 
             //await generateToken();
+        }
+        */
+
+        void Contiune_Clicked(object sender, System.EventArgs e)
+        {
+
+            Navigation.PushAsync(new MainPage());
+
+        }
+
+        void Register_Clicked(object sender, System.EventArgs e)
+        {
+
+            DisplayAlert("Hello","Welcome " + entryName.Text, "OK");
+            Navigation.PushAsync(new MainPage());
+
         }
 
         //method to generate the token

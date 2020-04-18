@@ -13,12 +13,29 @@ namespace SonicWalkingTour
         //double linked list to hold our vertices
         //each vertice contains a list of edges
         //each edge has a start node, end node, and route ID
-        private LinkedList<CustomPin> vertices;
+        private List<CustomPin> vertices;
+        private List<Edge> edges = new List<Edge>();
+        private int routeID;
 
-        public PinGraph(LinkedList<CustomPin> vertices)
+        public PinGraph(List<CustomPin> vertices, int routeID)
         {
-            this.vertices = vertices;
 
+            this.vertices = vertices;
+            this.routeID = routeID;
+
+        }
+
+        protected void initEdges()
+        {
+
+            for (int i = 0; i < vertices.Count -1; i++)
+            {
+                CustomPin startingPin = vertices[i];
+                CustomPin endingPin = vertices[i + 1];
+
+                Edge edge = new Edge(startingPin, endingPin, this.routeID);
+                edges.Insert(i,edge);
+            }
         }
 
         //method to get the next node for the route, specified by route ID
@@ -29,6 +46,7 @@ namespace SonicWalkingTour
 
         }
 
+        /*
         //method to get the previous node in the route, specified by
         //the current node and the route ID
         public CustomPin getPreviousNode(CustomPin customPin, int routeID)
@@ -39,5 +57,6 @@ namespace SonicWalkingTour
             return previous.connectedEdges[routeID].endingVertex;
 
         }
+        */
     }
 }

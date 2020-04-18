@@ -1,18 +1,7 @@
-﻿<Properties StartupConfiguration="{7C497DB4-7D46-496B-9D66-EF93968F89BF}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SonicWalkingTour/PinGraph.cs">
+﻿<Properties StartupConfiguration="{89EBDA87-0226-4CBE-B33F-625E9F7E5446}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../.nuget/packages/plugin.permissions/6.0.1/readme.txt">
     <Files>
-      <File FileName="SonicWalkingTour/RoutePage.xaml" Line="1" Column="1" />
-      <File FileName="SonicWalkingTour/RoutePage.xaml.cs" />
-      <File FileName="SonicWalkingTour/App.xaml.cs" />
-      <File FileName="SonicWalkingTour/PinGraph.cs" Line="17" Column="1" />
-      <File FileName="SonicWalkingTour/App.xaml" />
-      <File FileName="SonicWalkingTour/CustomMap.cs" />
-      <File FileName="SonicWalkingTour/CustomPin.cs" />
-      <File FileName="SonicWalkingTour/Edge.cs" />
-      <File FileName="SonicWalkingTour/MainPage.xaml" />
-      <File FileName="SonicWalkingTour/MainPage.xaml.cs" />
-      <File FileName="SonicWalkingTour/MapPage.xaml" />
-      <File FileName="SonicWalkingTour/MapPage.xaml.cs" />
+      <File FileName="../../../../.nuget/packages/plugin.permissions/6.0.1/readme.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,24 +9,18 @@
           <Node name="SonicWalkingTour" expanded="True">
             <Node name="SonicWalkingTour" expanded="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Plugin.Permissions" selected="True" />
+                </Node>
               </Node>
-              <Node name="PinGraph.cs" selected="True" />
-            </Node>
-            <Node name="SonicWalkingTour.Android" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Properties" expanded="True" />
-            </Node>
-            <Node name="SonicWalkingTour.iOS" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Properties" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.SonicWalkingTour.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.3.2_HVGA_slider_ADP1_API_25" />
+  <MonoDevelop.Ide.ItemProperties.SonicWalkingTour.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_3_pie_9_0_-_api_28" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.SonicWalkingTour.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D07920FC-6F0A-4A18-99F1-2F9FE1FB6FD1" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
