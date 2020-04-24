@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -9,7 +8,7 @@ using Android.OS;
 
 namespace SonicWalkingTour.Droid
 {
-    [Activity(Label = "SonicWalkingTour", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "SonicWalkingTour", Icon = "@mipmap/uwgb_logo", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -22,8 +21,8 @@ namespace SonicWalkingTour.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
-            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
-
+            //Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
+            
             //add to use maps
             Xamarin.FormsMaps.Init(this, savedInstanceState);
 

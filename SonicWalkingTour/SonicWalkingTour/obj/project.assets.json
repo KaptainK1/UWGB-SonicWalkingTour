@@ -70,7 +70,7 @@
           "lib/netstandard1.0/Plugin.SimpleAudioPlayer.dll": {}
         }
       },
-      "Xamarin.Essentials/1.5.2": {
+      "Xamarin.Essentials/1.5.3.1": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -82,7 +82,7 @@
           "lib/netstandard2.0/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.5.0.617": {
+      "Xamarin.Forms/4.5.0.657": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {},
@@ -99,10 +99,10 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.5.0.617": {
+      "Xamarin.Forms.Maps/4.5.0.657": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Forms": "4.5.0.617"
+          "Xamarin.Forms": "4.5.0.657"
         },
         "compile": {
           "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {}
@@ -406,10 +406,10 @@
         "xam.plugin.simpleaudioplayer.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.5.2": {
-      "sha512": "qHxkrkx5jIC0X/qWhxCPZ3MuuOJm8bfCzAoUtlpOBSE4oV0JhrkTezK0A+IV+k/MeJ3zKc8FexaIXah9rlCTIw==",
+    "Xamarin.Essentials/1.5.3.1": {
+      "sha512": "6sE3kGMhES7dsR8ll+ar+roEIFobjPfDskKNMsU4FF6cV27ZsdArGZHxe1QqPPJcMT6PzJsGvA3l5PNMZgw5ng==",
       "type": "package",
-      "path": "xamarin.essentials/1.5.2",
+      "path": "xamarin.essentials/1.5.3.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -450,14 +450,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.5.2.nupkg.sha512",
+        "xamarin.essentials.1.5.3.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.5.0.617": {
-      "sha512": "tB/h7bHEylOgNT+521SRnbmO+LCe5R3lPboD/icCMpa+FdjmxhZQ7+fIIPFDbhY2dqYetGRnAeJWXVx4NLbmAw==",
+    "Xamarin.Forms/4.5.0.657": {
+      "sha512": "S6WmhCKBRDMG5woHEIRA8MBZv6yn2jZ8Kf9DzzcOuB5gXivH1S5mIiSt4yoaa9HwfNUcg2d7AH2GEoICmH5bJg==",
       "type": "package",
-      "path": "xamarin.forms/4.5.0.617",
+      "path": "xamarin.forms/4.5.0.657",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -762,14 +762,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.5.0.617.nupkg.sha512",
+        "xamarin.forms.4.5.0.657.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Maps/4.5.0.617": {
-      "sha512": "mubOqPuvJeQ5R/Oyw89wzI25NLrqm2nfvN4yj1R5hpz5ALzijZl57wS3/lJzPe8h2T4mjtzKnZC1FNwWJKOF0w==",
+    "Xamarin.Forms.Maps/4.5.0.657": {
+      "sha512": "kAXAcnvFNdDFC5/zfZpx2ofkgIxcS3zKwDeRoBdWW/vAk/DGA5HDdId6/MBXTOPlM68T7CHTCHiL+W1d2KCKtg==",
       "type": "package",
-      "path": "xamarin.forms.maps/4.5.0.617",
+      "path": "xamarin.forms.maps/4.5.0.657",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -798,7 +798,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
-        "xamarin.forms.maps.4.5.0.617.nupkg.sha512",
+        "xamarin.forms.maps.4.5.0.657.nupkg.sha512",
         "xamarin.forms.maps.nuspec"
       ]
     }
@@ -809,9 +809,9 @@
       "Plugin.Permissions >= 6.0.1",
       "Xam.Plugin.Geolocator >= 4.5.0.6",
       "Xam.Plugin.SimpleAudioPlayer >= 1.4.0",
-      "Xamarin.Essentials >= 1.5.2",
-      "Xamarin.Forms >= 4.5.0.617",
-      "Xamarin.Forms.Maps >= 4.5.0.617"
+      "Xamarin.Essentials >= 1.5.3.1",
+      "Xamarin.Forms >= 4.5.0.657",
+      "Xamarin.Forms.Maps >= 4.5.0.657"
     ]
   },
   "packageFolders": {
@@ -873,15 +873,15 @@
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.5.2, )"
+            "version": "[1.5.3.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.5.0.617, )"
+            "version": "[4.5.0.657, )"
           },
           "Xamarin.Forms.Maps": {
             "target": "Package",
-            "version": "[4.5.0.617, )"
+            "version": "[4.5.0.657, )"
           }
         },
         "imports": [

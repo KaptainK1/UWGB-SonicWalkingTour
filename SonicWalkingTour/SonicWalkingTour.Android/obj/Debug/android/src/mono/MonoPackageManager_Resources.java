@@ -4,7 +4,6 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "SonicWalkingTour.Android.dll" comes first in this list. */
 		"SonicWalkingTour.Android.dll",
 		"FormsViewGroup.dll",
-		"Plugin.CurrentActivity.dll",
 		"Plugin.Geolocator.dll",
 		"Plugin.Permissions.dll",
 		"Plugin.SimpleAudioPlayer.Abstractions.dll",

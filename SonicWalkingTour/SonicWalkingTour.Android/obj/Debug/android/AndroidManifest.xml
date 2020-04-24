@@ -12,10 +12,10 @@
   <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
-  <application android:label="SonicWalkingTour.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
+  <application android:label="SonicWalkingTour.Android" android:icon="@mipmap/icon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB-ZJMJxemf3mJ4TlUEwYLalXan3WifssU" />
     <uses-library android:name="org.apache.http.legacy" android:required="false" />
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SonicWalkingTour" android:theme="@style/MainTheme" android:name="crc6478168a7221475f42.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/uwgb_logo" android:label="SonicWalkingTour" android:theme="@style/MainTheme" android:name="crc6478168a7221475f42.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -37,7 +37,8 @@
         <category android:name="mono.android.intent.category.SEPPUKU.uwgb.dylanhoffman.sonicwalkingtour" />
       </intent-filter>
     </receiver>
-    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <!-- Needs to be explicitly declared on P+ -->
   </application>
 </manifest>

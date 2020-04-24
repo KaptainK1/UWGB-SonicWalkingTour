@@ -27,7 +27,7 @@ namespace SonicWalkingTour
         }
         */
 
-        void Contiune_Clicked(object sender, System.EventArgs e)
+        void Continue_Clicked(object sender, System.EventArgs e)
         {
 
             Navigation.PushAsync(new MainPage());

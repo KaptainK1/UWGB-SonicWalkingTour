@@ -511,12 +511,14 @@ public final class R {
      */
     public static final int backgroundStacked=0x7f030034;
     /**
+     * Tint to apply to the background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int backgroundTint=0x7f030035;
     /**
+     * Blending mode used to apply the background tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1091,6 +1093,7 @@ public final class R {
      */
     public static final int circleCrop=0x7f030080;
     /**
+     * Close button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1194,12 +1197,15 @@ public final class R {
      */
     public static final int color=0x7f03008d;
     /**
+     * Bright complement to the primary branding color. By default, this is the color applied
+     * to framework controls (via colorControlActivated).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorAccent=0x7f03008e;
     /**
+     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -1246,12 +1252,16 @@ public final class R {
      */
     public static final int colorError=0x7f030094;
     /**
+     * The primary branding color for the app. By default, this is the color applied to the
+     * action bar background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorPrimary=0x7f030095;
     /**
+     * Dark variant of the primary branding color. By default, this is the color applied to
+     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -1603,6 +1613,7 @@ public final class R {
      */
     public static final int editTextColor=0x7f0300be;
     /**
+     * Default EditText style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1610,6 +1621,7 @@ public final class R {
      */
     public static final int editTextStyle=0x7f0300bf;
     /**
+     * Elevation for the action bar itself
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2083,6 +2095,7 @@ public final class R {
      */
     public static final int hoveredFocusedTranslationZ=0x7f0300f6;
     /**
+     * Specifies the drawable used for the application icon.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2134,12 +2147,14 @@ public final class R {
      */
     public static final int iconStartPadding=0x7f0300fc;
     /**
+     * Tint to apply to the icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int iconTint=0x7f0300fd;
     /**
+     * Blending mode used to apply the icon tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -4099,32 +4114,37 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiTiltGestures=0x7f0301e8;
+    public static final int uiScrollGesturesDuringRotateOrZoom=0x7f0301e8;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiZoomControls=0x7f0301e9;
+    public static final int uiTiltGestures=0x7f0301e9;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int uiZoomGestures=0x7f0301ea;
+    public static final int uiZoomControls=0x7f0301ea;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int useCompatPadding=0x7f0301eb;
+    public static final int uiZoomGestures=0x7f0301eb;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int useViewLifecycle=0x7f0301ec;
+    public static final int useCompatPadding=0x7f0301ec;
+    /**
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     */
+    public static final int useViewLifecycle=0x7f0301ed;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int viewInflaterClass=0x7f0301ed;
+    public static final int viewInflaterClass=0x7f0301ee;
     /**
      * Voice button icon
      * <p>May be a reference to another resource, in the form
@@ -4132,14 +4152,14 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int voiceIcon=0x7f0301ee;
+    public static final int voiceIcon=0x7f0301ef;
     /**
      * Flag indicating whether this window should have an Action Bar
      * in place of the usual title bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBar=0x7f0301ef;
+    public static final int windowActionBar=0x7f0301f0;
     /**
      * Flag indicating whether this window's Action Bar should overlay
      * application content. Does nothing if the window would not
@@ -4147,14 +4167,14 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBarOverlay=0x7f0301f0;
+    public static final int windowActionBarOverlay=0x7f0301f1;
     /**
      * Flag indicating whether action modes should overlay window content
      * when there is not reserved space for their UI (such as an Action Bar).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionModeOverlay=0x7f0301f1;
+    public static final int windowActionModeOverlay=0x7f0301f2;
     /**
      * A fixed height for the window along the major axis of the screen,
      * that is, when in portrait. Can be either an absolute dimension
@@ -4169,7 +4189,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMajor=0x7f0301f2;
+    public static final int windowFixedHeightMajor=0x7f0301f3;
     /**
      * A fixed height for the window along the minor axis of the screen,
      * that is, when in landscape. Can be either an absolute dimension
@@ -4184,7 +4204,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMinor=0x7f0301f3;
+    public static final int windowFixedHeightMinor=0x7f0301f4;
     /**
      * A fixed width for the window along the major axis of the screen,
      * that is, when in landscape. Can be either an absolute dimension
@@ -4199,7 +4219,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMajor=0x7f0301f4;
+    public static final int windowFixedWidthMajor=0x7f0301f5;
     /**
      * A fixed width for the window along the minor axis of the screen,
      * that is, when in portrait. Can be either an absolute dimension
@@ -4214,7 +4234,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMinor=0x7f0301f5;
+    public static final int windowFixedWidthMinor=0x7f0301f6;
     /**
      * The minimum width the window is allowed to be, along the major
      * axis of the screen.  That is, when in landscape.  Can be either
@@ -4230,7 +4250,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMajor=0x7f0301f6;
+    public static final int windowMinWidthMajor=0x7f0301f7;
     /**
      * The minimum width the window is allowed to be, along the minor
      * axis of the screen.  That is, when in portrait.  Can be either
@@ -4246,18 +4266,18 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMinor=0x7f0301f7;
+    public static final int windowMinWidthMinor=0x7f0301f8;
     /**
      * Flag indicating whether there should be no title on this window.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowNoTitle=0x7f0301f8;
+    public static final int windowNoTitle=0x7f0301f9;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int zOrderOnTop=0x7f0301f9;
+    public static final int zOrderOnTop=0x7f0301fa;
   }
   public static final class bool {
     public static final int abc_action_bar_embed_tabs=0x7f040000;
@@ -5108,6 +5128,7 @@ public final class R {
     public static final int icon=0x7f0c0000;
     public static final int icon_round=0x7f0c0001;
     public static final int launcher_foreground=0x7f0c0002;
+    public static final int uwgb_logo=0x7f0c0003;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0d0000;
@@ -5159,28 +5180,29 @@ public final class R {
     public static final int common_google_play_services_install_button=0x7f0d002e;
     public static final int common_google_play_services_install_text=0x7f0d002f;
     public static final int common_google_play_services_install_title=0x7f0d0030;
-    public static final int common_google_play_services_notification_ticker=0x7f0d0031;
-    public static final int common_google_play_services_unknown_issue=0x7f0d0032;
-    public static final int common_google_play_services_unsupported_text=0x7f0d0033;
-    public static final int common_google_play_services_update_button=0x7f0d0034;
-    public static final int common_google_play_services_update_text=0x7f0d0035;
-    public static final int common_google_play_services_update_title=0x7f0d0036;
-    public static final int common_google_play_services_updating_text=0x7f0d0037;
-    public static final int common_google_play_services_wear_update_text=0x7f0d0038;
-    public static final int common_open_on_phone=0x7f0d0039;
-    public static final int common_signin_button_text=0x7f0d003a;
-    public static final int common_signin_button_text_long=0x7f0d003b;
-    public static final int fab_transformation_scrim_behavior=0x7f0d003c;
-    public static final int fab_transformation_sheet_behavior=0x7f0d003d;
-    public static final int hide_bottom_view_on_scroll_behavior=0x7f0d003e;
-    public static final int mtrl_chip_close_icon_content_description=0x7f0d003f;
-    public static final int password_toggle_content_description=0x7f0d0040;
-    public static final int path_password_eye=0x7f0d0041;
-    public static final int path_password_eye_mask_strike_through=0x7f0d0042;
-    public static final int path_password_eye_mask_visible=0x7f0d0043;
-    public static final int path_password_strike_through=0x7f0d0044;
-    public static final int search_menu_title=0x7f0d0045;
-    public static final int status_bar_notification_info_overflow=0x7f0d0046;
+    public static final int common_google_play_services_notification_channel_name=0x7f0d0031;
+    public static final int common_google_play_services_notification_ticker=0x7f0d0032;
+    public static final int common_google_play_services_unknown_issue=0x7f0d0033;
+    public static final int common_google_play_services_unsupported_text=0x7f0d0034;
+    public static final int common_google_play_services_update_button=0x7f0d0035;
+    public static final int common_google_play_services_update_text=0x7f0d0036;
+    public static final int common_google_play_services_update_title=0x7f0d0037;
+    public static final int common_google_play_services_updating_text=0x7f0d0038;
+    public static final int common_google_play_services_wear_update_text=0x7f0d0039;
+    public static final int common_open_on_phone=0x7f0d003a;
+    public static final int common_signin_button_text=0x7f0d003b;
+    public static final int common_signin_button_text_long=0x7f0d003c;
+    public static final int fab_transformation_scrim_behavior=0x7f0d003d;
+    public static final int fab_transformation_sheet_behavior=0x7f0d003e;
+    public static final int hide_bottom_view_on_scroll_behavior=0x7f0d003f;
+    public static final int mtrl_chip_close_icon_content_description=0x7f0d0040;
+    public static final int password_toggle_content_description=0x7f0d0041;
+    public static final int path_password_eye=0x7f0d0042;
+    public static final int path_password_eye_mask_strike_through=0x7f0d0043;
+    public static final int path_password_eye_mask_visible=0x7f0d0044;
+    public static final int path_password_strike_through=0x7f0d0045;
+    public static final int search_menu_title=0x7f0d0046;
+    public static final int status_bar_notification_info_overflow=0x7f0d0047;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0e0000;
@@ -5714,12 +5736,12 @@ public final class R {
      * <tr><td><code>{@link #ActionBar_customNavigationLayout uwgb.dylanhoffman.sonicwalkingtour:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
      * <tr><td><code>{@link #ActionBar_displayOptions uwgb.dylanhoffman.sonicwalkingtour:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
      * <tr><td><code>{@link #ActionBar_divider uwgb.dylanhoffman.sonicwalkingtour:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #ActionBar_height uwgb.dylanhoffman.sonicwalkingtour:height}</code></td><td></td></tr>
      * <tr><td><code>{@link #ActionBar_hideOnContentScroll uwgb.dylanhoffman.sonicwalkingtour:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
      * <tr><td><code>{@link #ActionBar_homeAsUpIndicator uwgb.dylanhoffman.sonicwalkingtour:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
      * <tr><td><code>{@link #ActionBar_homeLayout uwgb.dylanhoffman.sonicwalkingtour:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
-     * <tr><td><code>{@link #ActionBar_icon uwgb.dylanhoffman.sonicwalkingtour:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon uwgb.dylanhoffman.sonicwalkingtour:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
      * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle uwgb.dylanhoffman.sonicwalkingtour:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
      * <tr><td><code>{@link #ActionBar_itemPadding uwgb.dylanhoffman.sonicwalkingtour:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
      * system-provided items in the bar.</td></tr>
@@ -6755,7 +6777,7 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #AppBarLayout_expanded uwgb.dylanhoffman.sonicwalkingtour:expanded}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_liftOnScroll uwgb.dylanhoffman.sonicwalkingtour:liftOnScroll}</code></td><td></td></tr>
      * </table>
@@ -6806,8 +6828,9 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#elevation}
-     * attribute's value can be found in the {@link #AppBarLayout} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7508,16 +7531,16 @@ public final class R {
      * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall uwgb.dylanhoffman.sonicwalkingtour:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_checkboxStyle uwgb.dylanhoffman.sonicwalkingtour:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle uwgb.dylanhoffman.sonicwalkingtour:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent uwgb.dylanhoffman.sonicwalkingtour:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating uwgb.dylanhoffman.sonicwalkingtour:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent uwgb.dylanhoffman.sonicwalkingtour:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating uwgb.dylanhoffman.sonicwalkingtour:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal uwgb.dylanhoffman.sonicwalkingtour:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorControlActivated uwgb.dylanhoffman.sonicwalkingtour:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight uwgb.dylanhoffman.sonicwalkingtour:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorControlNormal uwgb.dylanhoffman.sonicwalkingtour:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorError uwgb.dylanhoffman.sonicwalkingtour:colorError}</code></td><td>Color used for error states and things that need to be drawn to
      * the user's attention.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary uwgb.dylanhoffman.sonicwalkingtour:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark uwgb.dylanhoffman.sonicwalkingtour:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary uwgb.dylanhoffman.sonicwalkingtour:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark uwgb.dylanhoffman.sonicwalkingtour:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal uwgb.dylanhoffman.sonicwalkingtour:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_controlBackground uwgb.dylanhoffman.sonicwalkingtour:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius uwgb.dylanhoffman.sonicwalkingtour:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
@@ -7529,7 +7552,7 @@ public final class R {
      * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight uwgb.dylanhoffman.sonicwalkingtour:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_editTextBackground uwgb.dylanhoffman.sonicwalkingtour:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_editTextColor uwgb.dylanhoffman.sonicwalkingtour:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle uwgb.dylanhoffman.sonicwalkingtour:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle uwgb.dylanhoffman.sonicwalkingtour:editTextStyle}</code></td><td>Default EditText style.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator uwgb.dylanhoffman.sonicwalkingtour:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle uwgb.dylanhoffman.sonicwalkingtour:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator uwgb.dylanhoffman.sonicwalkingtour:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
@@ -7744,10 +7767,10 @@ public final class R {
       0x7f0301b5, 0x7f0301b6, 0x7f0301b7, 0x7f0301b8, 
       0x7f0301ba, 0x7f0301bb, 0x7f0301bc, 0x7f0301bd, 
       0x7f0301c0, 0x7f0301c1, 0x7f0301db, 0x7f0301dc, 
-      0x7f0301dd, 0x7f0301de, 0x7f0301ed, 0x7f0301ef, 
-      0x7f0301f0, 0x7f0301f1, 0x7f0301f2, 0x7f0301f3, 
-      0x7f0301f4, 0x7f0301f5, 0x7f0301f6, 0x7f0301f7, 
-      0x7f0301f8
+      0x7f0301dd, 0x7f0301de, 0x7f0301ee, 0x7f0301f0, 
+      0x7f0301f1, 0x7f0301f2, 0x7f0301f3, 0x7f0301f4, 
+      0x7f0301f5, 0x7f0301f6, 0x7f0301f7, 0x7f0301f8, 
+      0x7f0301f9
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
@@ -9397,7 +9420,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint uwgb.dylanhoffman.sonicwalkingtour:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint uwgb.dylanhoffman.sonicwalkingtour:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode uwgb.dylanhoffman.sonicwalkingtour:fabAlignmentMode}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabCradleMargin uwgb.dylanhoffman.sonicwalkingtour:fabCradleMargin}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius uwgb.dylanhoffman.sonicwalkingtour:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
@@ -9416,8 +9439,9 @@ public final class R {
       0x7f0300d1, 0x7f0300f0
     };
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9499,7 +9523,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemBackground uwgb.dylanhoffman.sonicwalkingtour:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled uwgb.dylanhoffman.sonicwalkingtour:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemIconSize uwgb.dylanhoffman.sonicwalkingtour:itemIconSize}</code></td><td></td></tr>
@@ -9527,8 +9551,9 @@ public final class R {
       0x7f030114, 0x7f03013e
     };
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#elevation}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9991,7 +10016,7 @@ public final class R {
      * <tr><td><code>{@link #Chip_chipStartPadding uwgb.dylanhoffman.sonicwalkingtour:chipStartPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeColor uwgb.dylanhoffman.sonicwalkingtour:chipStrokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_chipStrokeWidth uwgb.dylanhoffman.sonicwalkingtour:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon uwgb.dylanhoffman.sonicwalkingtour:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon uwgb.dylanhoffman.sonicwalkingtour:closeIcon}</code></td><td>Close button icon</td></tr>
      * <tr><td><code>{@link #Chip_closeIconEnabled uwgb.dylanhoffman.sonicwalkingtour:closeIconEnabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconEndPadding uwgb.dylanhoffman.sonicwalkingtour:closeIconEndPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_closeIconSize uwgb.dylanhoffman.sonicwalkingtour:closeIconSize}</code></td><td></td></tr>
@@ -10293,8 +10318,9 @@ public final class R {
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#closeIcon}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Close button icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11394,10 +11420,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint uwgb.dylanhoffman.sonicwalkingtour:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode uwgb.dylanhoffman.sonicwalkingtour:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint uwgb.dylanhoffman.sonicwalkingtour:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode uwgb.dylanhoffman.sonicwalkingtour:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * <tr><td><code>{@link #FloatingActionButton_borderWidth uwgb.dylanhoffman.sonicwalkingtour:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #FloatingActionButton_fabCustomSize uwgb.dylanhoffman.sonicwalkingtour:fabCustomSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_fabSize uwgb.dylanhoffman.sonicwalkingtour:fabSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec uwgb.dylanhoffman.sonicwalkingtour:hideMotionSpec}</code></td><td></td></tr>
@@ -11426,11 +11452,12 @@ public final class R {
       0x7f030035, 0x7f030036, 0x7f03003e, 0x7f0300c0, 
       0x7f0300d2, 0x7f0300d3, 0x7f0300ee, 0x7f0300f6, 
       0x7f03013c, 0x7f030156, 0x7f030160, 0x7f03016d, 
-      0x7f0301eb
+      0x7f0301ec
     };
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11440,8 +11467,9 @@ public final class R {
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#backgroundTintMode}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11479,8 +11507,9 @@ public final class R {
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#elevation}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12687,6 +12716,7 @@ public final class R {
      * <tr><td><code>{@link #MapAttrs_uiMapToolbar uwgb.dylanhoffman.sonicwalkingtour:uiMapToolbar}</code></td><td></td></tr>
      * <tr><td><code>{@link #MapAttrs_uiRotateGestures uwgb.dylanhoffman.sonicwalkingtour:uiRotateGestures}</code></td><td></td></tr>
      * <tr><td><code>{@link #MapAttrs_uiScrollGestures uwgb.dylanhoffman.sonicwalkingtour:uiScrollGestures}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MapAttrs_uiScrollGesturesDuringRotateOrZoom uwgb.dylanhoffman.sonicwalkingtour:uiScrollGesturesDuringRotateOrZoom}</code></td><td></td></tr>
      * <tr><td><code>{@link #MapAttrs_uiTiltGestures uwgb.dylanhoffman.sonicwalkingtour:uiTiltGestures}</code></td><td></td></tr>
      * <tr><td><code>{@link #MapAttrs_uiZoomControls uwgb.dylanhoffman.sonicwalkingtour:uiZoomControls}</code></td><td></td></tr>
      * <tr><td><code>{@link #MapAttrs_uiZoomGestures uwgb.dylanhoffman.sonicwalkingtour:uiZoomGestures}</code></td><td></td></tr>
@@ -12711,6 +12741,7 @@ public final class R {
      * @see #MapAttrs_uiMapToolbar
      * @see #MapAttrs_uiRotateGestures
      * @see #MapAttrs_uiScrollGestures
+     * @see #MapAttrs_uiScrollGesturesDuringRotateOrZoom
      * @see #MapAttrs_uiTiltGestures
      * @see #MapAttrs_uiZoomControls
      * @see #MapAttrs_uiZoomGestures
@@ -12723,7 +12754,7 @@ public final class R {
       0x7f030116, 0x7f030117, 0x7f030118, 0x7f030119, 
       0x7f030134, 0x7f030137, 0x7f0301e4, 0x7f0301e5, 
       0x7f0301e6, 0x7f0301e7, 0x7f0301e8, 0x7f0301e9, 
-      0x7f0301ea, 0x7f0301ec, 0x7f0301f9
+      0x7f0301ea, 0x7f0301eb, 0x7f0301ed, 0x7f0301fa
     };
     /**
      * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#ambientEnabled}
@@ -12905,6 +12936,16 @@ public final class R {
      */
     public static final int MapAttrs_uiScrollGestures=17;
     /**
+     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#uiScrollGesturesDuringRotateOrZoom}
+     * attribute's value can be found in the {@link #MapAttrs} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name uwgb.dylanhoffman.sonicwalkingtour:uiScrollGesturesDuringRotateOrZoom
+     */
+    public static final int MapAttrs_uiScrollGesturesDuringRotateOrZoom=18;
+    /**
      * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#uiTiltGestures}
      * attribute's value can be found in the {@link #MapAttrs} array.
      *
@@ -12913,7 +12954,7 @@ public final class R {
      *
      * @attr name uwgb.dylanhoffman.sonicwalkingtour:uiTiltGestures
      */
-    public static final int MapAttrs_uiTiltGestures=18;
+    public static final int MapAttrs_uiTiltGestures=19;
     /**
      * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#uiZoomControls}
      * attribute's value can be found in the {@link #MapAttrs} array.
@@ -12923,7 +12964,7 @@ public final class R {
      *
      * @attr name uwgb.dylanhoffman.sonicwalkingtour:uiZoomControls
      */
-    public static final int MapAttrs_uiZoomControls=19;
+    public static final int MapAttrs_uiZoomControls=20;
     /**
      * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#uiZoomGestures}
      * attribute's value can be found in the {@link #MapAttrs} array.
@@ -12933,7 +12974,7 @@ public final class R {
      *
      * @attr name uwgb.dylanhoffman.sonicwalkingtour:uiZoomGestures
      */
-    public static final int MapAttrs_uiZoomGestures=20;
+    public static final int MapAttrs_uiZoomGestures=21;
     /**
      * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#useViewLifecycle}
      * attribute's value can be found in the {@link #MapAttrs} array.
@@ -12943,7 +12984,7 @@ public final class R {
      *
      * @attr name uwgb.dylanhoffman.sonicwalkingtour:useViewLifecycle
      */
-    public static final int MapAttrs_useViewLifecycle=21;
+    public static final int MapAttrs_useViewLifecycle=22;
     /**
      * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#zOrderOnTop}
      * attribute's value can be found in the {@link #MapAttrs} array.
@@ -12953,7 +12994,7 @@ public final class R {
      *
      * @attr name uwgb.dylanhoffman.sonicwalkingtour:zOrderOnTop
      */
-    public static final int MapAttrs_zOrderOnTop=22;
+    public static final int MapAttrs_zOrderOnTop=23;
     /**
      * Attributes that can be used with a MaterialButton.
      * <p>Includes the following attributes:</p>
@@ -12965,15 +13006,15 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint uwgb.dylanhoffman.sonicwalkingtour:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode uwgb.dylanhoffman.sonicwalkingtour:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint uwgb.dylanhoffman.sonicwalkingtour:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode uwgb.dylanhoffman.sonicwalkingtour:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * <tr><td><code>{@link #MaterialButton_cornerRadius uwgb.dylanhoffman.sonicwalkingtour:cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon uwgb.dylanhoffman.sonicwalkingtour:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon uwgb.dylanhoffman.sonicwalkingtour:icon}</code></td><td>Specifies the drawable used for the application icon.</td></tr>
      * <tr><td><code>{@link #MaterialButton_iconGravity uwgb.dylanhoffman.sonicwalkingtour:iconGravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconPadding uwgb.dylanhoffman.sonicwalkingtour:iconPadding}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_iconSize uwgb.dylanhoffman.sonicwalkingtour:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint uwgb.dylanhoffman.sonicwalkingtour:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode uwgb.dylanhoffman.sonicwalkingtour:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint uwgb.dylanhoffman.sonicwalkingtour:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode uwgb.dylanhoffman.sonicwalkingtour:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
      * <tr><td><code>{@link #MaterialButton_rippleColor uwgb.dylanhoffman.sonicwalkingtour:rippleColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeColor uwgb.dylanhoffman.sonicwalkingtour:strokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeWidth uwgb.dylanhoffman.sonicwalkingtour:strokeWidth}</code></td><td></td></tr>
@@ -13070,8 +13111,9 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13081,8 +13123,9 @@ public final class R {
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#backgroundTintMode}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -13120,8 +13163,9 @@ public final class R {
      */
     public static final int MaterialButton_cornerRadius=6;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#icon}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Specifies the drawable used for the application icon.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13175,8 +13219,9 @@ public final class R {
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#iconTint}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13186,8 +13231,9 @@ public final class R {
      */
     public static final int MaterialButton_iconTint=11;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#iconTintMode}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the icon tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -13298,12 +13344,12 @@ public final class R {
      * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle uwgb.dylanhoffman.sonicwalkingtour:chipGroupStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle uwgb.dylanhoffman.sonicwalkingtour:chipStandaloneStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle uwgb.dylanhoffman.sonicwalkingtour:chipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent uwgb.dylanhoffman.sonicwalkingtour:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating uwgb.dylanhoffman.sonicwalkingtour:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary uwgb.dylanhoffman.sonicwalkingtour:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark uwgb.dylanhoffman.sonicwalkingtour:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent uwgb.dylanhoffman.sonicwalkingtour:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating uwgb.dylanhoffman.sonicwalkingtour:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary uwgb.dylanhoffman.sonicwalkingtour:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark uwgb.dylanhoffman.sonicwalkingtour:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary uwgb.dylanhoffman.sonicwalkingtour:colorSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle uwgb.dylanhoffman.sonicwalkingtour:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle uwgb.dylanhoffman.sonicwalkingtour:editTextStyle}</code></td><td>Default EditText style.</td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle uwgb.dylanhoffman.sonicwalkingtour:floatingActionButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle uwgb.dylanhoffman.sonicwalkingtour:materialButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle uwgb.dylanhoffman.sonicwalkingtour:materialCardViewStyle}</code></td><td></td></tr>
@@ -13430,8 +13476,10 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#colorAccent}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * Bright complement to the primary branding color. By default, this is the color applied
+     * to framework controls (via colorControlActivated).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13441,8 +13489,9 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#colorBackgroundFloating}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13452,8 +13501,10 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#colorPrimary}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * The primary branding color for the app. By default, this is the color applied to the
+     * action bar background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13463,8 +13514,10 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#colorPrimaryDark}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * Dark variant of the primary branding color. By default, this is the color applied to
+     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13485,8 +13538,9 @@ public final class R {
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#editTextStyle}
-     * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
+     * <p>
+     * @attr description
+     * Default EditText style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13907,8 +13961,8 @@ public final class R {
      * action view.</td></tr>
      * <tr><td><code>{@link #MenuItem_alphabeticModifiers uwgb.dylanhoffman.sonicwalkingtour:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
      * <tr><td><code>{@link #MenuItem_contentDescription uwgb.dylanhoffman.sonicwalkingtour:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint uwgb.dylanhoffman.sonicwalkingtour:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode uwgb.dylanhoffman.sonicwalkingtour:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint uwgb.dylanhoffman.sonicwalkingtour:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode uwgb.dylanhoffman.sonicwalkingtour:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
      * <tr><td><code>{@link #MenuItem_numericModifiers uwgb.dylanhoffman.sonicwalkingtour:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
      * <tr><td><code>{@link #MenuItem_showAsAction uwgb.dylanhoffman.sonicwalkingtour:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
      * <tr><td><code>{@link #MenuItem_tooltipText uwgb.dylanhoffman.sonicwalkingtour:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
@@ -14447,7 +14501,7 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #NavigationView_headerLayout uwgb.dylanhoffman.sonicwalkingtour:headerLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemBackground uwgb.dylanhoffman.sonicwalkingtour:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemHorizontalPadding uwgb.dylanhoffman.sonicwalkingtour:itemHorizontalPadding}</code></td><td></td></tr>
@@ -14514,8 +14568,9 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#elevation}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -14991,7 +15046,7 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon uwgb.dylanhoffman.sonicwalkingtour:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon uwgb.dylanhoffman.sonicwalkingtour:closeIcon}</code></td><td>Close button icon</td></tr>
      * <tr><td><code>{@link #SearchView_commitIcon uwgb.dylanhoffman.sonicwalkingtour:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
      * <tr><td><code>{@link #SearchView_defaultQueryHint uwgb.dylanhoffman.sonicwalkingtour:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
      * the search view's {@code SearchableInfo} does not provide a hint.</td></tr>
@@ -15029,7 +15084,7 @@ public final class R {
       0x7f030081, 0x7f03009a, 0x7f0300b0, 0x7f0300e8, 
       0x7f0300ff, 0x7f03011a, 0x7f030159, 0x7f03015a, 
       0x7f030165, 0x7f030166, 0x7f030186, 0x7f03018b, 
-      0x7f0301ee
+      0x7f0301ef
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -15433,7 +15488,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation uwgb.dylanhoffman.sonicwalkingtour:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth uwgb.dylanhoffman.sonicwalkingtour:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
@@ -15457,8 +15512,9 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link uwgb.dylanhoffman.sonicwalkingtour.R.attr#elevation}
-     * attribute's value can be found in the {@link #SnackbarLayout} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17679,8 +17735,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint uwgb.dylanhoffman.sonicwalkingtour:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode uwgb.dylanhoffman.sonicwalkingtour:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint uwgb.dylanhoffman.sonicwalkingtour:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode uwgb.dylanhoffman.sonicwalkingtour:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
