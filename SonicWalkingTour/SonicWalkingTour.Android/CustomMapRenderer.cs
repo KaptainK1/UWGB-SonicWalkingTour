@@ -10,6 +10,7 @@ using SonicWalkingTour.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Xamarin.Forms.Maps.Android;
+using Resource = SonicWalkingTour.Droid.Resource;
 
 //https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/map/customized-pin#related-links
 

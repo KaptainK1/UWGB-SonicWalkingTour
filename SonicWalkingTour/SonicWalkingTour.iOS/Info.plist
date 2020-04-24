@@ -32,8 +32,6 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>SonicWalkingTour</string>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>We need Calendar Permission for map functionality</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -57,5 +55,7 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>
