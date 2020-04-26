@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{89EBDA87-0226-4CBE-B33F-625E9F7E5446}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SonicWalkingTour.Android/Resources/mipmap-anydpi-v26/icon.xml">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="SonicWalkingTour.Android/Resources/mipmap-anydpi-v26/icon.xml" Line="5" Column="17" />
-      <File FileName="SonicWalkingTour.Android/Resources/mipmap-anydpi-v26/icon_round.xml" Line="5" Column="17" />
+      <File FileName="SonicWalkingTour.Android/Resources/mipmap-anydpi-v26/icon.xml" Line="6" Column="1" />
+      <File FileName="SonicWalkingTour.Android/Resources/mipmap-anydpi-v26/icon_round.xml" />
       <File FileName="SonicWalkingTour.Android/CustomMapRenderer.cs" />
       <File FileName="SonicWalkingTour.Android/MainActivity.cs" />
       <File FileName="SonicWalkingTour.Android/Properties/AndroidManifest.xml" />
@@ -23,13 +23,13 @@
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
             <Node name="SonicWalkingTour.Android" expanded="True">
-              <Node name="Packages" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="mipmap-anydpi-v26" expanded="True" />
-              </Node>
+              <Node name="Resources" expanded="True" />
             </Node>
             <Node name="SonicWalkingTour.iOS" expanded="True">
-              <Node name="Packages" expanded="True" selected="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="LauncerIcons" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

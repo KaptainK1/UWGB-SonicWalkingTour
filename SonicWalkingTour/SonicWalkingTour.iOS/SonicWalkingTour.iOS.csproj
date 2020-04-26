@@ -75,47 +75,24 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\LaunchIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\LaunchIcon.imageset\uwgb_logo.pdf" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-4.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-5.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-6.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-7.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-8.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-9.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-10.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-12.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-13.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-14.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-15.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-16.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\uwgb_logo-17.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -199,12 +176,10 @@
     <BundleResource Include="Resources\route.png" />
     <BundleResource Include="Resources\route%402x.png" />
     <BundleResource Include="Resources\route%403x.png" />
-    <BundleResource Include="Resources\UWGB-Stack-RGB-Modified%403x.png" />
-    <BundleResource Include="Resources\UWGB-Stack-RGB-Modified%402x.png" />
-    <BundleResource Include="Resources\UWGB-Stack-RGB-Modified.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\LaunchIcon.imageset\" />
+    <Folder Include="Resources\LauncerIcons\" />
   </ItemGroup>
   <Import Project="..\packages\Xamarin.Forms.4.5.0.657\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.4.5.0.657\build\Xamarin.Forms.targets')" />
 </Project>
