@@ -30,7 +30,7 @@ namespace SonicWalkingTour
         void Continue_Clicked(object sender, System.EventArgs e)
         {
 
-            Navigation.PushAsync(new MainPage());
+            Navigation.PushAsync(new MainFlyout());
 
         }
 

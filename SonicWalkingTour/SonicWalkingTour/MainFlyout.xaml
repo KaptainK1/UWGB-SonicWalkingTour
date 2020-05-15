@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:SonicWalkingTour"
+       FlyoutBackgroundImageAspect="AspectFill"
+       FlyoutHeaderBehavior="CollapseOnScroll"
+       Navigating="OnNavigating"
+       Navigated="OnNavigated"
+       xmlns:controls="clr-namespace:SonicWalkingTour.Controls"
+       x:Class="SonicWalkingTour.MainFlyout">
+
+    <Shell.FlyoutHeader>
+        <controls:FlyoutHeader/>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Route="pages"
+                Title="Pages"
+                FlyoutDisplayOptions="AsMultipleItems">
+
+                <ShellContent Route="map"
+                      Title="Map"
+                      Icon="map.png"
+                      ContentTemplate="{DataTemplate views:MapPage}" />
+
+                <ShellContent Route="route"
+                      Title="RoutePage"
+                      Icon="route.png"
+                      ContentTemplate="{DataTemplate views:RoutePage}" />
+
+    </FlyoutItem>
+</Shell>

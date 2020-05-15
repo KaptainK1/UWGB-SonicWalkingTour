@@ -16,6 +16,7 @@
   <ItemGroup>
     <Folder Include="SharedAssets\" />
     <Folder Include="SharedAssets\Audio\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="SharedAssets\Audio\Track1.mp3" />
