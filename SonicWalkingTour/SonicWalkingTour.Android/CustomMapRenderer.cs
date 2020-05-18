@@ -75,7 +75,8 @@ namespace CustomRenderer.Droid
             if (!string.IsNullOrWhiteSpace(customPin.Url))
             {
                 //open a new Pin detail page with the custom pin selected
-                App.Current.MainPage.Navigation.PushAsync(new PinDetailPage(customPin));
+                //App.Current.MainPage.Navigation.PushAsync(new PinDetailPage(customPin));
+                Shell.Current.GoToAsync($"pinDetailPage?stopid={customPin.StopID}");
             }
         }
 

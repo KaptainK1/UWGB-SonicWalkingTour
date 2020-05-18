@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace SonicWalkingTour
@@ -9,16 +10,22 @@ namespace SonicWalkingTour
     {
         Dictionary<string, Type> routes = new Dictionary<string, Type>();
         public Dictionary<string, Type> Routes { get { return routes; } }
+
+        public ICommand HelpCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
+        public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync(".."));
+
         public MainFlyout()
         {
             InitializeComponent();
+
             RegisterRoutes();
         }
 
         void RegisterRoutes()
         {
-            routes.Add("MapPage", typeof(MapPage));
-            routes.Add("RoutePage", typeof(RoutePage));
+            routes.Add("mapPage", typeof(MapPage));
+            routes.Add("routePage", typeof(RoutePage));
+            routes.Add("pinDetailPage", typeof(PinDetailPage));
 
             foreach (var item in routes)
             {
@@ -32,6 +39,11 @@ namespace SonicWalkingTour
 
         void OnNavigated(object sender, ShellNavigatedEventArgs e)
         {
+        }
+
+        void OnBackButton(object sender, ShellNavigatedEventArgs e)
+        {
+
         }
     }
 }

@@ -86,7 +86,8 @@ namespace SonicWalkingTour.iOS
             var customPin = GetCustomPin(position);
             if (!string.IsNullOrWhiteSpace(customView.Url))
             {
-                App.Current.MainPage.Navigation.PushAsync(new PinDetailPage(customPin));
+                //App.Current.MainPage.Navigation.PushAsync(new PinDetailPage(customPin));
+                Shell.Current.GoToAsync($"pinDetailPage?stopid={id}");
             }
         }
 

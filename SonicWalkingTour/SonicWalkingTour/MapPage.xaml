@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:SonicWalkingTour;assembly=SonicWalkingTour"
              x:Class="SonicWalkingTour.MapPage">
 
+        <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding BackCommand}"
+                            IconOverride="gear.png"/>   
+    </Shell.BackButtonBehavior>
+
 		<local:CustomMap x:Name="customMap"
                    MapType="Street" WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}"
                    IsShowingUser="True"/>

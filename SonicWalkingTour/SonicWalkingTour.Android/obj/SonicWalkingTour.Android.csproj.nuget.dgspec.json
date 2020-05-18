@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj": {}
+    "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj": {}
   },
   "projects": {
-    "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj": {
+    "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj",
+        "projectUniqueName": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj",
         "projectName": "SonicWalkingTour.Android",
-        "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj",
+        "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj",
         "packagesPath": "/Users/dhoffman/.nuget/packages/",
-        "outputPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/",
+        "outputPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj": {
-                "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj"
+              "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj": {
+                "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj"
               }
             }
           }
@@ -54,28 +54,28 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.5.3.1, )"
+              "version": "[1.5.3.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.5.0.657, )"
+              "version": "[4.6.0.772, )"
             },
             "Xamarin.Forms.Maps": {
               "target": "Package",
-              "version": "[4.5.0.657, )"
+              "version": "[4.6.0.772, )"
             }
           }
         }
       }
     },
-    "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj": {
+    "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj",
+        "projectUniqueName": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj",
         "projectName": "SonicWalkingTour",
-        "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj",
+        "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj",
         "packagesPath": "/Users/dhoffman/.nuget/packages/",
-        "outputPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/",
+        "outputPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -123,15 +123,15 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.5.3.1, )"
+              "version": "[1.5.3.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.5.0.657, )"
+              "version": "[4.6.0.772, )"
             },
             "Xamarin.Forms.Maps": {
               "target": "Package",
-              "version": "[4.5.0.657, )"
+              "version": "[4.6.0.772, )"
             }
           },
           "imports": [
@@ -144,7 +144,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.202/RuntimeIdentifierGraph.json"
         }
       }
     }

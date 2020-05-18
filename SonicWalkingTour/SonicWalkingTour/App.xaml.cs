@@ -12,7 +12,8 @@ namespace SonicWalkingTour
         public static double ScreenHeight;
         public static double ScreenWidth;
         public static string MusicLocation = "SonicWalkingTour.SharedAssets.Audio.";
-        public static List<CustomPin> pins;
+        //public static IList<Animal> Elephants { get; private set; }
+        public static List<CustomPin> pins  {get; private set; }
 
         public App()
         {
@@ -20,7 +21,7 @@ namespace SonicWalkingTour
 
             pins = InitializePins();
 
-            MainPage = new NavigationPage(new LoginPage());
+            MainPage =  new MainFlyout();
         }
 
         #region Load Pins from the Azure Database
@@ -28,10 +29,6 @@ namespace SonicWalkingTour
         {
 
             List<CustomPin> customPins = new List<CustomPin>();
-
-
-
-
 
             return customPins;
 

@@ -29,8 +29,9 @@ namespace SonicWalkingTour
 
         void Continue_Clicked(object sender, System.EventArgs e)
         {
-
-            Navigation.PushAsync(new MainFlyout());
+            DisplayAlert("Hello", "Welcome ", "OK");
+            //Navigation.PushAsync(new MainFlyout());
+            Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
 
         }
 
@@ -38,7 +39,8 @@ namespace SonicWalkingTour
         {
 
             DisplayAlert("Hello","Welcome " + entryName.Text, "OK");
-            Navigation.PushAsync(new MainPage());
+            //Navigation.PushAsync(new MainPage());
+            Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
 
         }
 

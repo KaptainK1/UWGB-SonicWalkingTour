@@ -7,25 +7,70 @@
        Navigating="OnNavigating"
        Navigated="OnNavigated"
        xmlns:controls="clr-namespace:SonicWalkingTour.Controls"
-       x:Class="SonicWalkingTour.MainFlyout">
+       x:Class="SonicWalkingTour.MainFlyout"
+       FlyoutBehavior="Disabled">
 
     <Shell.FlyoutHeader>
         <controls:FlyoutHeader/>
     </Shell.FlyoutHeader>
 
-    <FlyoutItem Route="pages"
-                Title="Pages"
-                FlyoutDisplayOptions="AsMultipleItems">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding BackCommand}"
+                            IconOverride="gear.png"/>   
+    </Shell.BackButtonBehavior>
 
-                <ShellContent Route="map"
+        <Shell.Resources>
+            <ResourceDictionary>
+                <!--<Style x:Key="BaseStyle" TargetType="Element">
+                    <Setter Property="Shell.BackgroundColor" Value="{StaticResource phoneixOrange}" />
+                    <Setter Property="Shell.ForegroundColor" Value="White" />
+                    <Setter Property="Shell.TitleColor" Value="White" />
+                </Style>
+                <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
+
+                <Style TargetType="Label"
+                   Class="FlyoutItemLabelStyle">
+                <Setter Property="TextColor"
+                        Value="Black"/>
+                <Setter Property="HeightRequest"
+                        Value="100" />
+                </Style>
+
+                    <Style TargetType="Image"
+                       Class="FlyoutItemImageStyle">
+                    <Setter Property="BackgroundColor"
+                        Value="Black" />
+                </Style>-->
+
+
+            </ResourceDictionary>
+    </Shell.Resources>
+    
+    <ShellContent Title="Register" Icon="man.png" ContentTemplate="{DataTemplate views:LoginPage}"/>
+
+        <FlyoutItem Route="MapPage"
+                        Title="Map"
+                        Icon="map.png"
+                        Shell.TabBarIsVisible="False"
+                        FlyoutDisplayOptions="AsMultipleItems">
+
+         <ShellContent Route="map"
                       Title="Map"
                       Icon="map.png"
+                      IsTabStop="True"
                       ContentTemplate="{DataTemplate views:MapPage}" />
 
-                <ShellContent Route="route"
+         <ShellContent Route="route"
                       Title="RoutePage"
                       Icon="route.png"
+                        IsTabStop="True"
                       ContentTemplate="{DataTemplate views:RoutePage}" />
 
-    </FlyoutItem>
+
+        </FlyoutItem>
+
+    <MenuItem Text="UWGB"
+              IconImageSource="home.png"
+              Command="{Binding HelpCommand}"
+              CommandParameter="https://www.uwgb.edu/" />  
 </Shell>

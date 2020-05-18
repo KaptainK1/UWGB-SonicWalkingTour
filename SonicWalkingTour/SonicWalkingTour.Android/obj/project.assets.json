@@ -792,7 +792,7 @@
           "build/_._": {}
         }
       },
-      "Xamarin.Essentials/1.5.3.1": {
+      "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.Compat": "28.0.0.3",
@@ -805,7 +805,7 @@
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.5.0.657": {
+      "Xamarin.Forms/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3",
@@ -833,11 +833,11 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "Xamarin.Forms.Maps/4.5.0.657": {
+      "Xamarin.Forms.Maps/4.6.0.772": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.v7.AppCompat": "28.0.0.3",
-          "Xamarin.Forms": "4.5.0.657",
+          "Xamarin.Forms": "4.6.0.772",
           "Xamarin.GooglePlayServices.Maps": "71.1610.0"
         },
         "compile": {
@@ -934,9 +934,9 @@
           "Plugin.Permissions": "6.0.1",
           "Xam.Plugin.Geolocator": "4.5.0.6",
           "Xam.Plugin.SimpleAudioPlayer": "1.4.0",
-          "Xamarin.Essentials": "1.5.3.1",
-          "Xamarin.Forms": "4.5.0.657",
-          "Xamarin.Forms.Maps": "4.5.0.657"
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "4.6.0.772",
+          "Xamarin.Forms.Maps": "4.6.0.772"
         },
         "compile": {
           "bin/placeholder/SonicWalkingTour.dll": {}
@@ -1822,10 +1822,10 @@
         "xamarin.build.download.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.5.3.1": {
-      "sha512": "6sE3kGMhES7dsR8ll+ar+roEIFobjPfDskKNMsU4FF6cV27ZsdArGZHxe1QqPPJcMT6PzJsGvA3l5PNMZgw5ng==",
+    "Xamarin.Essentials/1.5.3.2": {
+      "sha512": "BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
       "type": "package",
-      "path": "xamarin.essentials/1.5.3.1",
+      "path": "xamarin.essentials/1.5.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1866,14 +1866,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.5.3.1.nupkg.sha512",
+        "xamarin.essentials.1.5.3.2.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.5.0.657": {
-      "sha512": "S6WmhCKBRDMG5woHEIRA8MBZv6yn2jZ8Kf9DzzcOuB5gXivH1S5mIiSt4yoaa9HwfNUcg2d7AH2GEoICmH5bJg==",
+    "Xamarin.Forms/4.6.0.772": {
+      "sha512": "tRxuc7x0PgLYZRjRvs2mm3D8KnkKgCCYOuXHnqOjcXWUJWBDmexM8R7LxWPyEBSLMU55SGl+RRcFvHZcOSsgMA==",
       "type": "package",
-      "path": "xamarin.forms/4.5.0.657",
+      "path": "xamarin.forms/4.6.0.772",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2136,8 +2136,8 @@
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
-        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
@@ -2168,6 +2168,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
@@ -2178,14 +2179,14 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.5.0.657.nupkg.sha512",
+        "xamarin.forms.4.6.0.772.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "Xamarin.Forms.Maps/4.5.0.657": {
-      "sha512": "kAXAcnvFNdDFC5/zfZpx2ofkgIxcS3zKwDeRoBdWW/vAk/DGA5HDdId6/MBXTOPlM68T7CHTCHiL+W1d2KCKtg==",
+    "Xamarin.Forms.Maps/4.6.0.772": {
+      "sha512": "Yo1Lly8gyGuX/Wxp/dbfnyrnkJgAxp+brA2+Qk8grSotbtsi9hle4vJ7aeeqUvI5Ws0PtteCEyAk8+bOJpWx9A==",
       "type": "package",
-      "path": "xamarin.forms.maps/4.5.0.657",
+      "path": "xamarin.forms.maps/4.6.0.772",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2214,7 +2215,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.UWP.pri",
         "lib/uap10.0.16299/Xamarin.Forms.Maps.dll",
-        "xamarin.forms.maps.4.5.0.657.nupkg.sha512",
+        "xamarin.forms.maps.4.6.0.772.nupkg.sha512",
         "xamarin.forms.maps.nuspec"
       ]
     },
@@ -2286,9 +2287,9 @@
       "Xam.Plugin.Geolocator >= 4.5.0.6",
       "Xam.Plugin.SimpleAudioPlayer >= 1.4.0",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.3",
-      "Xamarin.Essentials >= 1.5.3.1",
-      "Xamarin.Forms >= 4.5.0.657",
-      "Xamarin.Forms.Maps >= 4.5.0.657"
+      "Xamarin.Essentials >= 1.5.3.2",
+      "Xamarin.Forms >= 4.6.0.772",
+      "Xamarin.Forms.Maps >= 4.6.0.772"
     ]
   },
   "packageFolders": {
@@ -2297,11 +2298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj",
+      "projectUniqueName": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj",
       "projectName": "SonicWalkingTour.Android",
-      "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj",
+      "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/SonicWalkingTour.Android.csproj",
       "packagesPath": "/Users/dhoffman/.nuget/packages/",
-      "outputPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/",
+      "outputPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2316,8 +2317,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj": {
-              "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj"
+            "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj": {
+              "projectPath": "/Users/dhoffman/Desktop/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.csproj"
             }
           }
         }
@@ -2344,15 +2345,15 @@
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.5.3.1, )"
+            "version": "[1.5.3.2, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.5.0.657, )"
+            "version": "[4.6.0.772, )"
           },
           "Xamarin.Forms.Maps": {
             "target": "Package",
-            "version": "[4.5.0.657, )"
+            "version": "[4.6.0.772, )"
           }
         }
       }
