@@ -1,10 +1,10 @@
 #ignore the following dirs
-/SonicWalkingTour/bin/*
-/SonicWalkingTour/obj/*
-/SonicWalkingTour.iOS/bin/*
-/SonicWalkingTour.iOS/obj/*
-/SonicWalkingTour.Android/bin/*
-/SonicWalkingTour.Android/obj/*
-SonicWalkingTour/.vs/SonicWalkingTour/xs*
+/SonicWalkingTour/SonicWalkingTour/bin/*
+/SonicWalkingTour/SonicWalkingTour/obj/*
+/SonicWalkingTour/SonicWalkingTour.iOS/bin/*
+/SonicWalkingTour/SonicWalkingTour.iOS/obj/*
+/SonicWalkingTour/SonicWalkingTour.Android/bin/*
+/SonicWalkingTour/SonicWalkingTour.Android/obj/*
+/SonicWalkingTourSonicWalkingTour/.vs/SonicWalkingTour/xs*
 /.vs/*
-/SonicWalkingTour/.DS_Store*
+/SonicWalkingTour/SonicWalkingTour/.DS_Store*
