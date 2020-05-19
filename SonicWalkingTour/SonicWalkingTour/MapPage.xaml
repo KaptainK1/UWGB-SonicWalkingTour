@@ -2,12 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SonicWalkingTour;assembly=SonicWalkingTour"
+             Shell.BackgroundColor="{StaticResource phoneixOrange}"
+             Shell.ForegroundColor="White"
+             Shell.TitleColor="White"
              x:Class="SonicWalkingTour.MapPage">
-
-        <Shell.BackButtonBehavior>
-        <BackButtonBehavior Command="{Binding BackCommand}"
-                            IconOverride="gear.png"/>   
-    </Shell.BackButtonBehavior>
 
 		<local:CustomMap x:Name="customMap"
                    MapType="Street" WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}"

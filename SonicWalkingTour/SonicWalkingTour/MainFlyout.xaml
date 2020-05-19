@@ -18,33 +18,6 @@
         <BackButtonBehavior Command="{Binding BackCommand}"
                             IconOverride="gear.png"/>   
     </Shell.BackButtonBehavior>
-
-        <Shell.Resources>
-            <ResourceDictionary>
-                <!--<Style x:Key="BaseStyle" TargetType="Element">
-                    <Setter Property="Shell.BackgroundColor" Value="{StaticResource phoneixOrange}" />
-                    <Setter Property="Shell.ForegroundColor" Value="White" />
-                    <Setter Property="Shell.TitleColor" Value="White" />
-                </Style>
-                <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
-
-                <Style TargetType="Label"
-                   Class="FlyoutItemLabelStyle">
-                <Setter Property="TextColor"
-                        Value="Black"/>
-                <Setter Property="HeightRequest"
-                        Value="100" />
-                </Style>
-
-                    <Style TargetType="Image"
-                       Class="FlyoutItemImageStyle">
-                    <Setter Property="BackgroundColor"
-                        Value="Black" />
-                </Style>-->
-
-
-            </ResourceDictionary>
-    </Shell.Resources>
     
     <ShellContent Title="Register" Icon="man.png" ContentTemplate="{DataTemplate views:LoginPage}"/>
 

@@ -1,6 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SonicWalkingTour.RoutePage">
-      <ListView x:Name="CustomPinListView">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.BackgroundColor="{StaticResource phoneixOrange}"
+             Shell.ForegroundColor="White"
+             Shell.TitleColor="White"
+
+             x:Class="SonicWalkingTour.RoutePage">
+
+        <!--<Shell.BackButtonBehavior>
+        we can override the back button behavior with this
+        <BackButtonBehavior Command="{Binding BackCommand}"
+                            
+                            IconOverride="gear.png" />   
+        </Shell.BackButtonBehavior>-->
+
+    <ListView x:Name="CustomPinListView">
     <ListView.ItemTemplate>
       <DataTemplate>
           <ViewCell Tapped="ListItem_Tapped">

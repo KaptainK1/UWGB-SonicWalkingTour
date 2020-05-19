@@ -39,6 +39,7 @@ namespace SonicWalkingTour
         {
 
             DisplayAlert("Hello","Welcome " + entryName.Text, "OK");
+            register.IsEnabled = false;
             //Navigation.PushAsync(new MainPage());
             Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
 

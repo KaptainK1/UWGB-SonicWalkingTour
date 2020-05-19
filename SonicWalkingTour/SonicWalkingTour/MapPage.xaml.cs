@@ -25,6 +25,11 @@ namespace SonicWalkingTour
             LoadPins();
         }
 
+        //protected override bool OnBackButtonPressed()
+        //{
+        //    return base.OnBackButtonPressed();
+        //}
+
         //function to load all the pins we will be using
         private void LoadPins()
         {
