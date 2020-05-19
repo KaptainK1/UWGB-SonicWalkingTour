@@ -5,6 +5,8 @@
 /SonicWalkingTour/SonicWalkingTour.iOS/obj/*
 /SonicWalkingTour/SonicWalkingTour.Android/bin/*
 /SonicWalkingTour/SonicWalkingTour.Android/obj/*
-/SonicWalkingTourSonicWalkingTour/.vs/SonicWalkingTour/xs*
+/SonicWalkingTour/.vs/SonicWalkingTour/xs*
 /.vs/*
 /SonicWalkingTour/SonicWalkingTour/.DS_Store*
+
+#SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj
