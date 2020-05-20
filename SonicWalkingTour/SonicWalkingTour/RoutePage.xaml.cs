@@ -25,15 +25,8 @@ namespace SonicWalkingTour
             var customPin = CustomPinListView.SelectedItem as CustomPin;
             string id = customPin.StopID.ToString();
 
+            //old method of navigating, but we are no longer using a NavigationPage
             //App.Current.MainPage.Navigation.PushAsync(new PinDetailPage(customPin));
-            //await Shell.Current.GoToAsync($"{state.Location}/{destinationRoute}?name={animalName}");
-
-            //async void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
-            //{
-            //    string elephantName = (e.CurrentSelection.FirstOrDefault() as Animal).Name;
-            //    await Shell.Current.GoToAsync($"//animals/elephants/elephantdetails?name={elephantName}");
-            //}
-            //await Shell.Current.GoToAsync($"pinDetailPage?label={Label}&description={Description}&url={Url}");
 
             //since we are using shell navigation, we can use URI type navigation
             //here we are going to the pinDetailPage route, and passing the stopid as parameter

@@ -35,6 +35,7 @@ namespace SonicWalkingTour
 
         }
 
+        //TODO update to use Azure db to track people who registered
         void Register_Clicked(object sender, System.EventArgs e)
         {
 

@@ -31,6 +31,7 @@ namespace SonicWalkingTour
         //}
 
         //function to load all the pins we will be using
+        #region function for loading the pins defined in the App.xaml.cs into the map page
         private void LoadPins()
         {
 
@@ -63,6 +64,9 @@ namespace SonicWalkingTour
             }
         }
 
+        #endregion
+
+        #region get the current user's location then move to it
         //fuction to get the location of the user then display it
         private async Task GetLocation()
         {
@@ -77,7 +81,9 @@ namespace SonicWalkingTour
 
             }
         }
+        #endregion
 
+        #region make sure we have the user's permissions
         //fuction to get location permissions from the user
         private async void GetPermissions()
         {
@@ -114,7 +120,10 @@ namespace SonicWalkingTour
             hasLocationPermission = true;
             customMap.IsShowingUser = true;
         }
+        #endregion
 
+
+        #region method to handle the on appearing method for this page
         protected override async void OnAppearing()
         {
             base.OnAppearing();
@@ -133,6 +142,10 @@ namespace SonicWalkingTour
 
         }
 
+        #endregion
+
+
+        #region method to handle the on disappearing method for this page
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
@@ -144,11 +157,17 @@ namespace SonicWalkingTour
             CrossGeolocator.Current.PositionChanged -= Locator_PositionChanged;
         }
 
+        #endregion
+
+        #region event for handling the user's postion changing
         void Locator_PositionChanged(object sender, PositionEventArgs e)
         {
             MoveMap(e.Position);
         }
 
+        #endregion
+
+        #region method to move the map to the user's position
         private void MoveMap(Plugin.Geolocator.Abstractions.Position position)
         {
             //get the center in lat, long
@@ -160,6 +179,7 @@ namespace SonicWalkingTour
             //now move to the region
             customMap.MoveToRegion(mapspan);
         }
+        #endregion
 
     }
 }

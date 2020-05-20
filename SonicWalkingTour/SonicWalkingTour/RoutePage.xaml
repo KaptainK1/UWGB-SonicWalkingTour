@@ -27,12 +27,15 @@
                   </Grid.RowDefinitions>
                   <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
                   </Grid.ColumnDefinitions>
                         <Label Text="{Binding Label}" Grid.Column="0" Grid.Row="0"
-                        TextColor="#f35e20" />
-                        <Label Text="Stop Number:   " Grid.Column="0" Grid.Row="1"/>
-                        <Label Text="{Binding StopID}" Grid.Column="0" Grid.Row="1"
-                        TextColor="#503026"
+                        TextColor="{StaticResource phoneixOrange}"
+                         HorizontalOptions="StartAndExpand"/>
+                        <Label Text="Stop Number:      " Grid.Column="0" Grid.Row="1"
+                               HorizontalOptions="Start"/>
+                        <Label Text="{Binding StopID}" Grid.Column="1" Grid.Row="1"
+                        TextColor="Black"
                         HorizontalOptions="EndAndExpand"/>
                     </Grid>
                 </StackLayout>

@@ -8,6 +8,7 @@ namespace SonicWalkingTour
     //all the vertices and edges for our map graph
 
     //Still a W.I.P!
+    //TODO finish pin graph data structure
     public class PinGraph
     {
         //double linked list to hold our vertices
@@ -42,7 +43,8 @@ namespace SonicWalkingTour
         public CustomPin getNextNode(CustomPin currentPin, int routeID)
         {
 
-            return currentPin.connectedEdges[routeID].endingVertex;
+            //return currentPin.connectedEdges[routeID].endingVertex;
+            return null;
 
         }
 
