@@ -69,7 +69,7 @@ namespace SonicWalkingTour.iOS
                 annotationView = new CustomMKAnnotationView(annotation, customPin.MarkerId.ToString());
                 annotationView.Image = UIImage.FromFile("pin.png");
                 annotationView.CalloutOffset = new CGPoint(0, 0);
-                annotationView.LeftCalloutAccessoryView = new UIImageView(UIImage.FromFile("monkey.png"));
+                annotationView.LeftCalloutAccessoryView = new UIImageView(UIImage.FromFile("logo.png"));
                 annotationView.RightCalloutAccessoryView = UIButton.FromType(UIButtonType.DetailDisclosure);
                 ((CustomMKAnnotationView)annotationView).MarkerId = customPin.MarkerId.ToString();
                 ((CustomMKAnnotationView)annotationView).Url = customPin.Url;
@@ -94,29 +94,39 @@ namespace SonicWalkingTour.iOS
         //method to create a new annotation when a pin is selected
         void OnDidSelectAnnotationView(object sender, MKAnnotationViewEventArgs e)
         {
+
+            var control = sender as MKMapView;
             var customView = e.View as CustomMKAnnotationView;
+
+            
             customPinView = new UIView();
 
             //if (customView.MarkerId == "Xamarin")
             //{
-                customPinView.Frame = new CGRect(0, 0, 200, 84);
-                var image = new UIImageView(new CGRect(0, 0, 200, 84));
-                image.Image = UIImage.FromFile("xamarin.png");
+                customPinView.Frame = new CGRect(0,0, 200, 84);
+                var image = new UIImageView(new CGRect(0 , 0 , 200, 84));
+                image.Image = UIImage.FromFile("logo.png");
                 customPinView.AddSubview(image);
-                customPinView.Center = new CGPoint(0, -(e.View.Frame.Height + 75));
+                customPinView.Center = new CGPoint( 0, -(e.View.Frame.Height + 50));
+
                 e.View.AddSubview(customPinView);
 
             //}
+
+            
         }
 
         void OnDidDeselectAnnotationView(object sender, MKAnnotationViewEventArgs e)
         {
+            
             if (!e.View.Selected)
             {
                 customPinView.RemoveFromSuperview();
                 customPinView.Dispose();
                 customPinView = null;
             }
+
+            
         }
 
         CustomPin GetCustomPin(MKPointAnnotation annotation)

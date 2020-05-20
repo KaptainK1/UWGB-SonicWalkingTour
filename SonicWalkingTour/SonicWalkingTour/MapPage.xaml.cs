@@ -40,7 +40,7 @@ namespace SonicWalkingTour
             Polyline polyline = new Polyline
             {
                 StrokeColor = Color.Green,
-                StrokeWidth = 12,
+                StrokeWidth = 10,
                 Geopath =
                             {
                                 new Xamarin.Forms.Maps.Position(44.532351, -87.920922),
