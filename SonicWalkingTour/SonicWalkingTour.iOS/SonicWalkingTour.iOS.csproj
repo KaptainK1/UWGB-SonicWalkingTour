@@ -75,47 +75,38 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\LaunchIcon.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\LaunchIcon.imageset\uwgb_logo.pdf" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-40-3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-60-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-58-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-87-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-80-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-120-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-120-3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-180-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-20-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-40-4.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-29-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-58-3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-40-5.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-80-3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-76-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-152-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-167-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-1024-1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchScreenLogo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchScreenLogo.imageset\Icon-120.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchScreenLogo.imageset\Icon-180.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchScreenLogo.imageset\Icon-256.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchScreenLogo.imageset\Icon-120-1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchScreenLogo.imageset\Icon-120-2.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchScreenLogo.imageset\Icon-144.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchScreenLogo.imageset\Icon-180-1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchScreenLogo.imageset\Icon-256-1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchIcon.imageset\Icon-120.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchIcon.imageset\Icon-256.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchIcon.imageset\Icon-167.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -208,9 +199,11 @@
     <BundleResource Include="Resources\logo%402x.png" />
     <BundleResource Include="Resources\pin%402x.png" />
     <BundleResource Include="Resources\pin%403x.png" />
+    <BundleResource Include="Resources\uwgb_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\LaunchIcon.imageset\" />
+    <Folder Include="Assets.xcassets\LaunchScreenLogo.imageset\" />
   </ItemGroup>
   <Import Project="..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.targets')" />
 </Project>

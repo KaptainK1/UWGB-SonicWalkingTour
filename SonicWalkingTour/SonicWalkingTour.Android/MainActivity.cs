@@ -8,7 +8,7 @@ using Android.OS;
 
 namespace SonicWalkingTour.Droid
 {
-    [Activity(Label = "SonicWalkingTour", Icon = "@mipmap/uwgb_logo", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "SonicWalkingTour", Icon = "@mipmap/uwgb_logo", Theme = "@style/MainTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

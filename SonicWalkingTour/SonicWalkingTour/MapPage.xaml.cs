@@ -46,8 +46,9 @@ namespace SonicWalkingTour
                                 new Xamarin.Forms.Maps.Position(44.532351, -87.920922),
                                 new Xamarin.Forms.Maps.Position(44.531936, -87.921457),
                                 new Xamarin.Forms.Maps.Position(44.531397, -87.921274),
-                                new Xamarin.Forms.Maps.Position(44.532386, -87.919828),
-                                new Xamarin.Forms.Maps.Position(44.531822, -87.920591)
+                                new Xamarin.Forms.Maps.Position(44.531822, -87.920591),
+                                new Xamarin.Forms.Maps.Position(44.532386, -87.919828)
+
 
                             }
             };
