@@ -25,8 +25,12 @@
             <Entry x:Name="entryDescription" Text="" Grid.Row="1" Grid.Column="0" IsReadOnly="True"/>-->
 
             <Entry x:Name="entryTitle" Text="{Binding Label}" Grid.Row="0" Grid.Column="0" IsReadOnly ="True"/>
-            <Entry x:Name="entryDescription" Text="{Binding Description}" Grid.Row="1" Grid.Column="0" IsReadOnly="True"/>
-            <Entry x:Name="url" Text="{Binding Url}" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/>
+
+            <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical">
+                 <Label x:Name="entryDescription" Text="{Binding Description}"/>
+            </ScrollView>
+
+            <!--Entry x:Name="url" Text="{Binding Url}" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/-->
 
             <Button ImageSource="play.png" Grid.Row="2" Grid.Column="0" Clicked="Play_Clicked"/>
             <Button ImageSource="pause.png" Grid.Row="2" Grid.Column="1" Clicked="Pause_Clicked"/>

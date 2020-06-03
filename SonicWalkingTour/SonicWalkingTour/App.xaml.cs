@@ -61,7 +61,7 @@ namespace SonicWalkingTour
             {
                 Type = PinType.SavedPin,
                 Position = new Xamarin.Forms.Maps.Position(44.531936, -87.921457),
-                Description = "Here is a brief description of the Tunnels",
+                Description = "Here is a brief description of the Tunnels laksdjfl;ksdjflkasdjflksdjfkja;sdkfja;dslkfj;asldkfj;alskdjfa;lsdkfj;alsdjffjkdla;lksdjfa;sldkfjdfka;sdflkds;kfja;sldkfjsdl;fakjdsfksdlafjal;sdfkja;sdlfkjadls",
                 MarkerId = "2",
                 StopID = 2,
                 Label = "Tunnels",
