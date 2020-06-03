@@ -28,8 +28,8 @@ namespace SonicWalkingTour.iOS
                 var nativeMap = Control as MKMapView;
                 nativeMap.GetViewForAnnotation = null;
                 nativeMap.CalloutAccessoryControlTapped -= OnCalloutAccessoryControlTapped;
-                nativeMap.DidSelectAnnotationView -= OnDidSelectAnnotationView;
-                nativeMap.DidDeselectAnnotationView -= OnDidDeselectAnnotationView;
+                //nativeMap.DidSelectAnnotationView -= OnDidSelectAnnotationView;
+                //nativeMap.DidDeselectAnnotationView -= OnDidDeselectAnnotationView;
             }
 
             if (e.NewElement != null)
@@ -40,8 +40,8 @@ namespace SonicWalkingTour.iOS
 
                 nativeMap.GetViewForAnnotation = GetViewForAnnotation;
                 nativeMap.CalloutAccessoryControlTapped += OnCalloutAccessoryControlTapped;
-                nativeMap.DidSelectAnnotationView += OnDidSelectAnnotationView;
-                nativeMap.DidDeselectAnnotationView += OnDidDeselectAnnotationView;
+                //nativeMap.DidSelectAnnotationView += OnDidSelectAnnotationView;
+                //nativeMap.DidDeselectAnnotationView += OnDidDeselectAnnotationView;
             }
         }
 

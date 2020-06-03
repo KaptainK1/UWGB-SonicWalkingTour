@@ -34,7 +34,7 @@
                 <Style TargetType="Label"
                    Class="FlyoutItemLabelStyle">
                 <Setter Property="TextColor"
-                        Value="Black"/>
+                        Value= "Black"/>
                 <Setter Property="HeightRequest"
                         Value="100" />
                 </Style>
@@ -42,7 +42,7 @@
                     <Style TargetType="Image"
                        Class="FlyoutItemImageStyle">
                     <Setter Property="BackgroundColor"
-                        Value="Black" />
+                         Value="{StaticResource phoneixLightGray}"/>
                 </Style>
 
 
