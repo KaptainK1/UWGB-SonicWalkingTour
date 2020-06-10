@@ -43,12 +43,18 @@ namespace SonicWalkingTour
                 StrokeWidth = 10,
                 Geopath =
                             {
-                                new Xamarin.Forms.Maps.Position(44.532351, -87.920922),
-                                new Xamarin.Forms.Maps.Position(44.531936, -87.921457),
-                                new Xamarin.Forms.Maps.Position(44.531397, -87.921274),
-                                new Xamarin.Forms.Maps.Position(44.531822, -87.920591),
-                                new Xamarin.Forms.Maps.Position(44.532386, -87.919828)
 
+                                new Xamarin.Forms.Maps.Position(44.532377, -87.921069),
+                                new Xamarin.Forms.Maps.Position(44.532174, -87.921140),
+                                new Xamarin.Forms.Maps.Position(44.531521, -87.921297),
+                                new Xamarin.Forms.Maps.Position(44.531166, -87.921602),
+                                new Xamarin.Forms.Maps.Position(44.531521, -87.921297),
+                                new Xamarin.Forms.Maps.Position(44.531400, -87.920857),
+                                new Xamarin.Forms.Maps.Position(44.531727, -87.920409),
+                                new Xamarin.Forms.Maps.Position(44.531969, -87.920197),
+                                new Xamarin.Forms.Maps.Position(44.532295, -87.919902),
+                                new Xamarin.Forms.Maps.Position(44.532402, -87.920384),
+                                new Xamarin.Forms.Maps.Position(44.532330, -87.920784)
 
                             }
             };

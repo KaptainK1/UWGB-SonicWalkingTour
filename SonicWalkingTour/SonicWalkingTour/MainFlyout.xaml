@@ -14,6 +14,7 @@
         <controls:FlyoutHeader/>
     </Shell.FlyoutHeader>
 
+
     <Shell.BackButtonBehavior>
         <BackButtonBehavior Command="{Binding BackCommand}"
                             IconOverride="gear.png"/>   

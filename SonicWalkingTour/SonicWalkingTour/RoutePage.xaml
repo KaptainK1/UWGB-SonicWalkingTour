@@ -26,17 +26,17 @@
                     <RowDefinition Height="Auto" />
                   </Grid.RowDefinitions>
                   <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                   </Grid.ColumnDefinitions>
                         <Label Text="{Binding Label}" Grid.Column="0" Grid.Row="0"
                         TextColor="{StaticResource phoneixOrange}"
                          HorizontalOptions="StartAndExpand"/>
-                        <Label Text="Stop Number:      " Grid.Column="0" Grid.Row="1"
-                               HorizontalOptions="Start"/>
+                        <Label Text="Stop Number: " Grid.Column="0" Grid.Row="1"
+                               />
                         <Label Text="{Binding StopID}" Grid.Column="1" Grid.Row="1"
                         TextColor="Black"
-                        HorizontalOptions="EndAndExpand"/>
+                        HorizontalOptions="StartAndExpand"/>
                     </Grid>
                 </StackLayout>
             </ViewCell>

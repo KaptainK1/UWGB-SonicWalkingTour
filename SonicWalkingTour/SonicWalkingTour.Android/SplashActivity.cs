@@ -42,7 +42,7 @@ namespace SonicWalkingTour.Droid
         async void startUp()
         {
             //temporarily wait for a second to ensure the screen is displayed
-            await Task.Delay(1000);
+            await Task.Delay(10);
             //start the main activity
             StartActivity(new Intent(Application.Context, typeof(MainActivity)));
         }

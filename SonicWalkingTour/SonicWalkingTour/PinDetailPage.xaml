@@ -6,35 +6,45 @@
              Shell.TitleColor="White"
              x:Class="SonicWalkingTour.PinDetailPage">
 
-        <!--<Shell.BackButtonBehavior>
-        <BackButtonBehavior Command="{Binding BackCommand}"
-                            IconOverride="gear.png" />   
-    </Shell.BackButtonBehavior>-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+                     IconImageSource="play_outline.png"
+                     Text="Play"
+                     Order="Primary"
+                     Priority="0" 
+                     Clicked="Play_Clicked"/>
+
+        <ToolbarItem 
+                     IconImageSource="pause_outline.png"
+                     Text="Pause"
+                     Order="Primary"
+                     Priority="1" 
+                     Clicked="Pause_Clicked"/>
+
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
         <Grid Padding="10" RowSpacing="10">
-          <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-          </Grid.RowDefinitions>
-          <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-          </Grid.ColumnDefinitions>
-            <!--<Entry x:Name="entryTitle" Text="" Grid.Row="0" Grid.Column="0" IsReadOnly ="True"/>
-            <Entry x:Name="entryDescription" Text="" Grid.Row="1" Grid.Column="0" IsReadOnly="True"/>-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <!--<Entry x:Name="entryTitle" Text="" Grid.Row="0" Grid.Column="0" IsReadOnly ="True"/>
+                <Entry x:Name="entryDescription" Text="" Grid.Row="1" Grid.Column="0" IsReadOnly="True"/>-->
 
-            <Entry x:Name="entryTitle" Text="{Binding Label}" Grid.Row="0" Grid.Column="0" IsReadOnly ="True"/>
+                <Entry x:Name="entryTitle" Text="{Binding Label}" Grid.Row="0" Grid.Column="0" IsReadOnly="True" />
 
-            <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical">
-                 <Label x:Name="entryDescription" Text="{Binding Description}"/>
-            </ScrollView>
+                <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical">
+                    <Label x:Name="entryDescription" Text="{Binding Description}"/>
+                </ScrollView>
 
-            <!--Entry x:Name="url" Text="{Binding Url}" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/-->
+                <!--Entry x:Name="url" Text="{Binding Url}" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/-->
 
-            <Button ImageSource="play.png" Grid.Row="2" Grid.Column="0" Clicked="Play_Clicked"/>
-            <Button ImageSource="pause.png" Grid.Row="2" Grid.Column="1" Clicked="Pause_Clicked"/>
-           
-        </Grid>
+            </Grid>
     </ContentPage.Content>
 </ContentPage>
