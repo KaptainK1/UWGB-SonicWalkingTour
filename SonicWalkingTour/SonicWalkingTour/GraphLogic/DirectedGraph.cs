@@ -17,18 +17,23 @@ namespace SonicWalkingTour.GraphLogic
             init(numberOfStartingNodes);
         }
 
+        public DirectedGraph(List<List<Vertex>> startingNodes)
+        {
+            this.startingNodes = startingNodes;
+        }
+
         public DirectedGraph()
         {
             init(5);
         }
 
-        void iterate()
+        public void iterate()
         {
             for (int i = 0; i < startingNodes.Count; i++)
             {
                 for (int j = 0; j < startingNodes.ElementAt(i).Count; j++)
                 {
-                    Console.WriteLine(startingNodes.ElementAt(i).ElementAt(j));
+                    Console.WriteLine(startingNodes.ElementAt(i).ElementAt(j).getRouteID() + " " + startingNodes.ElementAt(i).ElementAt(j).getStopName());
                 }
 
                 Console.WriteLine();
@@ -36,7 +41,7 @@ namespace SonicWalkingTour.GraphLogic
         }
 
         //method to add an edge to the end of a route for a starting node
-        int addEdge(string vertex, string edge, string routeName)
+        public int addEdge(string vertex, string edge, string routeName)
         {
             int _startingSpot;
             int _edge;
@@ -79,7 +84,7 @@ namespace SonicWalkingTour.GraphLogic
         }
 
         //method to add a new route set
-        void addNewRoute()
+        public void addNewRoute()
         {
             this.startingNodes.Add(new List<Vertex>());
         }

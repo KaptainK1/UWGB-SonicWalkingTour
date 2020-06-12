@@ -22,22 +22,22 @@ namespace SonicWalkingTour.GraphLogic
             setStopName(stopName);
         }
 
-        void setStopName(string stopName)
+        public void setStopName(string stopName)
         {
             this.stopName = stopName;
         }
 
-        void setRouteID(int routeID)
+        public void setRouteID(int routeID)
         {
             this.routeID = routeID;
         }
 
-        int getRouteID()
+        public int getRouteID()
         {
             return this.routeID;
         }
 
-        string getStopName()
+        public string getStopName()
         {
             return this.stopName;
         }
