@@ -4,10 +4,8 @@
              x:Class="SonicWalkingTour.Controls.FlyoutHeader"
              HeightRequest="100">
 
-    <Grid BackgroundColor="Black" >
-        <Image Aspect="AspectFill" 
-               Source="logo.jpg" 
-               Opacity="0.5" />
+    <Grid BackgroundColor="{StaticResource phoneixGreen}">
+
         <Label Text="SonicWalkingTour" 
                TextColor="White"
                FontAttributes="Bold" 
