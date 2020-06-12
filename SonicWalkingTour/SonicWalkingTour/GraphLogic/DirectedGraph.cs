@@ -9,7 +9,7 @@ namespace SonicWalkingTour.GraphLogic
 {
     class DirectedGraph
     {
-        private string route;
+        //private string route;
         private List< List <Vertex>> startingNodes;
 
         public DirectedGraph(int numberOfStartingNodes)
