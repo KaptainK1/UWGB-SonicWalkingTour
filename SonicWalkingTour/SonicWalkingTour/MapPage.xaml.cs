@@ -37,6 +37,8 @@ namespace SonicWalkingTour
 
             // instantiate a polyline
             // this could be a simple way to draw a path between points
+
+            /*
             Polyline polyline = new Polyline
             {
                 StrokeColor = Color.Green,
@@ -60,15 +62,33 @@ namespace SonicWalkingTour
             };
 
             //add the line between the points
-            customMap.MapElements.Add(polyline);
-            customMap.CustomPins = App.pins;
+            //customMap.MapElements.Add(polyline);
+
+            */
+           // customMap.CustomPins = App.pins;
 
 
-            foreach (CustomPin pin in App.pins)
+            for (int i = 0; i < App.pins.Count -2; i++)
             {
-                customMap.Pins.Add(pin);
-                Console.WriteLine(pin.Description);
+                customMap.Pins.Add(App.pins[i]);
+
+                Polyline line = new Polyline
+                {
+                    StrokeColor = Color.FromHex(App.pins[i].CustomPinType.getBackgroundColor()),
+                    StrokeWidth = 10,
+                    Geopath =
+                    {
+                        App.pins[i].Position,
+                        App.pins[i+1].Position
+
+                    }
+
+                };
+
+                customMap.MapElements.Add(line);
             }
+
+            customMap.CustomPins = App.pins;
         }
 
         #endregion

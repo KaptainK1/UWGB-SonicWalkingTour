@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms.Maps;
 using System.Collections.Generic;
+using SonicWalkingTour.Model;
 
 namespace SonicWalkingTour
 {
@@ -10,6 +11,7 @@ namespace SonicWalkingTour
         public string Url { get; set; }
         public string Description { get; set; }
         public int StopID { get; set; }
+        public CustomPinType CustomPinType;
 
         //TODO need to have a way of connecting pins to each other
         //public List<Edge> connectedEdges { get; set; }
