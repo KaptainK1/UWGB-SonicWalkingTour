@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using SonicWalkingTour.Model;
 using Xamarin.Forms;
 
 namespace SonicWalkingTour
@@ -36,13 +37,31 @@ namespace SonicWalkingTour
         }
 
         //TODO update to use Azure db to track people who registered
-        void Register_Clicked(object sender, System.EventArgs e)
+        private async void Register_Clicked(object sender, System.EventArgs e)
         {
+            if (entryEmail.Text != String.Empty && entryName.Text != String.Empty)
+            {
+                UserRegistration user = new UserRegistration()
+                {
+                    fullName = entryName.Text.Trim(),
+                    email = entryEmail.Text.Trim()
+                };
+                
+                register.IsEnabled = false;
+                Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
 
-            DisplayAlert("Hello","Welcome " + entryName.Text, "OK");
-            register.IsEnabled = false;
-            //Navigation.PushAsync(new MainPage());
-            Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
+                await DisplayAlert("Hello", "Welcome " + user.fullName, "OK");
+                await App.MobileService.GetTable<UserRegistration>().InsertAsync(user);
+                //Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
+            }
+            else
+            {
+                await DisplayAlert("Error", "Name field or email is empty, please re-enter or continue as guest", "OK");
+            }
+            //DisplayAlert("Hello","Welcome " + entryName.Text, "OK");
+            //register.IsEnabled = false;
+            ////Navigation.PushAsync(new MainPage());
+            //Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
 
         }
 

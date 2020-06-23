@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.WindowsAzure.MobileServices;
 using SonicWalkingTour.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
@@ -20,7 +21,7 @@ namespace SonicWalkingTour
         public static CustomPinType upperFloorPin = new CustomPinType("#adffdb");
 
         //TODO setup Azure DB and change url
-        //public static MobileServiceClient MobileService = new MobileServiceClient("https://travelrecord-app.azurewebsites.net");
+        public static MobileServiceClient MobileService = new MobileServiceClient("https://sonicwalkingtour.azurewebsites.net");
 
         public const string TRACK1 = "Welcome to the campus of University of Wisconsin Green Bay. Thank you for choosing to experience our Sonic Walking Tour. A Student Ambassador will be accompanying you on your journey today in case you have any questions along the way. The Sonic Walking Tour Experience is the product of a collaborative effort from members of the Computer Science, Music, Theatre & Dance Departments in association with UWGB Student Services.\n\nAnd this is where our tour begins; in front of the office of Student Services, which as the name implies, is completely dedicated to students. The first office that most students interact with is the Green Bay One Stop Shop, or as we call it, GBOSS.This is where we have our admissions department, financial aid, and academic advising.They’ll help you through the application process, answer any questions you have about admissions or finances, and will help guide you through your first year of classes.This is a great place to go with any questions or concerns you may have.Even if they don’t know the answer, they’ll connect you with someone who does.\n\nStudent Services also houses Career Services. This office is here to help you with all things related to your career.They can help you find a job, work on a resume and cover letter, practice your interview skills, and even rent out some clothes for free, if you don’t have anything to wear to an interview or job fair.UWGB offers an online job service called Handshake. It’s free for students to use, and helps you find any job you’re looking for, whether it be on-campus, off-campus, full-time, part-time, internships, and much more.\n\nDisability Services is here to help, if you have any documented disabilities.They can make any accommodations you need to ensure that your education goes as smoothly as possible.\nThe Counseling and Health Center offers many services to students. With a nurse practitioner on staff, students can come to the Health Center for checkups, and can be helped with any minor health issues.The Health Center also offers certain shots and vaccinations for a very low cost. Students can schedule up to 10 free counseling sessions per academic year at the Counseling Center. If additional counseling is needed beyond these 10 sessions, students can be referred to off-campus resources as well.\nThe Dean of Students is another very helpful office in Student Services. They’re here to make sure your education isn’t thrown off track in any major way.If any unexpected circumstances arrive that interfere with your academics, you can work with the Dean of Students, and they’ll work with your professors to make sure you don’t fall behind because of it. Once again, welcome to The University of Wisconsin’s Green Bay campus. We hope you enjoy your time with us.\nNow, please press TRACK 2.";
         public const string TRACK2 = "Let’s continue our tour. Follow your Student Ambassador as you make your way to the second stop on our tour today, Cofrin Library. Throughout our tour, enjoy original music from UWGB Music Professor Michelle McQuade Dewhirst and Music Composition student Aaron Frye.\n\nWhen we reach the Cofrin Library elevators, please press TRACK 3.";
@@ -90,6 +91,7 @@ namespace SonicWalkingTour
             const string track2 = "Track2.mp3";
             const string track3 = "Track3.mp3";
             const string track5 = "Haze.mp3";
+            const string track6 = "Track6.mp3";
 
             List<CustomPin> customPins;
 
@@ -147,7 +149,7 @@ namespace SonicWalkingTour
                 Description = TRACK5,
                 StopID = 5,
                 Label = "Confrin Library Elevators",
-                Url = track5 //need to update
+                Url = track5
             };
 
             var pin6 = new CustomPin()
@@ -159,7 +161,7 @@ namespace SonicWalkingTour
                 MarkerId = "6",
                 StopID = 6,
                 Label = "Intransit To Quad",
-                Url = track5 //TODO update
+                Url = track6
             };
 
             var pin7 = new CustomPin()
