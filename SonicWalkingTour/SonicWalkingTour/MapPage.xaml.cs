@@ -65,12 +65,17 @@ namespace SonicWalkingTour
             //customMap.MapElements.Add(polyline);
 
             */
-           // customMap.CustomPins = App.pins;
+            // customMap.CustomPins = App.pins;
 
+            foreach (CustomPin pin in App.pins){
+                customMap.Pins.Add(pin);
+            }
 
-            for (int i = 0; i < App.pins.Count -2; i++)
+            customMap.CustomPins = App.pins;
+
+            for (int i = 0; i < App.pins.Count -1; i++)
             {
-                customMap.Pins.Add(App.pins[i]);
+                //customMap.Pins.Add(App.pins[i]);
 
                 Polyline line = new Polyline
                 {
@@ -87,8 +92,6 @@ namespace SonicWalkingTour
 
                 customMap.MapElements.Add(line);
             }
-
-            customMap.CustomPins = App.pins;
         }
 
         #endregion

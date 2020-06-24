@@ -125,6 +125,7 @@ namespace SonicWalkingTour
                 CustomPinType = indoorPin,
                 Position = new Xamarin.Forms.Maps.Position(44.531521, -87.921297),
                 Description = TRACK3,
+                MarkerId = "3",
                 StopID = 3,
                 Label = "Confrin Library Elevators",
                 Url = track3
@@ -136,6 +137,7 @@ namespace SonicWalkingTour
                 CustomPinType = upperFloorPin,
                 Position = new Xamarin.Forms.Maps.Position(44.531166, -87.921602),
                 Description = TRACK4,
+                MarkerId = "4",
                 StopID = 4,
                 Label = "Confrin Library",
                 Url = track4
@@ -145,10 +147,11 @@ namespace SonicWalkingTour
             {
                 Type = PinType.SavedPin,
                 CustomPinType = indoorPin,
-                Position = new Xamarin.Forms.Maps.Position(44.531521, -87.921297),
+                Position = new Xamarin.Forms.Maps.Position(44.531487, -87.921233),
                 Description = TRACK5,
+                MarkerId = "5",
                 StopID = 5,
-                Label = "Confrin Library Elevators",
+                Label = "Confrin Library Elevators 2",
                 Url = track5
             };
 
