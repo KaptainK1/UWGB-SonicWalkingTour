@@ -4,6 +4,8 @@ using Xamarin.Forms.Maps;
 
 namespace SonicWalkingTour.Model
 {
+    //this is a concrete builder that implements the I customPinBuilder interface
+    //this will be used for our BetaPin Tour, but we will be able to create more concrete methods in the future
     public class BetaPinBuilder : ICustomPinBuilder
     {
         private List<CustomPin> pins;
@@ -12,9 +14,11 @@ namespace SonicWalkingTour.Model
 
         public BetaPinBuilder()
         {
+            //set the CustomPinSet object to a new instance
             this.pinSet = new CustomPinSet();
         }
 
+        //method to build the pins that we want to use for the beta tour
         public void buildPins()
         {
 
@@ -182,6 +186,7 @@ namespace SonicWalkingTour.Model
 
     }
 
+        //method to build the positions we want to use for the route on the map page
         public void buildPositions()
         {
             positions = new List<Position>();

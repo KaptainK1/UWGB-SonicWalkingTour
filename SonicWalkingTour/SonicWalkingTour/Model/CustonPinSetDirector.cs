@@ -4,10 +4,14 @@ using System.Collections.Generic;
 
 namespace SonicWalkingTour.Model
 {
+    //The director is the top level class that we will be using to make the pins, and positions
+    //and get those pins and positions directly from the builder class 
     public class CustonPinSetDirector
     {
+        //using composition, have an object that is set to a builder object
         private ICustomPinBuilder pinBuilder;
 
+        //now set the passed in builder to our private instance
         public CustonPinSetDirector(ICustomPinBuilder builder)
         {
             this.pinBuilder = builder;
