@@ -21,5 +21,6 @@ bld/
 [Oo]bj/
 *.userprefs
 .packages
+packages/
 
 #SonicWalkingTour/SonicWalkingTour/SonicWalkingTour.iOS/obj

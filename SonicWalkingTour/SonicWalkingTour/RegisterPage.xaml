@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Shell.BackgroundColor="{StaticResource phoneixOrange}"
+             Shell.ForegroundColor="White"
+             Shell.TitleColor="White"
+             x:Class="SonicWalkingTour.RegisterPage">
+
+    <Grid >
+        <BoxView Opacity="0.9" BackgroundColor="{StaticResource phoneixGreen}"/>
+        <Grid HeightRequest="520" Margin="20">
+            <Path Fill="{StaticResource phoneixOrange}" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
+                  Data="M30.6 , 172.838V696.314L348.157 , 426.72Z" Opacity="0.9"/>
+            <Path Fill="White" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
+                  Data="M30.6 , 172.838V650.665L320.465 , 404.581Z" Opacity="0.8"/>
+            <Path Stroke="{StaticResource phoneixGreen}" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
+                  Data="M30.6 , 172.838V605.512L293.073 , 382.682Z" Opacity="0.8"/>
+
+            <StackLayout Spacing="20" VerticalOptions="CenterAndExpand" Margin="50,0">
+                <Label Text="Register!" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+                <StackLayout Spacing="10">
+                    <Grid WidthRequest="160" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start">
+                        <Entry x:Name="entryName" Placeholder="Enter your Name!"/>
+                    </Grid>
+                    <Grid WidthRequest="160" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start">
+                        <Entry x:Name="entryEmail" Placeholder="Enter your Email!"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0,0,0,30">
+                <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center" Margin="15,10">
+                    <Button x:Name="register" Clicked="Register_Clicked" Text="Register" TextColor="White" CornerRadius="18" BackgroundColor="Transparent"
+                                BorderColor="{StaticResource phoneixLightGreen}" HeightRequest="40" WidthRequest="150" FontSize="14" BorderWidth="2"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="10" VerticalOptions="Center" Margin="15,0">
+                    <Button x:Name="continue" Clicked="Continue_Clicked" Text="Contiune" TextColor="White" CornerRadius="18" BackgroundColor="Transparent"
+                                BorderColor="{StaticResource phoneixLightGreen}" HeightRequest="40" WidthRequest="150" FontSize="14" BorderWidth="2"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+     </Grid>
+
+</ContentPage>
