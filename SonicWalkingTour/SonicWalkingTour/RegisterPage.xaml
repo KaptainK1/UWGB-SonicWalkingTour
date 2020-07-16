@@ -47,11 +47,11 @@
                 </StackLayout>
             -->
 
-            <Path Fill="{StaticResource phoneixOrange}" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
+            <Path Fill= "{StaticResource phoneixLightGray}" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
                   Data="M30.6 , 172.838V696.314L348.157 , 426.72Z" Opacity="0.9"/>
             <Path Fill="White" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
                   Data="M30.6 , 172.838V650.665L320.465 , 404.581Z" Opacity="0.2"/>
-            <Path Stroke="{StaticResource phoneixGreen}" StrokeThickness="2" Aspect="Uniform" HorizontalOptions="Center"
+            <Path Stroke="{StaticResource phoneixGreen}" StrokeThickness="2" Fill="White" Aspect="Uniform" HorizontalOptions="Center"
                   Data="M30.6 , 172.838V605.512L293.073 , 382.682Z" Opacity="0.8"/>
 
 
