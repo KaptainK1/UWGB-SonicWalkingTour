@@ -21,7 +21,7 @@ namespace SonicWalkingTour
         //TODO update to use Azure db to track people who registered
         private async void Register_Clicked(object sender, System.EventArgs e)
         {
-            if (entryEmail.Text != String.Empty && entryName.Text != String.Empty)
+            if (entryEmail.Text != null && entryName.Text != null)
             {
                 UserRegistration user = new UserRegistration()
                 {
