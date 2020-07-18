@@ -30,7 +30,7 @@
                     <ColumnDefinition Width="*" />
                   </Grid.ColumnDefinitions>
                         <Label Text="{Binding Label}" Grid.Column="0" Grid.Row="0"
-                        TextColor="{StaticResource phoneixOrange}"
+                        TextColor="{StaticResource phoneixGreen}"
                          HorizontalOptions="StartAndExpand"/>
                         <Label Text="Stop Number: " Grid.Column="0" Grid.Row="1"
                                />

@@ -10,7 +10,7 @@ namespace SonicWalkingTour
 
         public string Url { get; set; }
         public string Description { get; set; }
-        public int StopID { get; set; }
+        public decimal StopID { get; set; }
         public CustomPinType CustomPinType;
 
         //TODO need to have a way of connecting pins to each other

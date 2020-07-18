@@ -31,8 +31,9 @@ namespace SonicWalkingTour.Droid
         protected override void OnResume()
         {
             base.OnResume();
-            Task startupWork = new Task(() => { startUp(); });
-            startupWork.Start();
+            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+            //Task startupWork = new Task(() => { startUp(); });
+            //startupWork.Start();
         }
 
         // Prevent the back button from canceling the startup process
@@ -42,7 +43,7 @@ namespace SonicWalkingTour.Droid
         async void startUp()
         {
             //temporarily wait for a second to ensure the screen is displayed
-            await Task.Delay(10);
+            //await Task.Delay(10);
             //start the main activity
             StartActivity(new Intent(Application.Context, typeof(MainActivity)));
         }
