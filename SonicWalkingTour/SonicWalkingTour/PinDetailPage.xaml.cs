@@ -86,5 +86,47 @@ namespace SonicWalkingTour
 
             player.Pause();
         }
+
+        async void Go_Next(object sender, System.EventArgs e)
+        {
+            decimal nextPin = getNextStopID(this.selectedPin.StopID);
+            //int testIfDecimal = (int)nextPin;
+
+            //if (testIfDecimal == nextPin)
+            //{
+            //    nextPin = (nextPin + 1) % App.pins.Count;
+            //} else
+            //{
+            //    nextPin = Decimal.Add(nextPin, .1m) % App.pins.Count;
+            //}
+
+            //decimal nextPin = ((this.selectedPin.StopID + 1) % App.pins.Count);
+            Console.WriteLine(nextPin);
+
+            await Shell.Current.GoToAsync($"pinDetailPage?stopid={nextPin}");
+
+
+        }
+
+        private decimal getNextStopID(decimal currentID)
+        {
+            decimal nextStopID;
+
+            CustomPin currentPin = App.pins[0];
+
+            for (int i = 0; i < App.pins.Count; i++)
+            {
+                if (currentID == App.pins[i].StopID)
+                {
+                  return  nextStopID = App.pins[(i + 1)  % (App.pins.Count)].StopID;
+                }
+
+            }
+
+            return 0;
+
+        }
+
+
     }
 }

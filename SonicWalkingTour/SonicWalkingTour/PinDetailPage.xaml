@@ -21,6 +21,13 @@
                      Priority="1" 
                      Clicked="Pause_Clicked"/>
 
+        <ToolbarItem 
+                     IconImageSource="ic_action_navigate_next.png"
+                     Text="Next"
+                     Order="Primary"
+                     Priority="2" 
+                     Clicked="Go_Next"/>
+
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>

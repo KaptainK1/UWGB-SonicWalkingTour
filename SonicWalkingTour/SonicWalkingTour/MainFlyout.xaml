@@ -20,7 +20,7 @@
                             IconOverride="gear.png"/>   
     </Shell.BackButtonBehavior>
     
-    <ShellContent Title="Register" Icon="man.png" ContentTemplate="{DataTemplate views:LoginPage}"/>
+    <ShellContent Title="Register" Icon="man.png" ContentTemplate="{DataTemplate views:RegisterPage}"/>
 
         <FlyoutItem Route="MapPage"
                         Title="Map"
@@ -40,10 +40,6 @@
                         IsTabStop="True"
                       ContentTemplate="{DataTemplate views:RoutePage}" />
 
-        <ShellContent Route="Test Registration Page"
-                      Title="RegistrationPage"
-                        IsTabStop="True"
-                      ContentTemplate="{DataTemplate views:RegisterPage}" />
 
 
     </FlyoutItem>
