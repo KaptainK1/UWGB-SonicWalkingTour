@@ -19,7 +19,7 @@ namespace SonicWalkingTour
         public static MobileServiceClient MobileService = new MobileServiceClient("https://sonicwalkingtour.azurewebsites.net");
 
         public static List<CustomPin> pins  {get; private set; }
-        public static List<Track> tracks { get; private set;  }
+        //public static List<Track> tracks { get; private set;  }
         public static List<Position> positions { get; private set; }
 
         public App()

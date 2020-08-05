@@ -27,7 +27,7 @@ namespace SonicWalkingTour.Model
         const string TRACK3 = "Enter the elevator and take a ride up to the 8th floor where our tour will continue. After you exit the elevator, follow your Student Ambassador to the nearest window for a bird’s eye view of campus and press Track 4.";
         const string TRACK4 = "Welcome to the 8th floor of Cofrin Library, the tallest building in the city of Green Bay. Standing at eight stories, this building is the center of academic life for students on this campus. The view from the 8th floor allows you to see the whole campus in all of its beauty. Take a walk from window to window and see how many buildings you are able to recognize. From the Weidner Center for the Performing Arts, to our beautiful arboretum trails and 9 hole golf course. And let’s not forget our brand new state of the art STEM building. This building encapsulates both the natural beauty, and innate drive that fosters the culture of this university. As you enjoy the view, take a moment to listen to student-poet Lori Noto’s evocative poem called Empty Nest, dedicated to Cofrin Library.\n\nWhen you are ready to continue to our next stop on the tour, press Track 5.";
         const string TRACK4_1 = "It towers here\nlike a stranger oak,\namongst the fleeting\ngreenery. Come Autumn, we flock to it, our downy feathers ruffled by a winter that seemingly\nlasts,\njoyously and anguishly\nforever.\n\nWe build our scrapes from the paper\nof its lore, learning its words to transform ourselves from goslings to gurus of our craft\n\none caffeinated cacophony of an all-nighter and book-side prayer\nat a time.\n\nHow sweet it is\nthat nothing sings here\nbut a sonata of silence\n\nbeyond\n\npages rustling\nlike wings of fretful birdsong,\nsoon to leave this nest.";
-            const string TRACK4_2 = "\nWhen you are ready to continue to our next stop on the tour, press Track 5.";
+        const string TRACK4_2 = "\nWhen you are ready to continue to our next stop on the tour, press Track 5.";
         const string TRACK5 = "Now let’s get back on the elevators and head to the 2nd floor. When the elevator doors open, follow your student ambassador to the brick ring on the floor in front of the stairway to the 1st floor and press track 6.";
         const string TRACK6 = "In 1965 David A. Cofrin, the building’s namesake, officially completed construction of the campus. If you look on the floor, you will see a circle of bricks inlaid into the floor’s surface. David Cofrin placed this here as a reminder that he always wanted academics to be the center of focus for all students and faculty who come here, and as such, these bricks represent the geographical center of campus. The Library Commons adjacent to where you are standing is one of the most popular areas for students to study on campus. This area was designed by Psychology students in the Master’s program, who were attempting to answer the thesis question: “What does a study area need to be most effective for students?” The Commons have several different types of lounging for hard working students. From booths with complementary charging stations, to studio rooms paired with sound proof doors, and enclosed pods designed to minimize distraction. Here, there is something for every student.\n\nNow let’s continue our journey.Follow your student ambassador as they guide you out the doors leading to the Quad.\n\nPress Track 7.";
         const string TRACK7 = "The Commons, also known as The Quad, is an enclosed open-air space between the University Union, Mary Ann Cofrin Hall and the Cofrin Library. There is a short path across it that students often use as a shortcut to go from the Library to the first floor of the Student Union without passing through MAC Hall. Big outdoor events will sometimes take place in the Quad, especially during GB Welcome week in September.It is a really nice place to hang out or do activities outside in the warmer months, but it is just as fun in the winter thanks to the big hill on one side of the Quad.After a snowstorm many students can be seen climbing up the hill in order to slide down it using sleds, coats or any other tools they might have.Although, speaking from experience, we do not recommend putting too much trust in your nice jeans to carry you smoothly to the foot of the hill.We’ve also found that is an excellent spot to build a snowman!As you take in the sights before you, listen to an original poem from Dean Chuck Rybak of the College of Arts, Humanities and Social Sciences, titled: Commons. \n\n Trunks of the first maples tail feathers\n\nBranches and their green plumage wingspan and flight\n\nPasts futures all marked present \n\n Our children roll down the hill shouting sounds\n\nto the clouds the grass clouds grass clouds\n\nTheir hopes echo off the gift of stone\n\nstirring the falcons who lay and nurture our sky\n\natop the towering nest woven in brick and questions\n\n\n\nNow follow your Student Ambassador as they lead you into the Student Union.Once you enter the building, press track 8.";
@@ -38,11 +38,12 @@ namespace SonicWalkingTour.Model
         const string TRACK11 = "You have come to the end of your Sonic Walking Tour. Take this opportunity to ask your Student Ambassador any questions you may have.\n\nOn behalf of the whole UWGB community, thanks for visiting. We hope you had a good time and look forward to seeing you again.";
 
         const string track4 = "Track4.mp3";
-        const string track1 = "Track1.mp3";
+        const string track1 = "Track1E.mp3";
         const string track2 = "Track2.mp3";
         const string track3 = "Track3.mp3";
         const string track5 = "Haze.mp3";
         const string track6 = "Track6.mp3";
+        const string track7 = "Track7E.mp3";
 
         CustomPinType indoorPin = new CustomPinType("#ff7319");
         CustomPinType outdoorPin = new CustomPinType("#0F5640");
@@ -156,7 +157,7 @@ namespace SonicWalkingTour.Model
             MarkerId = "7",
             StopID = 7,
             Label = "The Quad",
-            Url = track5 //TODO update
+            Url = track7 //TODO update
         };
 
             var pin7_1 = new CustomPin()
