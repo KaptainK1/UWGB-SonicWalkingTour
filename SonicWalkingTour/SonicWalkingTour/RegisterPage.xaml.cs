@@ -54,5 +54,9 @@ namespace SonicWalkingTour
             Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
 
         }
+
+        void Login_Clicked(System.Object sender, System.EventArgs e)
+        {
+        }
     }
 }

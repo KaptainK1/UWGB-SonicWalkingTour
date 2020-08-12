@@ -9,43 +9,37 @@
              Shell.TitleColor="White"
              x:Class="SonicWalkingTour.RegisterPage">
 
+
+        <ContentPage.ToolbarItems>
+            <ToolbarItem 
+                         IconImageSource="play_outline.png"
+                         Text="Play"
+                         Order="Primary"
+                         Priority="0" 
+                         Clicked="Login_Clicked"/>
+    </ContentPage.ToolbarItems>
+
     <Grid >
 
-
-
         <BoxView Opacity="0.95" BackgroundColor="{StaticResource phoneixGreen}"/>
+
+
+           <Frame HeightRequest="110" WidthRequest="120" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True"
+                 BackgroundColor="{StaticResource phoneixMediumGreen}" BorderColor="Black" CornerRadius="20" Margin="20,40" IsVisible="True">
+                <StackLayout Spacing="10" HorizontalOptions="Center">
+    
+                         <Frame Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10">
+                            <Entry x:Name="entryLoginUsername" Placeholder="Username" />
+                        </Frame>
+                        <Frame Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10">
+                            <Entry x:Name="entryLoginPassword" Placeholder="Password"/>
+                        </Frame>
+                </StackLayout>
+            </Frame>
+
         <Grid HeightRequest="520"  Margin="20">
 
-            <!--
-                <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Margin="-30,-20,0,0">
-                    <StackLayout Orientation="Horizontal"  VerticalOptions="Center" >
 
-                            <Path Data="M 0,80 C 100,0 200,200 500,50"
-                          Stroke="{StaticResource phoneixOrange}"
-                          Aspect="Uniform"
-                          StrokeThickness="3"
-                          HorizontalOptions="StartAndExpand" />
-
-
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="-20,-100,0,0" >
-                        <Path Data="M 0,80 C 100,0 200,200 500,50"
-                          Stroke="{StaticResource phoneixOrange}"
-                          Aspect="Uniform"
-                          StrokeThickness="3"
-                          HorizontalOptions="StartAndExpand" />
-
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="-20,-100,0,0" >
-                        <Path Data="M 0,80 C 100,0 200,200 500,50"
-                          Stroke="{StaticResource phoneixOrange}"
-                          Aspect="Uniform"
-                          StrokeThickness="3"
-                          HorizontalOptions="StartAndExpand" />
-
-                    </StackLayout>
-                </StackLayout>
-            -->
 
             <Path Fill= "{StaticResource phoneixLightGray}" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
                   Data="M30.6 , 172.838V696.314L348.157 , 426.72Z" Opacity="0.9"/>
