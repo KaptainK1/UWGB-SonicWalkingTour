@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="uwgb.dylanhoffman.sonicwalkingtour">
-	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="uwgb.dylanhoffman.sonicwalkingtour" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
 	<application android:label="SonicWalkingTour.Android" android:theme="@style/MainTheme" android:icon="@mipmap/icon">
 		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB-ZJMJxemf3mJ4TlUEwYLalXan3WifssU" />
 		<uses-library android:name="org.apache.http.legacy" android:required="false" />

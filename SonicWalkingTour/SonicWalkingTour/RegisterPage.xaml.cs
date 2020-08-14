@@ -13,9 +13,32 @@ namespace SonicWalkingTour
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegisterPage : ContentPage
     {
+        bool isMenuItemEnabled = false;
+        public bool IsMenuItemEnabled
+        {
+            get { return isMenuItemEnabled; }
+            set
+            {
+                isMenuItemEnabled = value;
+                MyCommand.ChangeCanExecute();
+            }
+        }
+
+        public Command MyCommand { get; private set; }
+
+
+
         public RegisterPage()
         {
             InitializeComponent();
+
+            MyCommand = new Command(() =>
+            {
+                Console.WriteLine(isMenuItemEnabled);
+                DisplayAlert("Hello", "Welcome ", "OK");
+                Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
+            },
+            () => IsMenuItemEnabled);
         }
 
         //TODO update to use Azure db to track people who registered
@@ -55,8 +78,18 @@ namespace SonicWalkingTour
 
         }
 
-        void Login_Clicked(System.Object sender, System.EventArgs e)
+        private void Login_Clicked(System.Object sender, System.EventArgs e)
         {
+            DisplayAlert("Hello", "Welcome ", "OK");
+            Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
+        }
+
+        private void DisplayLogin_Clicked(System.Object sender, System.EventArgs e)
+        {
+            this.LoginFrame.IsVisible = true;
+            ((Command)MyCommand).ChangeCanExecute();
+            isMenuItemEnabled = true;
+            //this.LoginButton.IsEnabled = true;
         }
     }
 }

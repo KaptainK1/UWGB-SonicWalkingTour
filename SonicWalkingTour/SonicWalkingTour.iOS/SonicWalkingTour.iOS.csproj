@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchArch>x86_64</MtouchArch>
-    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -311,6 +311,15 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\next%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arror_left%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrow_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrow_left%402x.png" />
   </ItemGroup>
   <Import Project="..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
   <Import Project="..\packages\Xamarin.Forms.4.8.0.1269\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.4.8.0.1269\build\Xamarin.Forms.targets')" />

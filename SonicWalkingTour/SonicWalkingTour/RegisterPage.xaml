@@ -11,35 +11,41 @@
 
 
         <ContentPage.ToolbarItems>
-            <ToolbarItem 
-                         IconImageSource="play_outline.png"
-                         Text="Play"
+        <ToolbarItem 
+                        IconImageSource="arrow_left.png"
+                        Text="Login"
+                        Order="Primary"
+                        Priority="0" 
+                        Command="{Binding MyCommand}"/>
+
+        <ToolbarItem 
+                         IconImageSource="man.png"
+                         Text="DisplayLogin"
                          Order="Primary"
-                         Priority="0" 
-                         Clicked="Login_Clicked"/>
+                         Priority="1" 
+                         Clicked="DisplayLogin_Clicked"/>
+
+
     </ContentPage.ToolbarItems>
 
-    <Grid >
+    <Grid>
 
         <BoxView Opacity="0.95" BackgroundColor="{StaticResource phoneixGreen}"/>
 
-
-           <Frame HeightRequest="110" WidthRequest="120" VerticalOptions="Start" HorizontalOptions="End" HasShadow="True"
-                 BackgroundColor="{StaticResource phoneixMediumGreen}" BorderColor="Black" CornerRadius="20" Margin="20,40" IsVisible="True">
-                <StackLayout Spacing="10" HorizontalOptions="Center">
-    
-                         <Frame Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10">
-                            <Entry x:Name="entryLoginUsername" Placeholder="Username" />
-                        </Frame>
-                        <Frame Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10">
-                            <Entry x:Name="entryLoginPassword" Placeholder="Password"/>
-                        </Frame>
-                </StackLayout>
-            </Frame>
-
         <Grid HeightRequest="520"  Margin="20">
 
+            <Frame x:Name="LoginFrame" HeightRequest="110" WidthRequest="140" VerticalOptions="StartAndExpand" HorizontalOptions="End"
+                 BackgroundColor="{StaticResource phoneixLightGray}" BorderColor="Black" CornerRadius="20"  IsVisible="False">
 
+                <StackLayout Spacing="10" VerticalOptions="StartAndExpand" HorizontalOptions="End" >
+                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10">
+                        <Entry x:Name="entryLoginUsername" Placeholder="Username" />
+                    </Frame>
+                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10">
+                        <Entry x:Name="entryLoginPassword" IsPassword="True" Placeholder="Password"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
 
             <Path Fill= "{StaticResource phoneixLightGray}" StrokeThickness="1" Aspect="Uniform" HorizontalOptions="Center"
                   Data="M30.6 , 172.838V696.314L348.157 , 426.72Z" Opacity="0.9"/>
