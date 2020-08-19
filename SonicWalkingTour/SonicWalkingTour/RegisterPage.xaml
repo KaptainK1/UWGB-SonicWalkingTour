@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Shell.BackgroundColor="{StaticResource phoneixOrange}"
+             Shell.BackgroundColor="{StaticResource phoneixGray}"
              Shell.ForegroundColor="White"
              Shell.TitleColor="White"
              x:Class="SonicWalkingTour.RegisterPage">
@@ -37,17 +37,15 @@
         <Grid HeightRequest="520"  Margin="20">
 
             <Frame x:Name="LoginFrame" HeightRequest="110" WidthRequest="140" VerticalOptions="StartAndExpand" HorizontalOptions="End"
-                 BackgroundColor="{StaticResource phoneixLightGray}" BorderColor="Black" CornerRadius="20"  IsVisible="False">
+                 BackgroundColor="{StaticResource phoneixLightGray}" BorderColor="Black" CornerRadius="20" Margin="-10,-100,-10,-10"  IsVisible="False">
 
                 <StackLayout Spacing="10" VerticalOptions="StartAndExpand" HorizontalOptions="End" >
-                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10" BorderColor="{StaticResource phoneixGreen}}">
-                        <Entry x:Name="entryLoginUsername" Placeholder="Username" />
+                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10" BorderColor="{StaticResource phoneixGreen}">
+                        <Entry x:Name="entryLoginUsername" Placeholder="Username" TextColor="{StaticResource phoneixGreen}" />
                     </Frame>
-                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10" BorderColor="{StaticResource phoneixGreen}}">
-                        <Entry x:Name="entryLoginPassword" IsPassword="True" Placeholder="Password"/>
+                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10" BorderColor="{StaticResource phoneixGreen}">
+                        <Entry x:Name="entryLoginPassword" IsPassword="True" Placeholder="Password" TextColor="{StaticResource phoneixGreen}"/>
                     </Frame>
-                    <!--<Button x:Name="login" Clicked="Login_Clicked" Text="Login" TextColor="White" CornerRadius="18" BackgroundColor="{StaticResource phoneixGreen}"
-                                BorderColor="{StaticResource phoneixLightGreen}" HeightRequest="40" WidthRequest="150" FontSize="14" BorderWidth="2"/>-->
                 </StackLayout>
             </Frame>
 
@@ -62,12 +60,12 @@
             <StackLayout Spacing="20" VerticalOptions="CenterAndExpand" Margin="50,0">
                 <Label Text="Register!" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
                 <StackLayout Spacing="10">
-                    <Grid WidthRequest="160" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start">
-                        <Entry x:Name="entryName" Placeholder="Enter your Name!"/>
-                    </Grid>
-                    <Grid WidthRequest="160" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start">
-                        <Entry x:Name="entryEmail" Placeholder="Enter your Email!"/>
-                    </Grid>
+                    <Frame WidthRequest="160" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10" BorderColor="{StaticResource phoneixGreen}">
+                        <Entry x:Name="entryName" Placeholder="Enter your Name!" TextColor="{StaticResource phoneixGreen}" />
+                    </Frame>
+                    <Frame WidthRequest="160" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10" BorderColor="{StaticResource phoneixGreen}">
+                        <Entry x:Name="entryEmail" Placeholder="Enter your Email!" TextColor="{StaticResource phoneixGreen}"/>
+                    </Frame>
                 </StackLayout>
             </StackLayout>
             <StackLayout VerticalOptions="End" HorizontalOptions="End" Margin="0,0,0,30">

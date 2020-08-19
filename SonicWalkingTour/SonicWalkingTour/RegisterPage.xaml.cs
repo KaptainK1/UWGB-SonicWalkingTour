@@ -13,7 +13,8 @@ namespace SonicWalkingTour
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegisterPage : ContentPage
     {
-        bool isLoginButtonVisible;
+        //If this is false, then the login button is removed from the tool bar and the login frame will be shown
+        bool toggleLoginButtonAndHideLoginFrame = false;
         ToolbarItem toolbarLoginButton = new ToolbarItem{
                 Text = "Login",
                 IconImageSource = ImageSource.FromFile("arrow_left.png"),
@@ -23,10 +24,10 @@ namespace SonicWalkingTour
 
         public RegisterPage()
         {
-            isLoginButtonVisible = false;
-            toolbarLoginButton.Clicked += Login_Clicked;
             InitializeComponent();
-            CheckSubmitButton();
+            //toggleLoginButtonAndHideLoginFrame = false;
+            toolbarLoginButton.Clicked += Login_Clicked;
+            //CheckToggleForLoginButton();
 
         }
 
@@ -68,21 +69,21 @@ namespace SonicWalkingTour
             Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
         }
 
-        async private void DisplayLogin_Clicked(System.Object sender, System.EventArgs e)
+        private void DisplayLogin_Clicked(System.Object sender, System.EventArgs e)
         {
            //this.LoginFrame.IsVisible = true;
 
-            if (this.LoginFrame.IsVisible == true)
-            {
-                this.LoginFrame.IsVisible = false;
-            } else
-            {
-                this.LoginFrame.IsVisible = true;
-                await this.LoginFrame.TranslateTo(0, 20, 1000);
-                //await this.LoginFrame.Op
-            }
+            //if (this.LoginFrame.IsVisible == false)
+            //{
+            //    this.LoginFrame.IsVisible = true;
+            //    this.LoginFrame.TranslateTo(0, 100, 1000);
 
-            CheckSubmitButton();
+            //} else
+            //{
+            //    this.LoginFrame.IsVisible = false;
+            //}
+
+            CheckToggleForLoginButton();
         }
 
         private void addLoginButton()
@@ -101,30 +102,49 @@ namespace SonicWalkingTour
             }
         }
 
-        public void CheckSubmitButton()
+        //function to check if the toggleLoginButtonAndHideLoginFrame value is true or false
+        //if that bool is true, then we need to remove the login button and hide the login frame
+        public void CheckToggleForLoginButton()
         {
-            if(isLoginButtonVisible == true)
+            if(toggleLoginButtonAndHideLoginFrame == true)
             {
-                isLoginButtonVisible = false;
+                toggleLoginButtonAndHideLoginFrame = false;
                 removeLoginButton();
-            } else
+                UnToggleLoginFrame();
+            } 
+            else
             {
-                isLoginButtonVisible = true;
+                toggleLoginButtonAndHideLoginFrame = true;
                 addLoginButton();
+                ToggleLoginFrame();
+
             }
+        }
+
+        async private void ToggleLoginFrame()
+        {
+            this.LoginFrame.IsVisible = true;
+            this.LoginFrame.Opacity = 1;
+            await this.LoginFrame.TranslateTo(0, 100, 1000);
+        }
+
+        async private void UnToggleLoginFrame()
+        {
+            await this.LoginFrame.FadeTo(0, 1200);
+            this.LoginFrame.IsVisible = false;
+            await this.LoginFrame.TranslateTo(0, -100, 1);
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            CheckSubmitButton();
         }
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
-            isLoginButtonVisible = true;
-            CheckSubmitButton();
+            toggleLoginButtonAndHideLoginFrame = true;
+            CheckToggleForLoginButton();
         }
 
     }
