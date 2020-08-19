@@ -11,12 +11,14 @@
 
 
         <ContentPage.ToolbarItems>
-        <ToolbarItem 
+            
+            
+        <!--<ToolbarItem 
                         IconImageSource="arrow_left.png"
                         Text="Login"
                         Order="Primary"
                         Priority="0" 
-                        Command="{Binding MyCommand}"/>
+                        Command="{Binding MyCommand}"/>-->
 
         <ToolbarItem 
                          IconImageSource="man.png"
@@ -38,12 +40,14 @@
                  BackgroundColor="{StaticResource phoneixLightGray}" BorderColor="Black" CornerRadius="20"  IsVisible="False">
 
                 <StackLayout Spacing="10" VerticalOptions="StartAndExpand" HorizontalOptions="End" >
-                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10">
+                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10" BorderColor="{StaticResource phoneixGreen}}">
                         <Entry x:Name="entryLoginUsername" Placeholder="Username" />
                     </Frame>
-                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10">
+                    <Frame WidthRequest="120" Padding="10,0" BackgroundColor="#F6F6F6" HorizontalOptions="Start" CornerRadius="10" BorderColor="{StaticResource phoneixGreen}}">
                         <Entry x:Name="entryLoginPassword" IsPassword="True" Placeholder="Password"/>
                     </Frame>
+                    <!--<Button x:Name="login" Clicked="Login_Clicked" Text="Login" TextColor="White" CornerRadius="18" BackgroundColor="{StaticResource phoneixGreen}"
+                                BorderColor="{StaticResource phoneixLightGreen}" HeightRequest="40" WidthRequest="150" FontSize="14" BorderWidth="2"/>-->
                 </StackLayout>
             </Frame>
 

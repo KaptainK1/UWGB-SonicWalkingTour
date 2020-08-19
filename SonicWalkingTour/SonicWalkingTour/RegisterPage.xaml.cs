@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,32 +13,21 @@ namespace SonicWalkingTour
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RegisterPage : ContentPage
     {
-        bool isMenuItemEnabled = false;
-        public bool IsMenuItemEnabled
-        {
-            get { return isMenuItemEnabled; }
-            set
-            {
-                isMenuItemEnabled = value;
-                MyCommand.ChangeCanExecute();
-            }
-        }
-
-        public Command MyCommand { get; private set; }
-
-
+        bool isLoginButtonVisible;
+        ToolbarItem toolbarLoginButton = new ToolbarItem{
+                Text = "Login",
+                IconImageSource = ImageSource.FromFile("arrow_left.png"),
+                Order=ToolbarItemOrder.Primary,
+                Priority=1
+            };
 
         public RegisterPage()
         {
+            isLoginButtonVisible = false;
+            toolbarLoginButton.Clicked += Login_Clicked;
             InitializeComponent();
+            CheckSubmitButton();
 
-            MyCommand = new Command(() =>
-            {
-                Console.WriteLine(isMenuItemEnabled);
-                DisplayAlert("Hello", "Welcome ", "OK");
-                Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
-            },
-            () => IsMenuItemEnabled);
         }
 
         //TODO update to use Azure db to track people who registered
@@ -63,11 +52,6 @@ namespace SonicWalkingTour
             {
                 await DisplayAlert("Error", "Name field or email is empty, please re-enter or continue as guest", "OK");
             }
-            //DisplayAlert("Hello","Welcome " + entryName.Text, "OK");
-            //register.IsEnabled = false;
-            ////Navigation.PushAsync(new MainPage());
-            //Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
-
         }
 
         private void Continue_Clicked(object sender, System.EventArgs e)
@@ -86,10 +70,60 @@ namespace SonicWalkingTour
 
         private void DisplayLogin_Clicked(System.Object sender, System.EventArgs e)
         {
-            this.LoginFrame.IsVisible = true;
-            ((Command)MyCommand).ChangeCanExecute();
-            isMenuItemEnabled = true;
-            //this.LoginButton.IsEnabled = true;
+           //this.LoginFrame.IsVisible = true;
+
+            if (this.LoginFrame.IsVisible == true)
+            {
+                this.LoginFrame.IsVisible = false;
+            } else
+            {
+                this.LoginFrame.IsVisible = true;
+            }
+
+            CheckSubmitButton();
         }
+
+        private void addLoginButton()
+        {
+            if(this.ToolbarItems.Count <= 1 )
+            {
+                this.ToolbarItems.Add(toolbarLoginButton);
+            }
+        }
+
+        private void removeLoginButton()
+        {
+            if (this.ToolbarItems.Count > 1)
+            {
+                this.ToolbarItems.Remove(toolbarLoginButton);
+            }
+        }
+
+        public void CheckSubmitButton()
+        {
+            if(isLoginButtonVisible == true)
+            {
+                isLoginButtonVisible = false;
+                removeLoginButton();
+            } else
+            {
+                isLoginButtonVisible = true;
+                addLoginButton();
+            }
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            CheckSubmitButton();
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            isLoginButtonVisible = true;
+            CheckSubmitButton();
+        }
+
     }
 }
