@@ -68,7 +68,7 @@ namespace SonicWalkingTour
             Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
         }
 
-        private void DisplayLogin_Clicked(System.Object sender, System.EventArgs e)
+        async private void DisplayLogin_Clicked(System.Object sender, System.EventArgs e)
         {
            //this.LoginFrame.IsVisible = true;
 
@@ -78,6 +78,8 @@ namespace SonicWalkingTour
             } else
             {
                 this.LoginFrame.IsVisible = true;
+                await this.LoginFrame.TranslateTo(0, 20, 1000);
+                //await this.LoginFrame.Op
             }
 
             CheckSubmitButton();
