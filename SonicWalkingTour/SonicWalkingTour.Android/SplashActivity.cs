@@ -40,7 +40,7 @@ namespace SonicWalkingTour.Droid
         public override void OnBackPressed() { }
 
         //startup our main activity class
-        async void startUp()
+        void StartUp()
         {
             //temporarily wait for a second to ensure the screen is displayed
             //await Task.Delay(10);

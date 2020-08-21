@@ -122,11 +122,7 @@ namespace SonicWalkingTour
                 }
 
             }
-
             return 0;
-
         }
-
-
     }
 }

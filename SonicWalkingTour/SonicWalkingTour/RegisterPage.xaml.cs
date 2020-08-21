@@ -22,6 +22,8 @@ namespace SonicWalkingTour
                 Priority=1
             };
 
+        public string HelpDescription { get; set; }
+
         public RegisterPage()
         {
             InitializeComponent();
@@ -147,5 +149,12 @@ namespace SonicWalkingTour
             CheckToggleForLoginButton();
         }
 
+        async void Help_Clicked(System.Object sender, System.EventArgs e)
+        {
+            const string help = "This is the RegisterHelp page!";
+
+            await Shell.Current.GoToAsync($"informationPage?helpdescription={help}");
+
+        }
     }
 }
