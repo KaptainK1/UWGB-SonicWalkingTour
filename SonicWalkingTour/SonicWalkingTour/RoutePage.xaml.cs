@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Input;
+using SonicWalkingTour.Model;
 using Xamarin.Forms;
 
 namespace SonicWalkingTour
 {
-    public partial class RoutePage : ContentPage
+    public partial class RoutePage : ContentPage, IInformationPage
     {
+        public string HelpText { get; set; }
+
         public RoutePage()
         {
             InitializeComponent();
+
+            HelpText = "Route Page Help";
 
             CustomPinListView.ItemsSource = App.pins;
 
@@ -32,6 +37,11 @@ namespace SonicWalkingTour
             //here we are going to the pinDetailPage route, and passing the stopid as parameter
             //the receiving page will consume this id, please check the comments there
             await Shell.Current.GoToAsync($"pinDetailPage?stopid={id}");
+        }
+
+        private void Help_Clicked_Base(object sender, EventArgs e)
+        {
+            ((IInformationPage)this).Help_Clicked(sender, e);
         }
     }
 }

@@ -1,17 +1,12 @@
 ﻿using SonicWalkingTour.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SonicWalkingTour
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RegisterPage : ContentPage
+    public partial class RegisterPage : ContentPage, IInformationPage
     {
         //If this is false, then the login button is removed from the tool bar and the login frame will be shown
         bool toggleLoginButtonAndHideLoginFrame = false;
@@ -23,10 +18,13 @@ namespace SonicWalkingTour
             };
 
         public string HelpDescription { get; set; }
+        public string HelpText { get ; set ; }
 
         public RegisterPage()
         {
             InitializeComponent();
+
+            HelpText = "Test";
             //toggleLoginButtonAndHideLoginFrame = false;
             toolbarLoginButton.Clicked += Login_Clicked;
             //CheckToggleForLoginButton();
@@ -149,12 +147,9 @@ namespace SonicWalkingTour
             CheckToggleForLoginButton();
         }
 
-        async void Help_Clicked(System.Object sender, System.EventArgs e)
+        private void Help_Clicked_Base(object sender, EventArgs e)
         {
-            const string help = "This is the RegisterHelp page!";
-
-            await Shell.Current.GoToAsync($"informationPage?helpdescription={help}");
-
+            ((IInformationPage)this).Help_Clicked(sender, e);
         }
     }
 }

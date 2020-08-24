@@ -5,20 +5,25 @@ using Plugin.Geolocator;
 using Plugin.Geolocator.Abstractions;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
+using SonicWalkingTour.Model;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
 namespace SonicWalkingTour
 {
-    public partial class MapPage : ContentPage
+    public partial class MapPage : ContentPage, IInformationPage
     {
 
         //boolean to hold if we have permission or not for location
         bool hasLocationPermission = false;
 
+        public string HelpText { get; set; }
+
         public MapPage()
         {
             InitializeComponent();
+
+            HelpText = "Map Page help";
 
             GetPermissions();
 
@@ -34,39 +39,6 @@ namespace SonicWalkingTour
         #region function for loading the pins defined in the App.xaml.cs into the map page
         private void LoadPins()
         {
-
-            // instantiate a polyline
-            // this could be a simple way to draw a path between points
-
-            /*
-            Polyline polyline = new Polyline
-            {
-                StrokeColor = Color.Green,
-                StrokeWidth = 10,
-                Geopath =
-                            {
-
-                                new Xamarin.Forms.Maps.Position(44.532377, -87.921069),
-                                new Xamarin.Forms.Maps.Position(44.532174, -87.921140),
-                                new Xamarin.Forms.Maps.Position(44.531521, -87.921297),
-                                new Xamarin.Forms.Maps.Position(44.531166, -87.921602),
-                                new Xamarin.Forms.Maps.Position(44.531521, -87.921297),
-                                new Xamarin.Forms.Maps.Position(44.531400, -87.920857),
-                                new Xamarin.Forms.Maps.Position(44.531727, -87.920409),
-                                new Xamarin.Forms.Maps.Position(44.531969, -87.920197),
-                                new Xamarin.Forms.Maps.Position(44.532295, -87.919902),
-                                new Xamarin.Forms.Maps.Position(44.532402, -87.920384),
-                                new Xamarin.Forms.Maps.Position(44.532330, -87.920784)
-
-                            }
-            };
-
-            //add the line between the points
-            //customMap.MapElements.Add(polyline);
-
-            */
-            // customMap.CustomPins = App.pins;
-
             foreach (CustomPin pin in App.pins){
                 customMap.Pins.Add(pin);
             }
@@ -210,6 +182,11 @@ namespace SonicWalkingTour
             customMap.MoveToRegion(mapspan);
         }
         #endregion
+
+        private void Help_Clicked_Base(object sender, EventArgs e)
+        {
+            ((IInformationPage)this).Help_Clicked(sender, e);
+        }
 
     }
 }

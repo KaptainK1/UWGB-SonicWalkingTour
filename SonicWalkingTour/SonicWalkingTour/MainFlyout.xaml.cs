@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using SonicWalkingTour.Model;
 
 namespace SonicWalkingTour
 {
@@ -13,11 +14,16 @@ namespace SonicWalkingTour
 
         //help command to navigate to other urls
         public ICommand HelpCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
+
+        public string HelpText { get; set ; }
+
         //public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync(".."));
 
         public MainFlyout()
         {
             InitializeComponent();
+
+            HelpText="Test";
 
             RegisterRoutes();
 
@@ -46,5 +52,10 @@ namespace SonicWalkingTour
         void OnNavigated(object sender, ShellNavigatedEventArgs e)
         {
         }
+
+        //public void Help_Clicked(object sender, EventArgs e)
+        //{
+        //    Shell.Current.GoToAsync($"informationPage?helpdescription={HelpText}");
+        //}
     }
 }

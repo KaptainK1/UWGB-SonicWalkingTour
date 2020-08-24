@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Plugin.SimpleAudioPlayer;
+using SonicWalkingTour.Model;
 using Xamarin.Forms;
 
 namespace SonicWalkingTour
@@ -12,7 +13,7 @@ namespace SonicWalkingTour
     //we need this query property to receive the stop id
     //from the calling pages which pass the stop id as a parameter
     [QueryProperty("StopID", "stopid")]
-    public partial class PinDetailPage : ContentPage
+    public partial class PinDetailPage : ContentPage, IInformationPage
     {
         //custom pin object that will be set based off of the stop id passed
         private CustomPin selectedPin = null;
@@ -42,12 +43,16 @@ namespace SonicWalkingTour
             }
         }
 
+        public string HelpText { get; set; }
+
         ISimpleAudioPlayer player;
 
         public PinDetailPage()
         {
 
             InitializeComponent();
+
+            HelpText = "PinDetailPage Help";
 
             BindingContext = this;
 
@@ -106,6 +111,11 @@ namespace SonicWalkingTour
             await Shell.Current.GoToAsync($"pinDetailPage?stopid={nextPin}");
 
 
+        }
+
+        private void Help_Clicked_Base(object sender, EventArgs e)
+        {
+            ((IInformationPage)this).Help_Clicked(sender, e);
         }
 
         private decimal getNextStopID(decimal currentID)

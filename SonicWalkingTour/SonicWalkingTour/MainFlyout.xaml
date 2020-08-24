@@ -14,6 +14,14 @@
         <controls:FlyoutHeader/>
     </Shell.FlyoutHeader>
 
+    <!--This doesnt work yet, work in progress according to https://github.com/xamarin/Xamarin.Forms/issues/6453
+    <Shell.ToolbarItems>
+                <ToolbarItem
+                IconImageSource="info.png"
+                Text="Help"
+                Order="Primary"
+                Clicked="Help_Clicked"/>
+    </Shell.ToolbarItems>-->
 
     <Shell.BackButtonBehavior>
         <BackButtonBehavior Command="{Binding BackCommand}"

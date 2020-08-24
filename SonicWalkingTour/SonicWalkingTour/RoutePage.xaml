@@ -14,6 +14,14 @@
                             IconOverride="gear.png" />   
         </Shell.BackButtonBehavior>-->
 
+    <ContentPage.ToolbarItems>
+                <ToolbarItem
+                IconImageSource="info.png"
+                Text="Help"
+                Order="Secondary"
+                Clicked="Help_Clicked_Base"/>
+    </ContentPage.ToolbarItems>
+
 
     <ListView x:Name="CustomPinListView">
     <ListView.ItemTemplate>
