@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms.Maps;
+using SonicWalkingTour.Model.ImportResources;
+using System.Threading.Tasks;
 
 namespace SonicWalkingTour.Model
 {
@@ -19,7 +21,7 @@ namespace SonicWalkingTour.Model
         }
 
         //method to build the pins that we want to use for the beta tour
-        public void buildPins()
+        public async void buildPins()
         {
 
         const string TRACK1 = "Welcome to the campus of University of Wisconsin Green Bay. Thank you for choosing to experience our Sonic Walking Tour. A Student Ambassador will be accompanying you on your journey today in case you have any questions along the way. The Sonic Walking Tour Experience is the product of a collaborative effort from members of the Computer Science, Music, Theatre & Dance Departments in association with UWGB Student Services.\n\nAnd this is where our tour begins; in front of the office of Student Services, which as the name implies, is completely dedicated to students. The first office that most students interact with is the Green Bay One Stop Shop, or as we call it, GBOSS.This is where we have our admissions department, financial aid, and academic advising.They’ll help you through the application process, answer any questions you have about admissions or finances, and will help guide you through your first year of classes.This is a great place to go with any questions or concerns you may have.Even if they don’t know the answer, they’ll connect you with someone who does.\n\nStudent Services also houses Career Services. This office is here to help you with all things related to your career.They can help you find a job, work on a resume and cover letter, practice your interview skills, and even rent out some clothes for free, if you don’t have anything to wear to an interview or job fair.UWGB offers an online job service called Handshake. It’s free for students to use, and helps you find any job you’re looking for, whether it be on-campus, off-campus, full-time, part-time, internships, and much more.\n\nDisability Services is here to help, if you have any documented disabilities.They can make any accommodations you need to ensure that your education goes as smoothly as possible.\nThe Counseling and Health Center offers many services to students. With a nurse practitioner on staff, students can come to the Health Center for checkups, and can be helped with any minor health issues.The Health Center also offers certain shots and vaccinations for a very low cost. Students can schedule up to 10 free counseling sessions per academic year at the Counseling Center. If additional counseling is needed beyond these 10 sessions, students can be referred to off-campus resources as well.\nThe Dean of Students is another very helpful office in Student Services. They’re here to make sure your education isn’t thrown off track in any major way.If any unexpected circumstances arrive that interfere with your academics, you can work with the Dean of Students, and they’ll work with your professors to make sure you don’t fall behind because of it. Once again, welcome to The University of Wisconsin’s Green Bay campus. We hope you enjoy your time with us.\nNow, please press TRACK 2.";
@@ -36,6 +38,9 @@ namespace SonicWalkingTour.Model
         const string TRACK9 = "Here there are two more eating options, the Green Bay Grill and the Phoenix club. While the Green Bay grill will satisfy your hamburger, chicken tender, smoothie, waffle fries and cheese curds needs, the Phoenix club has a variety of pizza's, bagels, mac and cheese, and brats. Attached to the Phoenix club is an array of pool tables, a ping pong table, gaming systems, and many places to sit and relax if you just want to rest and watch TV until your next class. Also, along in the central area are four lounge areas with student organization and student life coordinators. First is the Multi-Ethnic student Affairs office, second is the Student Life lounge, the Student Government area, as well as the Pride Center. All of these offices have couch areas, chairs, tables, and great environments for those who like a little background noise when they study, and tv’s when you want to keep up with your favorite shows during the day. Tucked in a corner is the Christy Theatre which is our Union movie theatre. Every week there is a movie bought in fresh from theaters before it becomes available to the general public on DVD. Student tickets are only three dollars!\n\nAs we head back to Student Services where your tour began, press track 10 to hear about our system of tunnels.";
         const string TRACK10 = "Here at UW-Green Bay, the famous tunnels or concourses as they are also known, are an interconnected web of first floor hallways that can lead students to almost of all of our academic buildings without ever having to step foot outside. As you can imagine, this is especially helpful in the winter time. The only buildings on campus that the tunnels don’t connect to are: the Weidner Center, the Kress Events Center, the STEM Building, and housing. The first chancellor, Edward Weidner, had wanted them not only for their use in the winter time, but also to promote an inter-connectedness on campus. Each building, or area of study, is not closed off from one another, but rather open to each other, essentially creating one big building for one community\n\nAs you continue towards the Student Union, take this time to experience the sights and sounds around you by removing your headphones or earbuds. Depending on the time of day, you may bemet with the joyous cacophony of a bustling educational community or the silent serenity of a community hard at work.\n\nWhen you arrive back at Student Services, press and listen to track 11.";
         const string TRACK11 = "You have come to the end of your Sonic Walking Tour. Take this opportunity to ask your Student Ambassador any questions you may have.\n\nOn behalf of the whole UWGB community, thanks for visiting. We hope you had a good time and look forward to seeing you again.";
+
+            IImportResource importResource = new ImportTextFileLocal("SonicWalkingTour.SharedAssets.Text.");
+            char[] test = await (importResource.ImportFileResouce("TestFile.txt"));
 
         const string track4 = "Track4.mp3";
         const string track1 = "Track1E.mp3";
@@ -55,6 +60,7 @@ namespace SonicWalkingTour.Model
             Type = PinType.SavedPin,
             CustomPinType = indoorPin,
             Position = new Xamarin.Forms.Maps.Position(44.532353, -87.921420),
+            //Description = String.Concat(test),
             Description = TRACK1,
             MarkerId = "1",
             StopID = 1,

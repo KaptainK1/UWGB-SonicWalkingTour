@@ -20,6 +20,7 @@
     <Folder Include="Controls\" />
     <Folder Include="Model\" />
     <Folder Include="Model\Views\" />
+    <Folder Include="Model\ImportResources\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="SharedAssets\Audio\Track1.mp3" />
@@ -30,6 +31,7 @@
     <None Remove="SharedAssets\Audio\Track4.mp3" />
     <None Remove="SharedAssets\Audio\Track6.mp3" />
     <None Remove="SharedAssets\Audio\Track7E.mp3" />
+    <None Remove="SharedAssets\Text\TestFile.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SharedAssets\Audio\Track1.mp3" />
@@ -40,6 +42,7 @@
     <EmbeddedResource Include="SharedAssets\Audio\Track4.mp3" />
     <EmbeddedResource Include="SharedAssets\Audio\Track6.mp3" />
     <EmbeddedResource Include="SharedAssets\Audio\Track7E.mp3" />
+    <EmbeddedResource Include="SharedAssets\Text\TestFile.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="RegisterPage.xaml">
