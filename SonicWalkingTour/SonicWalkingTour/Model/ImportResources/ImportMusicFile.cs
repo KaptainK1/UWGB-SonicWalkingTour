@@ -1,21 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using System.Threading.Tasks;
+using System.Text;
 
 namespace SonicWalkingTour.Model.ImportResources
 {
-    public interface IImportResource
+    class ImportMusicFile : IImportMusicResource
     {
+        private string path;
 
-        public Task<char[]> ImportFileResouce( string file);
+        public ImportMusicFile(string path)
+        {
+            this.path = path;
+        }
 
-        public Stream GetStreamFromFile(string path, string filename)
+        public Stream GetStreamFromFile(string filename)
         {
             var assembly = typeof(App).GetTypeInfo().Assembly;
             var stream = assembly.GetManifestResourceStream(path + filename);
             return stream;
         }
-
     }
 }

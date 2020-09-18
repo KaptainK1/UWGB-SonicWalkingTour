@@ -18,9 +18,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
-    <Folder Include="Model\" />
     <Folder Include="Model\Views\" />
-    <Folder Include="Model\ImportResources\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="SharedAssets\Audio\Track1.mp3" />
