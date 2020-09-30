@@ -1,0 +1,1 @@
+Welcome to the Help Section for the Map page! \n\n The Map Page features the route that should be followed when taking the tour. This page features pins on a map which tracks your location. When you get near a pin, tap on the pin to interact with it. Continue following the path until you are done with the tour. Enjoy the Sonic Walking Tour!

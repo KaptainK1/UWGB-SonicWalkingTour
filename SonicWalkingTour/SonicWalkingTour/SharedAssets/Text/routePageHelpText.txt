@@ -1,0 +1,1 @@
+Welcome to the Help Section for the Route page! \n\n The Route page is used instead of the map page to take the tour. \n\n Starting at stop 1, head to Student Services where our tour starts, and spoiler, ends. Click on each stop as you continue the tour, or alternatively, click on the next button in the top right once you have already clicked on stop 1 to go to the next stop.
