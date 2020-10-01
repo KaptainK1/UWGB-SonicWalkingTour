@@ -43,12 +43,13 @@ namespace SonicWalkingTour.Model
             //char[] test = await (importResource.ImportFileResouce("TestFile.txt"));
 
         const string track4 = "Track4.mp3";
-        const string track1 = "Track1E.mp3";
+        const string track1 = "Track1C.mp3";
         const string track2 = "Track2.mp3";
         const string track3 = "Track3.mp3";
         const string track5 = "Haze.mp3";
         const string track6 = "Track6.mp3";
         const string track7 = "Track7E.mp3";
+        const string track8 = "Track8C.mp3";
 
         CustomPinType indoorPin = new CustomPinType("#ff7319");
         CustomPinType outdoorPin = new CustomPinType("#0F5640");
@@ -189,7 +190,7 @@ namespace SonicWalkingTour.Model
             MarkerId = "8",
             StopID = 8,
             Label = "The Student Union",
-            Url = track5 //TODO update
+            Url = track8 //TODO update
 
         };
 
