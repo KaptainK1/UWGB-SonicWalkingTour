@@ -52,7 +52,7 @@ namespace SonicWalkingTour
 
             InitializeComponent();
 
-            HelpText = "PinDetailPage Help";
+            HelpText = ((IInformationPage)this).GetHelpText(this.GetType().Name);
 
             BindingContext = this;
 

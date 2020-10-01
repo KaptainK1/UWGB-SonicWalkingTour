@@ -15,17 +15,32 @@ namespace SonicWalkingTour.Model.ImportResources
             this.path = path;
         }
 
-        public async Task<char[]> ImportFileResouce(string file)
-        {
-            StreamReader fileToRead = new StreamReader(((IImportResource)this).GetStreamFromFile(path,file));
-            Char[] buffer;
+        //public async Task<string> ImportFileResouce(string file)
+        //{
+        //    StreamReader fileToRead = new StreamReader(((IImportResource)this).GetStreamFromFile(path,file));
+        //     char[] buffer;
 
-            using (fileToRead)
+        //    using (fileToRead)
+        //    {
+        //        buffer = new Char[(int)fileToRead.BaseStream.Length];
+        //        await fileToRead.ReadAsync(buffer, 0, (int)fileToRead.BaseStream.Length);
+        //    }
+        //    return buffer.ToString();
+        //}
+
+
+        public async Task<string> ImportFileResouce(string file)
+        {
+            //StreamReader fileToRead = new StreamReader(((IImportResource)this).GetStreamFromFile(path, file));
+            string buffer;
+
+            using (StreamReader streamReader = new StreamReader(((IImportResource)this).GetStreamFromFile(path, file)))
             {
-                buffer = new Char[(int)fileToRead.BaseStream.Length];
-                await fileToRead.ReadAsync(buffer, 0, (int)fileToRead.BaseStream.Length);
+                buffer = await streamReader.ReadToEndAsync();
             }
+
             return buffer;
         }
+
     }
 }

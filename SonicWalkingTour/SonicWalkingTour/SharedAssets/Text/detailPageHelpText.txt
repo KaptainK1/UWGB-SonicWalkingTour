@@ -1,1 +1,3 @@
-Welcome to the Help Section for the Pin Detail page! \n\n To get started, please click on the play button in the top right-hand corner and follow along with the text on the page. Pressing the pause button will pause the audio. Once you are finished you can click the back button to return to the previous page or click the next button to continue with the tour.
+Welcome to the Help Section for the Pin Detail page!
+
+To get started, please click on the play button in the top right-hand corner and follow along with the text on the page. Pressing the pause button will pause the audio. Once you are finished you can click the back button to return to the previous page or click the next button to continue with the tour.

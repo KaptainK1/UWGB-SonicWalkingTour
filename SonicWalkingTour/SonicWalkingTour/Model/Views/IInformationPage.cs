@@ -16,5 +16,18 @@ namespace SonicWalkingTour.Model
         {
             Shell.Current.GoToAsync($"informationPage?helpdescription={HelpText}");
         }
+        public string GetHelpText(string page)
+        {
+            string helpText;
+
+            if (App.helpTextHashTable.TryGetValue(page, out helpText))
+            {
+                return helpText;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

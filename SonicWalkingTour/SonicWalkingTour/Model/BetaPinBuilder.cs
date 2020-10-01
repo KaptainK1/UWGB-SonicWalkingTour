@@ -39,8 +39,8 @@ namespace SonicWalkingTour.Model
         const string TRACK10 = "Here at UW-Green Bay, the famous tunnels or concourses as they are also known, are an interconnected web of first floor hallways that can lead students to almost of all of our academic buildings without ever having to step foot outside. As you can imagine, this is especially helpful in the winter time. The only buildings on campus that the tunnels don’t connect to are: the Weidner Center, the Kress Events Center, the STEM Building, and housing. The first chancellor, Edward Weidner, had wanted them not only for their use in the winter time, but also to promote an inter-connectedness on campus. Each building, or area of study, is not closed off from one another, but rather open to each other, essentially creating one big building for one community\n\nAs you continue towards the Student Union, take this time to experience the sights and sounds around you by removing your headphones or earbuds. Depending on the time of day, you may bemet with the joyous cacophony of a bustling educational community or the silent serenity of a community hard at work.\n\nWhen you arrive back at Student Services, press and listen to track 11.";
         const string TRACK11 = "You have come to the end of your Sonic Walking Tour. Take this opportunity to ask your Student Ambassador any questions you may have.\n\nOn behalf of the whole UWGB community, thanks for visiting. We hope you had a good time and look forward to seeing you again.";
 
-            IImportResource importResource = new ImportTextFileLocal("SonicWalkingTour.SharedAssets.Text.");
-            char[] test = await (importResource.ImportFileResouce("TestFile.txt"));
+            //IImportResource importResource = new ImportTextFileLocal("SonicWalkingTour.SharedAssets.Text.");
+            //char[] test = await (importResource.ImportFileResouce("TestFile.txt"));
 
         const string track4 = "Track4.mp3";
         const string track1 = "Track1E.mp3";

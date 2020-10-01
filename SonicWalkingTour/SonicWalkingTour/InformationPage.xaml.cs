@@ -13,8 +13,8 @@ namespace SonicWalkingTour
         {
             set
             {
-                BindingContext = Uri.UnescapeDataString(value);
-                labelHelpDescription.Text = Uri.UnescapeDataString(value);
+                BindingContext = Uri.UnescapeDataString(value.Normalize());
+                labelHelpDescription.Text = Uri.UnescapeDataString(value.Normalize());
             }
         }
 

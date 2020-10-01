@@ -1,12 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
 namespace SonicWalkingTour.Model.ImportResources
 {
     public interface IResourceBuilder
     {
 
-        System.Threading.Tasks.Task buildTextResourcesAsync();
+        Task buildTextResourcesAsync();
 
-        void buildAudioResources();
+        Task buildAudioResources();
+
+        public string getTextValue(string page);
+
+        public Dictionary<string, string> getHashTable();
 
     }
 }

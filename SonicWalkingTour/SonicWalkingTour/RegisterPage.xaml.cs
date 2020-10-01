@@ -18,13 +18,13 @@ namespace SonicWalkingTour
             };
 
         public string HelpDescription { get; set; }
-        public string HelpText { get ; set ; }
+        public string HelpText { get; set; }
 
         public RegisterPage()
         {
             InitializeComponent();
 
-            HelpText = "Test";
+            HelpText = ((IInformationPage)this).GetHelpText(this.GetType().Name);
             //toggleLoginButtonAndHideLoginFrame = false;
             toolbarLoginButton.Clicked += Login_Clicked;
             //CheckToggleForLoginButton();

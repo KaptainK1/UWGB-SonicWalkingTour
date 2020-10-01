@@ -8,7 +8,7 @@ namespace SonicWalkingTour.Model.ImportResources
     public interface IImportResource
     {
 
-        public Task<char[]> ImportFileResouce( string file);
+        public Task<string> ImportFileResouce( string file);
 
         public Stream GetStreamFromFile(string path, string filename)
         {

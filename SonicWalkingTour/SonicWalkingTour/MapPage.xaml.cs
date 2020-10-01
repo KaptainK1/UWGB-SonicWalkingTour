@@ -23,7 +23,7 @@ namespace SonicWalkingTour
         {
             InitializeComponent();
 
-            HelpText = "Map Page help";
+            HelpText = ((IInformationPage)this).GetHelpText("MapPage");
 
             GetPermissions();
 
@@ -186,7 +186,7 @@ namespace SonicWalkingTour
         private void Help_Clicked_Base(object sender, EventArgs e)
         {
             ((IInformationPage)this).Help_Clicked(sender, e);
-        }
 
+        }
     }
 }

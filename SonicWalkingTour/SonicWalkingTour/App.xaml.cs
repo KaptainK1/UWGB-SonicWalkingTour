@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.WindowsAzure.MobileServices;
 using SonicWalkingTour.Model;
+using SonicWalkingTour.Model.ImportResources;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
@@ -21,10 +22,16 @@ namespace SonicWalkingTour
         public static List<CustomPin> pins  {get; private set; }
         //public static List<Track> tracks { get; private set;  }
         public static List<Position> positions { get; private set; }
+        public static Dictionary<string, string> helpTextHashTable;
 
         public App()
         {
 
+
+            BetaFileImportBuilder betaFileImportBuilder = new BetaFileImportBuilder();
+            ResourceDirector resourceDirector = new ResourceDirector(betaFileImportBuilder);
+            resourceDirector.loadTextResources();
+            helpTextHashTable = resourceDirector.getHashTable();
 
             BetaPinBuilder builder = new BetaPinBuilder();
             CustonPinSetDirector director = new CustonPinSetDirector(builder);
@@ -69,13 +76,8 @@ namespace SonicWalkingTour
                //TODO get track id, audio file, and description from the db then add track to the local list
 
             }
-
-
-
             return tracks;
         }
-
-
         #endregion
 
         protected override void OnStart()

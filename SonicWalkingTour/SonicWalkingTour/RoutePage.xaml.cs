@@ -14,7 +14,7 @@ namespace SonicWalkingTour
         {
             InitializeComponent();
 
-            HelpText = "Route Page Help";
+            HelpText = ((IInformationPage)this).GetHelpText(this.GetType().Name);
 
             CustomPinListView.ItemsSource = App.pins;
 

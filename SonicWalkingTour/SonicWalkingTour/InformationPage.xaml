@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.BackgroundColor="{StaticResource phoneixOrange}"
+             Shell.ForegroundColor="White"
+             Shell.TitleColor="White"
              x:Class="SonicWalkingTour.InformationPage">
-    <StackLayout>
+    <StackLayout Margin="10">
         <Label Text="Help!"/>
         <ScrollView Orientation="Vertical">
-             <Label x:Name="labelHelpDescription" Text="{Binding HelpDescription}"/>
+             <Label x:Name="labelHelpDescription" Text="{Binding HelpDescription}" FontSize="Large"/>
         </ScrollView>
     </StackLayout>
 
