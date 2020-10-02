@@ -42,6 +42,7 @@ namespace SonicWalkingTour.Model
             //IImportResource importResource = new ImportTextFileLocal("SonicWalkingTour.SharedAssets.Text.");
             //char[] test = await (importResource.ImportFileResouce("TestFile.txt"));
 
+<<<<<<< HEAD
         const string track4 = "Track4C.mp3";
         const string track1 = "Track1E.mp3";
         const string track2 = "Track2C.mp3";
@@ -55,6 +56,18 @@ namespace SonicWalkingTour.Model
             const string track11 = "Track11C.mp3";
 
             CustomPinType indoorPin = new CustomPinType("#ff7319");
+=======
+        const string track4 = "Track4.mp3";
+        const string track1 = "Track1C.mp3";
+        const string track2 = "Track2.mp3";
+        const string track3 = "Track3.mp3";
+        const string track5 = "Haze.mp3";
+        const string track6 = "Track6.mp3";
+        const string track7 = "Track7E.mp3";
+        const string track8 = "Track8C.mp3";
+
+        CustomPinType indoorPin = new CustomPinType("#ff7319");
+>>>>>>> b3b9b172ddb652b8ba430d301af49212a0560d30
         CustomPinType outdoorPin = new CustomPinType("#0F5640");
         CustomPinType tunnelPin = new CustomPinType("#dfe4e1");
         CustomPinType upperFloorPin = new CustomPinType("#adffdb");

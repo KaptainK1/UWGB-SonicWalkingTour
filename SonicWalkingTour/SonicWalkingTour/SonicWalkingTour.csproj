@@ -22,6 +22,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="SharedAssets\Audio\Track1.mp3" />
+    <None Remove="SharedAssets\Audio\Track1C.mp3" />
     <None Remove="SharedAssets\Audio\Track1E.mp3" />
     <None Remove="SharedAssets\Audio\Track2.mp3" />
     <None Remove="SharedAssets\Audio\Haze.mp3" />
@@ -29,6 +30,7 @@
     <None Remove="SharedAssets\Audio\Track4.mp3" />
     <None Remove="SharedAssets\Audio\Track6.mp3" />
     <None Remove="SharedAssets\Audio\Track7E.mp3" />
+    <None Remove="SharedAssets\Audio\Track8C.mp3" />
     <None Remove="SharedAssets\Text\detailPageHelpText.txt" />
     <None Remove="SharedAssets\Text\mapPageHelpText.txt" />
     <None Remove="SharedAssets\Text\registrationPageHelpText.txt" />
@@ -47,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SharedAssets\Audio\Track1.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track1C.mp3" />
     <EmbeddedResource Include="SharedAssets\Audio\Track1E.mp3" />
     <EmbeddedResource Include="SharedAssets\Audio\Track2.mp3" />
     <EmbeddedResource Include="SharedAssets\Audio\Haze.mp3" />
@@ -54,6 +57,7 @@
     <EmbeddedResource Include="SharedAssets\Audio\Track4.mp3" />
     <EmbeddedResource Include="SharedAssets\Audio\Track6.mp3" />
     <EmbeddedResource Include="SharedAssets\Audio\Track7E.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track8C.mp3" />
     <EmbeddedResource Include="SharedAssets\Text\detailPageHelpText.txt" />
     <EmbeddedResource Include="SharedAssets\Text\mapPageHelpText.txt" />
     <EmbeddedResource Include="SharedAssets\Text\registrationPageHelpText.txt" />
