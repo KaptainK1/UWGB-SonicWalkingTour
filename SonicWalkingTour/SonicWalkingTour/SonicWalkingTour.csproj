@@ -34,6 +34,16 @@
     <None Remove="SharedAssets\Text\registrationPageHelpText.txt" />
     <None Remove="SharedAssets\Text\routePageHelpText.txt" />
     <None Remove="SharedAssets\Text\TestFile.txt" />
+    <None Remove="SharedAssets\Audio\Track10C.mp3" />
+    <None Remove="SharedAssets\Audio\Track11C.mp3" />
+    <None Remove="SharedAssets\Audio\Track2C.mp3" />
+    <None Remove="SharedAssets\Audio\Track3C.mp3" />
+    <None Remove="SharedAssets\Audio\Track4C.mp3" />
+    <None Remove="SharedAssets\Audio\Track5C.mp3" />
+    <None Remove="SharedAssets\Audio\Track6C.mp3" />
+    <None Remove="SharedAssets\Audio\Track7C.mp3" />
+    <None Remove="SharedAssets\Audio\Track9C.mp3" />
+    <None Remove="SharedAssets\Audio\Track8C.mp3" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SharedAssets\Audio\Track1.mp3" />
@@ -49,6 +59,16 @@
     <EmbeddedResource Include="SharedAssets\Text\registrationPageHelpText.txt" />
     <EmbeddedResource Include="SharedAssets\Text\routePageHelpText.txt" />
     <EmbeddedResource Include="SharedAssets\Text\TestFile.txt" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track10C.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track11C.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track2C.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track3C.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track4C.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track5C.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track6C.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track7C.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track9C.mp3" />
+    <EmbeddedResource Include="SharedAssets\Audio\Track8C.mp3" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="RegisterPage.xaml">
