@@ -43,7 +43,6 @@ namespace SonicWalkingTour
             }
         }
 
-
         public string HelpText { get; set; }
 
         ISimpleAudioPlayer player;
@@ -61,8 +60,7 @@ namespace SonicWalkingTour
 
         }
 
-        //public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync($"pinDetailPage?stopid={getPreviousStopID(selectedPin.StopID)}"));
-        public ICommand BackCommand => new Command<string>( (url) =>  OnBackButtonPressed());
+        public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync($"pinDetailPage?stopid={getPreviousStopID(selectedPin.StopID)}"));
 
         //method to get the audio stream from the track name passed
         Stream GetStreamFromFile(string filename)
@@ -76,14 +74,12 @@ namespace SonicWalkingTour
         //method to play the audio file
         void Play_Clicked(object sender, System.EventArgs e)
         {
-
             player.Play();
         }
 
         //method to pause the audio file
         void Pause_Clicked(object sender, System.EventArgs e)
         {
-
             player.Pause();
         }
 
@@ -127,29 +123,6 @@ namespace SonicWalkingTour
             }
             return 0;
         }
-
-/*        protected override bool OnBackButtonPressed()
-        {
-            decimal previousStopID = getPreviousStopID(selectedPin.StopID);
-            System.Threading.Tasks.Task<bool> action = (System.Threading.Tasks.Task<bool>)Shell.Current.GoToAsync($"pinDetailPage?stopid={previousStopID}");
-            action.ContinueWith(task =>
-            {
-
-            });
-
-            base.OnBackButtonPressed();
-
-            if (previousStopID == 0)
-            {
-                Shell.Current.GoToAsync($"routePage");
-            }
-            else
-            {
-                Shell.Current.GoToAsync($"pinDetailPage?stopid={previousStopID}");
-            }
-
-            return false;
-        }*/
 
         protected override bool OnBackButtonPressed()
         {
