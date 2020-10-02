@@ -6,6 +6,14 @@
              Shell.TitleColor="White"
              x:Class="SonicWalkingTour.PinDetailPage">
 
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding BackCommand}"
+                            IsEnabled="True"
+                            TextOverride="Back"
+                            IconOverride="arrow_left.png" />
+                    
+    </Shell.BackButtonBehavior>
+
     <ContentPage.ToolbarItems>
         <ToolbarItem 
                      IconImageSource="play_outline.png"

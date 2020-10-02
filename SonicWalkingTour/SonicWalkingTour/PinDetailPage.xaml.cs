@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Windows.Input;
 using Plugin.SimpleAudioPlayer;
 using SonicWalkingTour.Model;
 using Xamarin.Forms;
@@ -26,7 +27,6 @@ namespace SonicWalkingTour
             set
             {
                 BindingContext = App.pins.FirstOrDefault(p => p.StopID.ToString() == Uri.UnescapeDataString(value));
-                //selectedPin = App.pins.FirstOrDefault(p => p.StopID.ToString() == Uri.UnescapeDataString(value));
 
                 //if the binding is not null
                 //set the selected pin object as a custom pin
@@ -43,6 +43,7 @@ namespace SonicWalkingTour
             }
         }
 
+
         public string HelpText { get; set; }
 
         ISimpleAudioPlayer player;
@@ -56,18 +57,12 @@ namespace SonicWalkingTour
 
             BindingContext = this;
 
-            //selectedPin = pin;
-            //entryTitle.Text = selectedPin.Label;
-            //entryDescription.Text = selectedPin.Description;
-
-            //player = CrossSimpleAudioPlayer.Current;
-            //player.Load(GetStreamFromFile(selectedPin.Url));
-
             player = CrossSimpleAudioPlayer.Current;
 
-           // player.Load(GetStreamFromFile(url.ToString()));
-
         }
+
+        //public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync($"pinDetailPage?stopid={getPreviousStopID(selectedPin.StopID)}"));
+        public ICommand BackCommand => new Command<string>( (url) =>  OnBackButtonPressed());
 
         //method to get the audio stream from the track name passed
         Stream GetStreamFromFile(string filename)
@@ -109,8 +104,6 @@ namespace SonicWalkingTour
             Console.WriteLine(nextPin);
 
             await Shell.Current.GoToAsync($"pinDetailPage?stopid={nextPin}");
-
-
         }
 
         private void Help_Clicked_Base(object sender, EventArgs e)
@@ -133,6 +126,54 @@ namespace SonicWalkingTour
 
             }
             return 0;
+        }
+
+/*        protected override bool OnBackButtonPressed()
+        {
+            decimal previousStopID = getPreviousStopID(selectedPin.StopID);
+            System.Threading.Tasks.Task<bool> action = (System.Threading.Tasks.Task<bool>)Shell.Current.GoToAsync($"pinDetailPage?stopid={previousStopID}");
+            action.ContinueWith(task =>
+            {
+
+            });
+
+            base.OnBackButtonPressed();
+
+            if (previousStopID == 0)
+            {
+                Shell.Current.GoToAsync($"routePage");
+            }
+            else
+            {
+                Shell.Current.GoToAsync($"pinDetailPage?stopid={previousStopID}");
+            }
+
+            return false;
+        }*/
+
+        protected override bool OnBackButtonPressed()
+        {
+            decimal previousStopID = getPreviousStopID(selectedPin.StopID);
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                if (previousStopID == 0)
+                {
+                    await Shell.Current.GoToAsync($"routePage");
+                }
+                else
+                {
+                    await Shell.Current.GoToAsync($"pinDetailPage?stopid={previousStopID}");
+                }
+
+            });
+            return true;
+        }
+
+        private decimal getPreviousStopID(decimal currentID)
+        {
+            decimal nextStopID = currentID - 1;
+
+            return nextStopID;
         }
     }
 }

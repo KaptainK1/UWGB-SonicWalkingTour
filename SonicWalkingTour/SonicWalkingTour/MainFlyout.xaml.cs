@@ -35,6 +35,7 @@ namespace SonicWalkingTour
         void RegisterRoutes()
         {
             routes.Add("mapPage", typeof(MapPage));
+            routes.Add("routePage", typeof(RoutePage));
             routes.Add("registerPage", typeof(RegisterPage));
             routes.Add("pinDetailPage", typeof(PinDetailPage));
             routes.Add("informationPage", typeof(InformationPage));
