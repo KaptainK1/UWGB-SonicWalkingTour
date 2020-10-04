@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Plugin.SimpleAudioPlayer;
 using SonicWalkingTour.Model;
@@ -18,6 +19,9 @@ namespace SonicWalkingTour
     {
         //custom pin object that will be set based off of the stop id passed
         private CustomPin selectedPin = null;
+
+        public string BackString { get; set; }
+        //public decimal PreviousStopID { get; set; }
 
         //StopID property as defined in the first query property
         //we use the set method of this property to set the binding context (
@@ -35,7 +39,10 @@ namespace SonicWalkingTour
                 {
                     selectedPin = BindingContext as CustomPin;
                     player.Load(GetStreamFromFile(selectedPin.Url));
-                } else
+                    BackString = $"pinDetailPage?stopid={getPreviousStopID(selectedPin.StopID)}";
+                    //Console.WriteLine(Shell.GetBackButtonBehavior(Shell.BackButtonBehaviorProperty()));
+                }
+                else
                 {
                     Shell.Current.DisplayAlert("Error", "Selected pin stop ID doesnt exist", "Ok");
                     return;
@@ -57,10 +64,10 @@ namespace SonicWalkingTour
             BindingContext = this;
 
             player = CrossSimpleAudioPlayer.Current;
-
         }
 
-        public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync($"pinDetailPage?stopid={getPreviousStopID(selectedPin.StopID)}"));
+        //public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync($"pinDetailPage?stopid={getPreviousStopID(selectedPin.StopID)}"));
+        public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync(url));
 
         //method to get the audio stream from the track name passed
         Stream GetStreamFromFile(string filename)
@@ -86,17 +93,7 @@ namespace SonicWalkingTour
         async void Go_Next(object sender, System.EventArgs e)
         {
             decimal nextPin = getNextStopID(this.selectedPin.StopID);
-            //int testIfDecimal = (int)nextPin;
 
-            //if (testIfDecimal == nextPin)
-            //{
-            //    nextPin = (nextPin + 1) % App.pins.Count;
-            //} else
-            //{
-            //    nextPin = Decimal.Add(nextPin, .1m) % App.pins.Count;
-            //}
-
-            //decimal nextPin = ((this.selectedPin.StopID + 1) % App.pins.Count);
             Console.WriteLine(nextPin);
 
             await Shell.Current.GoToAsync($"pinDetailPage?stopid={nextPin}");
@@ -126,7 +123,10 @@ namespace SonicWalkingTour
 
         protected override bool OnBackButtonPressed()
         {
+            //decimal previousStopID = getPreviousStopID(selectedPin.StopID);
+
             decimal previousStopID = getPreviousStopID(selectedPin.StopID);
+            
             Device.BeginInvokeOnMainThread(async () =>
             {
                 if (previousStopID == 0)
@@ -146,7 +146,30 @@ namespace SonicWalkingTour
         {
             decimal nextStopID = currentID - 1;
 
+            Console.WriteLine($"Current StopID = {currentID}, Previous StopID = {nextStopID}");
+
             return nextStopID;
         }
+
+        /*
+        private async Task<Decimal> getPreviousStopID(string currentID)
+        {
+            decimal previousStopID;
+
+            if (Decimal.TryParse(currentID, out previousStopID))
+            {
+                Console.WriteLine("Successful parse of stop id");
+                
+            } else
+            {
+                Console.WriteLine($"Unsuccessful parse of stop id {previousStopID}");
+                previousStopID = 1;
+                await Shell.Current.DisplayAlert("Error", "Selected pin stop ID doesnt exist", "Ok");
+            }
+
+            return previousStopID;
+
+        }
+        */
     }
 }

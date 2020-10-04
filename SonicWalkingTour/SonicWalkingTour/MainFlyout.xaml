@@ -25,7 +25,10 @@
 
     <Shell.BackButtonBehavior>
         <BackButtonBehavior Command="{Binding BackCommand}"
-                            IconOverride="gear.png"/>   
+                            IsEnabled="True"
+                            TextOverride="Back"
+                            IconOverride="arrow_left.png"
+                            CommandParameter="routePage"/>
     </Shell.BackButtonBehavior>
     
     <ShellContent Title="Register" Icon="man.png" ContentTemplate="{DataTemplate views:RegisterPage}"/>
@@ -47,8 +50,6 @@
                       Icon="route.png"
                         IsTabStop="True"
                       ContentTemplate="{DataTemplate views:RoutePage}" />
-
-
 
     </FlyoutItem>
 

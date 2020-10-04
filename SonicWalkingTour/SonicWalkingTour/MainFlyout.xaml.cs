@@ -14,10 +14,9 @@ namespace SonicWalkingTour
 
         //help command to navigate to other urls
         public ICommand HelpCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
+        public ICommand BackCommand => new Command<string>(async (uri) => await Shell.Current.GoToAsync(uri));
 
         public string HelpText { get; set ; }
-
-        //public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync(".."));
 
         public MainFlyout()
         {
@@ -46,8 +45,15 @@ namespace SonicWalkingTour
             }
         }
 
-        void OnNavigating(object sender, ShellNavigatingEventArgs e)
+        async void OnNavigating(object sender, ShellNavigatingEventArgs e)
         {
+            // Cancel back navigation if data is unsaved
+
+            if (e.Source == ShellNavigationSource.Pop)
+            {
+                await Shell.Current.GoToAsync($"///route");
+            }
+
         }
 
         void OnNavigated(object sender, ShellNavigatedEventArgs e)

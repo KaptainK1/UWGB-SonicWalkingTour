@@ -7,10 +7,9 @@
              x:Class="SonicWalkingTour.PinDetailPage">
 
     <Shell.BackButtonBehavior>
-        <BackButtonBehavior Command="{Binding BackCommand}"
-                            IsEnabled="True"
-                            TextOverride="Back"
-                            IconOverride="arrow_left.png" />
+       <BackButtonBehavior Command="{Binding BackCommand}"
+                           CommandParameter="routePage"
+                           />
     </Shell.BackButtonBehavior>
 
     <ContentPage.ToolbarItems>
