@@ -21,11 +21,11 @@
                         Command="{Binding MyCommand}"/>-->
 
         <ToolbarItem 
-                         IconImageSource="man.png"
-                         Text="DisplayLogin"
-                         Order="Primary"
-                         Priority="1" 
-                         Clicked="DisplayLogin_Clicked"/>
+                IconImageSource="man.png"
+                Text="DisplayLogin"
+                Order="Primary"
+                Priority="1" 
+                Clicked="DisplayLogin_Clicked"/>
 
         <ToolbarItem
                 IconImageSource="info.png"
@@ -39,6 +39,7 @@
     <Grid>
 
         <BoxView Opacity="0.95" BackgroundColor="{StaticResource phoneixGreen}"/>
+        <BoxView VerticalOptions="StartAndExpand" HeightRequest="10" WidthRequest="1" BackgroundColor="{StaticResource phoneixLightGreen}"/>
 
         <Grid HeightRequest="520"  Margin="20">
 

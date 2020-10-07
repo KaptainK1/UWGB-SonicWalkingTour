@@ -44,16 +44,16 @@ namespace SonicWalkingTour.Model
 
 
         const string track4 = "Track4C.mp3";
-        const string track1 = "Track1E.mp3";
+        const string track1 = "Track1C.mp3";
         const string track2 = "Track2C.mp3";
         const string track3 = "Track3C.mp3";
         const string track5 = "Track5C.mp3";
         const string track6 = "Track6C.mp3";
         const string track7 = "Track7C.mp3";
-            const string track8 = "Track8C.mp3";
-            const string track9 = "Track9C.mp3";
-            const string track10 = "Track10C.mp3";
-            const string track11 = "Track11C.mp3";
+        const string track8 = "Track8C.mp3";
+        const string track9 = "Track9C.mp3";
+        const string track10 = "Track10C.mp3";
+        const string track11 = "Track11C.mp3";
 
         CustomPinType indoorPin = new CustomPinType("#ff7319");
         CustomPinType outdoorPin = new CustomPinType("#0F5640");
@@ -93,7 +93,7 @@ namespace SonicWalkingTour.Model
             Description = TRACK3,
             MarkerId = "3",
             StopID = 3,
-            Label = "Confrin Library Elevators",
+            Label = "Cofrin Library Elevators",
             Url = track3
         };
 
@@ -105,7 +105,7 @@ namespace SonicWalkingTour.Model
             Description = TRACK4,
             MarkerId = "4",
             StopID = 4,
-            Label = "Confrin Library",
+            Label = "Cofrin Library",
             Url = track4
         };
 
@@ -143,7 +143,7 @@ namespace SonicWalkingTour.Model
             Description = TRACK5,
             MarkerId = "5",
             StopID = 5,
-            Label = "Confrin Library Elevators 2",
+            Label = "Cofrin Library Elevators 2",
             Url = track5
         };
 

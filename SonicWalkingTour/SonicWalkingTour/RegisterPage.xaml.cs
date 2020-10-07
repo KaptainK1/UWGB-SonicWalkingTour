@@ -60,6 +60,7 @@ namespace SonicWalkingTour
             DisplayAlert("Hello", "Welcome ", "OK");
             //Navigation.PushAsync(new MainFlyout());
             Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
+            Shell.Current.FlyoutIsPresented = true;
 
         }
 

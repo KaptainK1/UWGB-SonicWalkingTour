@@ -151,6 +151,17 @@ namespace SonicWalkingTour
             return nextStopID;
         }
 
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            if (player.IsPlaying)
+            {
+                player.Pause();
+            }
+        }
+
+
         /*
         private async Task<Decimal> getPreviousStopID(string currentID)
         {
