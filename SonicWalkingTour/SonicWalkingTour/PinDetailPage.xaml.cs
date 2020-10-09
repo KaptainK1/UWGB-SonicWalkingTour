@@ -14,14 +14,25 @@ namespace SonicWalkingTour
 
     //we need this query property to receive the stop id
     //from the calling pages which pass the stop id as a parameter
+    [QueryProperty("RootPage", "rootPage")]
     [QueryProperty("StopID", "stopid")]
+
     public partial class PinDetailPage : ContentPage, IInformationPage
     {
         //custom pin object that will be set based off of the stop id passed
         private CustomPin selectedPin = null;
+        private static string rootPage;
+        private static Stack<decimal> previousStops = new Stack<decimal>();
 
-        public string BackString { get; set; }
-        //public decimal PreviousStopID { get; set; }
+        public string RootPage
+        {
+            set
+            {
+                BindingContext = Uri.UnescapeDataString(value);
+                rootPage = BindingContext as string;
+            }
+            
+        }
 
         //StopID property as defined in the first query property
         //we use the set method of this property to set the binding context (
@@ -39,8 +50,7 @@ namespace SonicWalkingTour
                 {
                     selectedPin = BindingContext as CustomPin;
                     player.Load(GetStreamFromFile(selectedPin.Url));
-                    BackString = $"pinDetailPage?stopid={getPreviousStopID(selectedPin.StopID)}";
-                    //Console.WriteLine(Shell.GetBackButtonBehavior(Shell.BackButtonBehaviorProperty()));
+
                 }
                 else
                 {
@@ -64,6 +74,15 @@ namespace SonicWalkingTour
             BindingContext = this;
 
             player = CrossSimpleAudioPlayer.Current;
+
+            Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+            {
+                Command = new Command(() =>
+                {
+                    Shell.Current.FlyoutIsPresented = true;
+                }),
+                IconOverride = "uwgb_logo.png"
+            });
         }
 
         //public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync($"pinDetailPage?stopid={getPreviousStopID(selectedPin.StopID)}"));
@@ -87,16 +106,21 @@ namespace SonicWalkingTour
         //method to pause the audio file
         void Pause_Clicked(object sender, System.EventArgs e)
         {
-            player.Pause();
+            if (player.IsPlaying) {
+                player.Pause();
+            }
         }
 
         async void Go_Next(object sender, System.EventArgs e)
         {
+            previousStops.Push(selectedPin.StopID);
+
             decimal nextPin = getNextStopID(this.selectedPin.StopID);
 
             Console.WriteLine(nextPin);
 
-            await Shell.Current.GoToAsync($"pinDetailPage?stopid={nextPin}");
+            //await Shell.Current.GoToAsync($"pinDetailPage?stopid={nextPin}");
+            await Shell.Current.GoToAsync($"pinDetailPage?rootPage={rootPage}&stopid={nextPin}");
         }
 
         private void Help_Clicked_Base(object sender, EventArgs e)
@@ -131,11 +155,11 @@ namespace SonicWalkingTour
             {
                 if (previousStopID == 0)
                 {
-                    await Shell.Current.GoToAsync($"routePage");
+                    await Shell.Current.GoToAsync($"{rootPage}");
                 }
                 else
                 {
-                    await Shell.Current.GoToAsync($"pinDetailPage?stopid={previousStopID}");
+                    await Shell.Current.GoToAsync($"pinDetailPage?rootPage={rootPage}&stopid={previousStopID}");
                 }
 
             });
@@ -144,9 +168,26 @@ namespace SonicWalkingTour
 
         private decimal getPreviousStopID(decimal currentID)
         {
-            decimal nextStopID = currentID - 1;
 
-            Console.WriteLine($"Current StopID = {currentID}, Previous StopID = {nextStopID}");
+            decimal nextStopID;
+            //if the count is one, then we are at the end and cant go back any further
+            if(previousStops.Count == 0)
+            {
+                nextStopID = 0;
+                Console.WriteLine($"Current StopID = {currentID}, Previous StopID = {nextStopID}");
+                previousStops.Clear();
+            } else
+            {
+
+                nextStopID = previousStops.Pop();
+                Console.WriteLine($"Current StopID = {currentID}, Previous StopID = {nextStopID}");
+            }
+
+/*            if(nextStopID != null)
+            {
+                Console.WriteLine($"Current StopID = {currentID}, Previous StopID = {nextStopID}");
+                return nextStopID;
+            }*/
 
             return nextStopID;
         }
@@ -160,6 +201,8 @@ namespace SonicWalkingTour
                 player.Pause();
             }
         }
+
+
 
 
         /*

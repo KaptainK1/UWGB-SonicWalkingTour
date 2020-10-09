@@ -51,8 +51,7 @@ namespace SonicWalkingTour
 
             if (e.Source == ShellNavigationSource.Pop)
             {
-                //Shell.SetBackButtonBehavior(Back, behavior);
-                await Shell.Current.GoToAsync($"///route");
+                //await Shell.Current.GoToAsync($"///route");
             }
 
         }

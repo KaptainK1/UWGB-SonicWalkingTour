@@ -76,7 +76,7 @@ namespace CustomRenderer.Droid
             {
                 //open a new Pin detail page with the custom pin selected
                 //App.Current.MainPage.Navigation.PushAsync(new PinDetailPage(customPin));
-                Shell.Current.GoToAsync($"pinDetailPage?stopid={customPin.StopID}");
+                Shell.Current.GoToAsync($"pinDetailPage?rootPage=mapPage&stopid={customPin.StopID}");
             }
         }
 

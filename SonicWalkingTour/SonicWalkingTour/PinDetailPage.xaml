@@ -6,11 +6,16 @@
              Shell.TitleColor="White"
              x:Class="SonicWalkingTour.PinDetailPage">
 
-    <Shell.BackButtonBehavior>
+    <!--Shell.BackButtonBehavior>
        <BackButtonBehavior Command="{Binding BackCommand}"
                            CommandParameter="routePage"
                            />
-    </Shell.BackButtonBehavior>
+    </-->
+
+    <!--Shell.BackButtonBehavior>
+        <BackButtonBehavior IsEnabled="Ture"
+                            IconOverride="uwgb_logo.png"/>
+    </-->
 
     <ContentPage.ToolbarItems>
         <ToolbarItem 

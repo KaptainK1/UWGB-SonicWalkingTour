@@ -15,7 +15,13 @@
                 Clicked="Help_Clicked_Base"/>
     </ContentPage.ToolbarItems>
 
-		<local:CustomMap x:Name="customMap"
+    <!--Shell.BackButtonBehavior>
+        <BackButtonBehavior IsEnabled="False"
+                           />
+    </-->
+
+
+    <local:CustomMap x:Name="customMap"
                    MapType="Street" WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}"
                    IsShowingUser="True"/>
 </ContentPage>

@@ -6,6 +6,7 @@ using Plugin.Geolocator.Abstractions;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using SonicWalkingTour.Model;
+using SonicWalkingTour.Model.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
@@ -19,11 +20,22 @@ namespace SonicWalkingTour
 
         public string HelpText { get; set; }
 
+        //public BackButtonBehavior backButtonBehavior { get; set ; }
+
         public MapPage()
         {
             InitializeComponent();
 
             HelpText = ((IInformationPage)this).GetHelpText("MapPage");
+
+            Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+            {
+                Command = new Command(() =>
+                {
+                    Shell.Current.FlyoutIsPresented = true;
+                }),
+                IconOverride = "uwgb_logo.png"
+            });
 
             GetPermissions();
 
@@ -188,5 +200,18 @@ namespace SonicWalkingTour
             ((IInformationPage)this).Help_Clicked(sender, e);
 
         }
+
+/*        public bool ShellBackButtonPressed()
+        {
+            backButtonBehavior = new BackButtonBehavior
+            {
+                Command = new Command(async () =>
+                {
+                    await Shell.Current.GoToAsync($"///mapPage");
+                }),
+            };
+
+            return true;
+        }*/
     }
 }

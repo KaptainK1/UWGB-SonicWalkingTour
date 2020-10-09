@@ -20,6 +20,15 @@ namespace SonicWalkingTour
 
             this.BindingContext = this;
 
+            Shell.SetBackButtonBehavior(this, new BackButtonBehavior
+            {
+                Command = new Command(() =>
+                {
+                    Shell.Current.FlyoutIsPresented = true;
+                }),
+                IconOverride = "uwgb_logo.png"
+            });
+
         }
 
         //we can override the back command if necessary
@@ -36,7 +45,7 @@ namespace SonicWalkingTour
             //since we are using shell navigation, we can use URI type navigation
             //here we are going to the pinDetailPage route, and passing the stopid as parameter
             //the receiving page will consume this id, please check the comments there
-            await Shell.Current.GoToAsync($"pinDetailPage?stopid={id}");
+            await Shell.Current.GoToAsync($"pinDetailPage?rootPage=routePage&stopid={id}");
         }
 
         private void Help_Clicked_Base(object sender, EventArgs e)
