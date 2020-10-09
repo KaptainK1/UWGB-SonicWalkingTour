@@ -55,13 +55,12 @@ namespace SonicWalkingTour
             }
         }
 
-        private void Continue_Clicked(object sender, System.EventArgs e)
+        private async void Continue_Clicked(object sender, System.EventArgs e)
         {
-            DisplayAlert("Hello", "Welcome ", "OK");
+            await DisplayAlert("Hello", "Welcome to the Sonic Walking Tour!", "Okay!");
             //Navigation.PushAsync(new MainFlyout());
             Shell.Current.FlyoutBehavior = FlyoutBehavior.Flyout;
             Shell.Current.FlyoutIsPresented = true;
-
         }
 
         private void Login_Clicked(System.Object sender, System.EventArgs e)

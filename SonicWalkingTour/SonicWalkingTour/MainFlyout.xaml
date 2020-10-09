@@ -27,6 +27,7 @@
         <BackButtonBehavior Command="{Binding BackCommand}"
                             IsEnabled="True"
                             TextOverride="Back"
+                            x:Name="Back"
                             IconOverride="arrow_left.png"
                             CommandParameter="routePage"/>
     </Shell.BackButtonBehavior>

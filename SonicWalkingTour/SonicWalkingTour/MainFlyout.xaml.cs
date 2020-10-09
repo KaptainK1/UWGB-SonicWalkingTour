@@ -47,10 +47,11 @@ namespace SonicWalkingTour
 
         async void OnNavigating(object sender, ShellNavigatingEventArgs e)
         {
-            // Cancel back navigation if data is unsaved
+            //BackButtonBehavior behavior = new BackButtonBehavior();
 
             if (e.Source == ShellNavigationSource.Pop)
             {
+                //Shell.SetBackButtonBehavior(Back, behavior);
                 await Shell.Current.GoToAsync($"///route");
             }
 
@@ -59,6 +60,7 @@ namespace SonicWalkingTour
         void OnNavigated(object sender, ShellNavigatedEventArgs e)
         {
         }
+
 
         //public void Help_Clicked(object sender, EventArgs e)
         //{

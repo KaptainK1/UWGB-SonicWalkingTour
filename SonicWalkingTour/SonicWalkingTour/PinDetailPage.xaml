@@ -28,17 +28,17 @@
                      Clicked="Pause_Clicked"/>
 
         <ToolbarItem 
-                     IconImageSource="ic_action_navigate_next.png"
+                     IconImageSource="ic_action_arrow_forward.png"
                      Text="Next"
                      Order="Primary"
                      Priority="2" 
                      Clicked="Go_Next"/>
 
-                <ToolbarItem
+        <!-- ToolbarItem
                 IconImageSource="info.png"
                 Text="Help"
                 Order="Secondary"
-                Clicked="Help_Clicked_Base"/>
+                Clicked="Help_Clicked_Base"/-->
 
     </ContentPage.ToolbarItems>
 
@@ -56,10 +56,10 @@
                 <!--<Entry x:Name="entryTitle" Text="" Grid.Row="0" Grid.Column="0" IsReadOnly ="True"/>
                 <Entry x:Name="entryDescription" Text="" Grid.Row="1" Grid.Column="0" IsReadOnly="True"/>-->
 
-                <Entry x:Name="entryTitle" Text="{Binding Label}" Grid.Row="0" Grid.Column="0" IsReadOnly="True" />
+                <Entry x:Name="entryTitle" Text="{Binding Label}" Grid.Row="0" Grid.Column="0" IsReadOnly="True" TextColor="{StaticResource phoneixGreen}"/>
 
                 <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical">
-                    <Label x:Name="entryDescription" Text="{Binding Description}"/>
+                    <Label x:Name="entryDescription" Text="{Binding Description}" FontSize="Medium" TextColor="Black"/>
                 </ScrollView>
 
                 <!--Entry x:Name="url" Text="{Binding Url}" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/-->
