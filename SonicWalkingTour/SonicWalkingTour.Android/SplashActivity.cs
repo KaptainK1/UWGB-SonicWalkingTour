@@ -7,9 +7,11 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
-using Android.Support.V7.App;
+//using Android.Support.V7.App;
+using Android.Support.V13;
 using Android.Views;
 using Android.Widget;
+using AndroidX.AppCompat.App;
 
 namespace SonicWalkingTour.Droid
 {
