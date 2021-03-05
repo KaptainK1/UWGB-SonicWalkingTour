@@ -53,6 +53,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -61,11 +62,12 @@
                 <!--<Entry x:Name="entryTitle" Text="" Grid.Row="0" Grid.Column="0" IsReadOnly ="True"/>
                 <Entry x:Name="entryDescription" Text="" Grid.Row="1" Grid.Column="0" IsReadOnly="True"/>-->
 
-                <Entry x:Name="entryTitle" Text="{Binding Label}" Grid.Row="0" Grid.Column="0" IsReadOnly="True" TextColor="{StaticResource phoneixGreen}"/>
-                <Slider x:Name="sliderPosition" />
-                <Slider x:Name="sliderVolume" Minimum="0" Maximum="1"/>
+                <Entry x:Name="entryTitle" Text="{Binding Label}" Grid.Row="2" Grid.Column="0" IsReadOnly="True" TextColor="{StaticResource phoneixGreen}"/>
 
-                <ScrollView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical">
+                <Slider x:Name="sliderPosition" Grid.Row="0" Grid.Column="0" BackgroundColor="Black"/>
+                <Label x:Name="lblPosition" Grid.Row="1" Grid.Column="0"/>
+
+                <ScrollView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Vertical">
                     <Label x:Name="entryDescription" Text="{Binding Description}" FontSize="Medium" TextColor="Black"/>
                 </ScrollView>
 

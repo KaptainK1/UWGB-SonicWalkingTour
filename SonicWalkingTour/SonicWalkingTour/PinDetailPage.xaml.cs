@@ -51,6 +51,7 @@ namespace SonicWalkingTour
                     selectedPin = BindingContext as CustomPin;
                     player.Load(GetStreamFromFile(selectedPin.Url));
 
+
                 }
                 else
                 {
@@ -83,6 +84,31 @@ namespace SonicWalkingTour
                 }),
                 IconOverride = "uwgb_logo.png"
             });
+
+            initControls();
+        }
+
+        void initControls()
+        {
+            sliderPosition.ValueChanged += SliderPostionValueChanged;
+        }
+
+        private void SliderPostionValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            if (sliderPosition.Value != player.Duration)
+                player.Seek(sliderPosition.Value);
+            lblPosition.Text = $"Postion: {(int)sliderPosition.Value} / {(int)player.Duration}";
+        }
+
+        bool UpdatePosition()
+        {
+            lblPosition.Text = $"Postion: {(int)player.CurrentPosition} / {(int)player.Duration}";
+
+            sliderPosition.ValueChanged -= SliderPostionValueChanged;
+            sliderPosition.Value = player.CurrentPosition;
+            sliderPosition.ValueChanged += SliderPostionValueChanged;
+
+            return player.IsPlaying;
         }
 
         //public ICommand BackCommand => new Command<string>(async (url) => await Shell.Current.GoToAsync($"pinDetailPage?stopid={getPreviousStopID(selectedPin.StopID)}"));
@@ -101,6 +127,11 @@ namespace SonicWalkingTour
         void Play_Clicked(object sender, System.EventArgs e)
         {
             player.Play();
+
+            sliderPosition.Maximum = player.Duration;
+            sliderPosition.IsEnabled = player.CanSeek;
+
+            Device.StartTimer(TimeSpan.FromSeconds(0.5), UpdatePosition);
         }
 
         //method to pause the audio file
